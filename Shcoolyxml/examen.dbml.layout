@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="examen">
+  <DataContextMoniker Name="/examenDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f96f60d8-ce61-454a-bd4d-085d5d086122" absoluteBounds="0.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/examenDataContext/level_ex" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a0209d0b-65b0-49a9-8291-e4bf062cd804" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="20ca969e-64c1-4b47-963b-9b5abd21cf8a" absoluteBounds="0.75, 2.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/examenDataContext/students_ex" />
+      <nestedChildShapes>
+        <elementListCompartment Id="40d843b3-af39-460d-992f-866fb049d1c2" absoluteBounds="0.765, 3.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="11afe427-47b9-4eb3-b37d-bd5ac8f35cdb" absoluteBounds="3.75, 0.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/examenDataContext/subject_ex" />
+      <nestedChildShapes>
+        <elementListCompartment Id="846d8cc7-10b0-4696-9b65-6fc3460df892" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

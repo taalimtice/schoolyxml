@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="exam" Class="examenDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\mdf\exam.mdf;Integrated Security=True" SettingsObjectName="Schooly.Properties.Settings" SettingsPropertyName="examConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.level_ex" Member="level_exes">
+    <Type Name="level_ex">
+      <Column Name="level_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="level_name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.students_ex" Member="students_exes">
+    <Type Name="students_ex">
+      <Column Name="cmassar_ex" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="fname_ex" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="lname_ex" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="birth_ex" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="level_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.subject_ex" Member="subject_exes">
+    <Type Name="subject_ex">
+      <Column Name="subject_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="subject_name_ex" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="day_ex" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="start_hour_ex" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="start_minute_ex" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="end_hour_ex" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="end_minute_ex" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="level_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

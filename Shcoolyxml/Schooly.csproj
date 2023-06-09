@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C1319917-E7E2-430E-879B-5986433B4EB5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Schooly</RootNamespace>
+    <AssemblyName>Schooly</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <PublisherName>mohamed bourihane</PublisherName>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3619EAF571D1EE725B68D958E9C21FED209153C3</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Shcooly_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Schooly.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FoxLearn.License">
+      <HintPath>..\..\..\skglGenfox\skglGenfox\bin\Debug\FoxLearn.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="SKGL, Version=2.0.4.1, Culture=neutral, PublicKeyToken=6506df92444891d9, processorArchitecture=MSIL">
+      <HintPath>..\packages\SoftwareProtector.1.0.5.1\lib\SKGL.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebDriver, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.4.9.0\lib\net46\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.4.9.0\lib\net46\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSetCC.cs">
+      <DependentUpon>DataSetCC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetCC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetCC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employee.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDataSet.cs">
+      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Etablissement.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Etablissement.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="examen.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>examen.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="fet.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fet.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_Abscence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_Abscence.Designer.cs">
+      <DependentUpon>Frm_Abscence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_exam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_exam.Designer.cs">
+      <DependentUpon>Frm_exam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_fet_import.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_fet_import.Designer.cs">
+      <DependentUpon>Frm_fet_import.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_Greve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_Greve.Designer.cs">
+      <DependentUpon>Frm_Greve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_list_controls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_list_controls.Designer.cs">
+      <DependentUpon>Frm_list_controls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_morasalat_niyaba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_morasalat_niyaba.Designer.cs">
+      <DependentUpon>Frm_morasalat_niyaba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_name_esise_fet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_name_esise_fet.Designer.cs">
+      <DependentUpon>Frm_name_esise_fet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_print_data_emp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_print_data_emp.Designer.cs">
+      <DependentUpon>Frm_print_data_emp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_Setting.Designer.cs">
+      <DependentUpon>Frm_Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_set_Scrap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_set_Scrap.Designer.cs">
+      <DependentUpon>Frm_set_Scrap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_Trans_Couriers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_Trans_Couriers.Designer.cs">
+      <DependentUpon>Frm_Trans_Couriers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_zero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_zero.Designer.cs">
+      <DependentUpon>Frm_zero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmActivate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActivate.Designer.cs">
+      <DependentUpon>FrmActivate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_req_docs_scool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_req_docs_scool.Designer.cs">
+      <DependentUpon>Frm_req_docs_scool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Error.Designer.cs">
+      <DependentUpon>Frm_Error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Main.Designer.cs">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ImportStudents.cs" />
+    <Compile Include="Pages\Frm_Emp_Fiche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Frm_Emp_Fiche.Designer.cs">
+      <DependentUpon>Frm_Emp_Fiche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Frm_fet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Frm_fet.Designer.cs">
+      <DependentUpon>Frm_fet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Frm_show_etab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Frm_show_etab.Designer.cs">
+      <DependentUpon>Frm_show_etab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Frm_Statistic_new_list_st.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Frm_Statistic_new_list_st.Designer.cs">
+      <DependentUpon>Frm_Statistic_new_list_st.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Frm_transaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Frm_transaction.Designer.cs">
+      <DependentUpon>Frm_transaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\Frm_report_ab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Frm_report_ab.Designer.cs">
+      <DependentUpon>Frm_report_ab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Frm_repport_cc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Frm_repport_cc.Designer.cs">
+      <DependentUpon>Frm_repport_cc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Frm_repport_test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Frm_repport_test.Designer.cs">
+      <DependentUpon>Frm_repport_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsList.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentsList.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\BulkExcel.cs" />
+    <Compile Include="Tools\Scraping.cs" />
+    <Compile Include="Tools\Staticlass.cs" />
+    <Compile Include="Tools\Tool.cs" />
+    <Compile Include="Tools\Tools_scrap.cs" />
+    <Compile Include="Tools\Tools_XML.cs" />
+    <None Include="DataSetCC.xsc">
+      <DependentUpon>DataSetCC.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetCC.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetCC.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetCC.xss">
+      <DependentUpon>DataSetCC.xsd</DependentUpon>
+    </None>
+    <None Include="examen.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>examen.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fet.dbml.layout">
+      <DependentUpon>fet.dbml</DependentUpon>
+    </None>
+    <None Include="examen.dbml.layout">
+      <DependentUpon>examen.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Forms\Frm_Abscence.resx">
+      <DependentUpon>Frm_Abscence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_exam.resx">
+      <DependentUpon>Frm_exam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_fet_import.resx">
+      <DependentUpon>Frm_fet_import.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_Greve.resx">
+      <DependentUpon>Frm_Greve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_list_controls.resx">
+      <DependentUpon>Frm_list_controls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_morasalat_niyaba.resx">
+      <DependentUpon>Frm_morasalat_niyaba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_name_esise_fet.resx">
+      <DependentUpon>Frm_name_esise_fet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_print_data_emp.resx">
+      <DependentUpon>Frm_print_data_emp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_set_Scrap.resx">
+      <DependentUpon>Frm_set_Scrap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_zero.resx">
+      <DependentUpon>Frm_zero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmActivate.resx">
+      <DependentUpon>FrmActivate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_req_docs_scool.resx">
+      <DependentUpon>Frm_req_docs_scool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Error.resx">
+      <DependentUpon>Frm_Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Frm_fet.resx">
+      <DependentUpon>Frm_fet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Frm_show_etab.resx">
+      <DependentUpon>Frm_show_etab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Frm_transaction.resx">
+      <DependentUpon>Frm_transaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlc\Report_cert_AR.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlc\Report_cert_FR.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlc\rpt_cc.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlc\rpt_dem_d_istitna.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlc\rpt_dem_d_malad.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlc\rpt_istifsar_d_bidon.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlc\rpt_istifsar_rr.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlc\rpt_istifsar_ss.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlc\rpt_istinaf_d_malad.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rdlc\rpt_recu_certif_d_malad.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Frm_report_ab.resx">
+      <DependentUpon>Frm_report_ab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Frm_repport_cc.resx">
+      <DependentUpon>Frm_repport_cc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Frm_repport_test.resx">
+      <DependentUpon>Frm_repport_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Employee.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Employee.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeDataSet.xsc">
+      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmployeeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmployeeDataSet.xss">
+      <DependentUpon>EmployeeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Etablissement.dbml.layout">
+      <DependentUpon>Etablissement.dbml</DependentUpon>
+    </None>
+    <None Include="Employee.dbml.layout">
+      <DependentUpon>Employee.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Forms\Frm_Setting.resx">
+      <DependentUpon>Frm_Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_Trans_Couriers.resx">
+      <DependentUpon>Frm_Trans_Couriers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Main.resx">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Frm_Emp_Fiche.resx">
+      <DependentUpon>Frm_Emp_Fiche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Frm_Statistic_new_list_st.resx">
+      <DependentUpon>Frm_Statistic_new_list_st.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Etablissement.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Etablissement.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fet.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>fet.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Shcooly_TemporaryKey.pfx" />
+    <None Include="StudentsList.dbml.layout">
+      <DependentUpon>StudentsList.dbml</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="StudentsList.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>StudentsList.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FrmDialog\" />
+    <Folder Include="Media\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fet.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fet_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>fet.mdf</DependentUpon>
+    </Content>
+    <Content Include="LINCENSE.txt" />
+    <Content Include="ddfs\Employee.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ddfs\Employee_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ddfs\Etablissement.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ddfs\Etablissement_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ddfs\fet.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ddfs\fet_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ddfs\Students.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ddfs\Students_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mdf\Employee.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mdf\Employee_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mdf\Etablissement.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mdf\Etablissement_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mdf\exam.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mdf\exam_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>exam.mdf</DependentUpon>
+    </Content>
+    <Content Include="mdf\fet.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mdf\fet_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mdf\Students.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mdf\Students_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Models\XML_emp.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Software Protector.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Selenium.WebDriver.4.9.0\build\Selenium.WebDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.4.9.0\build\Selenium.WebDriver.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Selenium.WebDriver.4.9.0\build\Selenium.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.4.9.0\build\Selenium.WebDriver.targets'))" />
+    <Error Condition="!Exists('..\packages\Selenium.WebDriver.MSEdgeDriver.107.0.1418.35\build\Selenium.WebDriver.MSEdgeDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.MSEdgeDriver.107.0.1418.35\build\Selenium.WebDriver.MSEdgeDriver.targets'))" />
+  </Target>
+  <Import Project="..\packages\Selenium.WebDriver.MSEdgeDriver.107.0.1418.35\build\Selenium.WebDriver.MSEdgeDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.MSEdgeDriver.107.0.1418.35\build\Selenium.WebDriver.MSEdgeDriver.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Etablissement" Class="EtablissementDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\mdf\Etablissement.mdf;Integrated Security=True" SettingsObjectName="Schooly.Properties.Settings" SettingsPropertyName="EtablissementConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.box" Member="boxes">
+    <Type Name="box">
+      <Column Name="Id_box" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nom_box" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="code_box" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="raf_id" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.casier" Member="casiers">
+    <Type Name="casier">
+      <Column Name="Id_cas" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="cas_cas" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="raf_id_cas" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.dipot" Member="dipots">
+    <Type Name="dipot">
+      <Column Name="Id_dip" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nom_dip" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="cod_dip" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.document" Member="documents">
+    <Type Name="document">
+      <Column Name="Id_doc" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ref_doc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="obj_doc" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="discr_doc" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="typ_doc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="product_doc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dt_doc" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="interesse_doc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="distruction_doc" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="dt_distruc_doc" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="path_doc" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InfoEtab" Member="InfoEtabs">
+    <Type Name="InfoEtab">
+      <Column Name="gresa_info" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="etabNameAr_info" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="etabNameFr_info" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="comuneAr_info" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="comuneFr_info" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="directionAr_info" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="directionFr_info" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="academieAr_info" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="academieFr_info" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="phone_info" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="adress_info" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="email_info" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="cardN_info" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.khizana" Member="khizanas">
+    <Type Name="khizana">
+      <Column Name="Id_khiz" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nom_khiz" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="code_khiz" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="saf_id" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.kism" Member="kisms">
+    <Type Name="kism">
+      <Column Name="Id_kism" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="kism_kis" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="mas_id_kis" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.maslaha" Member="maslahas">
+    <Type Name="maslaha">
+      <Column Name="Id_mas" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="mas_mas" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.morasala" Member="morasalas">
+    <Type Name="morasala">
+      <Column Name="Id_cor" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="subject_cor" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="num_loc_cor" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="num_ext_cor" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dt_cor" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="dt_delai_cor" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="execute_cor" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="jiha_cor" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="source_cor" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="maslaha_cor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[9ism_cor]" Member="_9ism_cor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="type_arch_cor" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="classeIn_dossier" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ref_doc_cor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="classIn_case_cor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="classIn_raf_cor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="locationPc_cor" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="gresa_cor" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.morasala_export" Member="morasala_exports">
+    <Type Name="morasala_export">
+      <Column Name="Id_expo" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="obj_expo" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="product_expo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="distination_expo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="maslaha_expo" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="maktab" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="num_bord_expo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dt_expo" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="distinee_expo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="path_expo" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.morasala_import" Member="morasala_imports">
+    <Type Name="morasala_import">
+      <Column Name="Id_impo" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="obj_impo" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="product_impo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="distination_impo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="maslaha_impo" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="maktab_impo" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="num_bord__extern_empo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dt_impo" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="distinee_impo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="path_impo" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="num_bord__intern_empo" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="execute_impo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="delai_execut_impo" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.pathclasse" Member="pathclasses">
+    <Type Name="pathclasse">
+      <Column Name="cl_pth_id" Type="System.String" DbType="NVarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="greasa_path" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="classe_path" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="niveau_path" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="cycle_path" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="typeEnseign_path" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="annescol_path" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.raf" Member="rafs">
+    <Type Name="raf">
+      <Column Name="Id_raf" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="raf_raf" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.raff" Member="raffs">
+    <Type Name="raff">
+      <Column Name="id_raf" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nom_raf" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="cod_raf" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="khiz_id" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.saf_khizana" Member="saf_khizanas">
+    <Type Name="saf_khizana">
+      <Column Name="Id_saf" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nom_saf" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="code_saf" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dipot_id" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

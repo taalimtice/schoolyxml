@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Students" Class="StudentsListDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\mdf\Students.mdf;Integrated Security=True" SettingsObjectName="Schooly.Properties.Settings" SettingsPropertyName="StudentsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.StudentListPrimaire" Member="StudentListPrimaires">
+    <Type Name="StudentListPrimaire">
+      <Column Name="cMassar_Pr" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="firstName_Pr" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="lastName_Pr" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[genre-Pr]" Member="genre_Pr" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dateNaiss_Pr" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="lieuNaiss_Pr" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="nOreder_Pr" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="classe_Pr" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="niveau_Pr" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="[gresa-Pr]" Member="gresa_Pr" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="annescol_Pr" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StudentListUpdate" Member="StudentListUpdates">
+    <Type Name="StudentListUpdate">
+      <Column Name="cMassar_Up" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="firstName_Up" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="lastName_Up" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[genre-Up]" Member="genre_Up" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dateNaiss_Up" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="lieuNaiss_Up" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="nOreder_Up" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="classe_Up" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="niveau_Up" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="[gresa-Up]" Member="gresa_Up" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="annescol_Up" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Transaction]" Member="Transactions">
+    <Type Name="Transaction">
+      <Column Name="[massar_trans_id ]" Member="massar_trans_id_" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[massar_trans ]" Member="massar_trans_" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[fname_trans ]" Member="fname_trans_" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[lname_trans ]" Member="lname_trans_" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[dt_trans ]" Member="dt_trans_" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="[typ_trans ]" Member="typ_trans_" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[etabOrig_trans ]" Member="etabOrig_trans_" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="[etabRecep_trans ]" Member="etabRecep_trans_" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="[direc_orig_recep_trans ]" Member="direc_orig_recep_trans_" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="[part_entr_trans ]" Member="part_entr_trans_" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[niveau_trans ]" Member="niveau_trans_" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="gresa_trans" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="num_corres_trans" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dt_corres_trans" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="req_send_trans" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="nb_req_trans" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

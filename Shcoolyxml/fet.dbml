@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="fet" Class="fetDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\mdfs\fet.mdf;Integrated Security=True" SettingsObjectName="Schooly.Properties.Settings" SettingsPropertyName="fetConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.elevess" Member="elevesses">
+    <Type Name="elevess">
+      <Column Name="Id_st" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Year" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NuOfStPerYear" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="groups" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NuOfStPerGroup" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Subgroup" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NuOfStPerSubgroup" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gresa_el_fet" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.subjects" Member="subjects">
+    <Type Name="subject">
+      <Column Name="Id_sub" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Subject" Member="Subject1" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="gresa_sub_fet" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.techers" Member="techers">
+    <Type Name="techer">
+      <Column Name="Id_tech" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Teacher" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ppr" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gresa_tech_fet" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.timeTable" Member="timeTables">
+    <Type Name="timeTable">
+      <Column Name="id_tt" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ActivityId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Day" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Hour" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StudentsSets" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Subject" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Teachers" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ActivityTags" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Room" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Comments" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="gresa_tt_fet" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

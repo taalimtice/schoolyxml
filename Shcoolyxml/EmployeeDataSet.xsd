@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EmployeeDataSet" targetNamespace="http://tempuri.org/EmployeeDataSet.xsd" xmlns:mstns="http://tempuri.org/EmployeeDataSet.xsd" xmlns="http://tempuri.org/EmployeeDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="EmployeeConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="EmployeeConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Schooly.Properties.Settings.GlobalReference.Default.EmployeeConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EmployeeDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="EmployeeDataSet" msprop:Generator_UserDSName="EmployeeDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="custmDataTable" msprop:Generator_TableClassName="custmDataTableDataTable" msprop:Generator_TableVarName="tablecustmDataTable" msprop:Generator_TablePropName="custmDataTable" msprop:Generator_RowDeletingName="custmDataTableRowDeleting" msprop:Generator_RowChangingName="custmDataTableRowChanging" msprop:Generator_RowEvHandlerName="custmDataTableRowChangeEventHandler" msprop:Generator_RowDeletedName="custmDataTableRowDeleted" msprop:Generator_UserTableName="custmDataTable" msprop:Generator_RowChangedName="custmDataTableRowChanged" msprop:Generator_RowEvArgName="custmDataTableRowChangeEvent" msprop:Generator_RowClassName="custmDataTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ppr" msprop:Generator_ColumnVarNameInTable="columnppr" msprop:Generator_ColumnPropNameInRow="ppr" msprop:Generator_ColumnPropNameInTable="pprColumn" msprop:Generator_UserColumnName="ppr" type="xs:string" minOccurs="0" />
+              <xs:element name="nbjrs" msprop:Generator_ColumnVarNameInTable="columnnbjrs" msprop:Generator_ColumnPropNameInRow="nbjrs" msprop:Generator_ColumnPropNameInTable="nbjrsColumn" msprop:Generator_UserColumnName="nbjrs" type="xs:int" minOccurs="0" />
+              <xs:element name="deb" msprop:Generator_ColumnVarNameInTable="columndeb" msprop:Generator_ColumnPropNameInRow="deb" msprop:Generator_ColumnPropNameInTable="debColumn" msprop:Generator_UserColumnName="deb" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="fin" msprop:Generator_ColumnVarNameInTable="columnfin" msprop:Generator_ColumnPropNameInRow="fin" msprop:Generator_ColumnPropNameInTable="finColumn" msprop:Generator_UserColumnName="fin" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="nom" msprop:Generator_ColumnVarNameInTable="columnnom" msprop:Generator_ColumnPropNameInRow="nom" msprop:Generator_ColumnPropNameInTable="nomColumn" msprop:Generator_UserColumnName="nom" type="xs:string" minOccurs="0" />
+              <xs:element name="grad" msprop:Generator_ColumnVarNameInTable="columngrad" msprop:Generator_ColumnPropNameInRow="grad" msprop:Generator_ColumnPropNameInTable="gradColumn" msprop:Generator_UserColumnName="grad" type="xs:string" minOccurs="0" />
+              <xs:element name="fonc" msprop:Generator_ColumnVarNameInTable="columnfonc" msprop:Generator_ColumnPropNameInRow="fonc" msprop:Generator_ColumnPropNameInTable="foncColumn" msprop:Generator_UserColumnName="fonc" type="xs:string" minOccurs="0" />
+              <xs:element name="docteur" msprop:Generator_ColumnVarNameInTable="columndocteur" msprop:Generator_ColumnPropNameInRow="docteur" msprop:Generator_ColumnPropNameInTable="docteurColumn" msprop:Generator_UserColumnName="docteur" type="xs:string" minOccurs="0" />
+              <xs:element name="type" msprop:Generator_ColumnVarNameInTable="columntype" msprop:Generator_ColumnPropNameInRow="type" msprop:Generator_ColumnPropNameInTable="typeColumn" msprop:Generator_UserColumnName="type" type="xs:string" minOccurs="0" />
+              <xs:element name="adress" msprop:Generator_ColumnVarNameInTable="columnadress" msprop:Generator_ColumnPropNameInRow="adress" msprop:Generator_ColumnPropNameInTable="adressColumn" msprop:Generator_UserColumnName="adress" type="xs:string" minOccurs="0" />
+              <xs:element name="cin" msprop:Generator_ColumnVarNameInTable="columncin" msprop:Generator_ColumnPropNameInRow="cin" msprop:Generator_ColumnPropNameInTable="cinColumn" msprop:Generator_UserColumnName="cin" type="xs:string" minOccurs="0" />
+              <xs:element name="noml" msprop:Generator_ColumnVarNameInTable="columnnoml" msprop:Generator_ColumnPropNameInRow="noml" msprop:Generator_ColumnPropNameInTable="nomlColumn" msprop:Generator_UserColumnName="noml" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="doc" msprop:Generator_ColumnVarNameInTable="columndoc" msprop:Generator_ColumnPropNameInRow="doc" msprop:Generator_ColumnPropNameInTable="docColumn" msprop:Generator_UserColumnName="doc" type="xs:string" minOccurs="0" />
+              <xs:element name="nbjrs2" msprop:Generator_ColumnVarNameInTable="columnnbjrs2" msprop:Generator_ColumnPropNameInRow="nbjrs2" msprop:Generator_ColumnPropNameInTable="nbjrs2Column" msprop:Generator_UserColumnName="nbjrs2" type="xs:int" minOccurs="0" />
+              <xs:element name="deb2" msprop:Generator_ColumnVarNameInTable="columndeb2" msprop:Generator_ColumnPropNameInRow="deb2" msprop:Generator_ColumnPropNameInTable="deb2Column" msprop:Generator_UserColumnName="deb2" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="fin2" msprop:Generator_ColumnVarNameInTable="columnfin2" msprop:Generator_ColumnPropNameInRow="fin2" msprop:Generator_ColumnPropNameInTable="fin2Column" msprop:Generator_UserColumnName="fin2" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

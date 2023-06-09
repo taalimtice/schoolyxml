@@ -1,0 +1,6309 @@
+<DsAgentExport xmlns="http://tempuri.org/DsAgentExport.xsd">
+  <xs:schema id="DsAgentExport" targetNamespace="http://tempuri.org/DsAgentExport.xsd" xmlns:mstns="http://tempuri.org/DsAgentExport.xsd" xmlns="http://tempuri.org/DsAgentExport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="DsAgentExport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ACTIVITE">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CD_ACTIVITES" type="xs:decimal" minOccurs="0" />
+                <xs:element name="CD_MODAFFE" type="xs:string" minOccurs="0" />
+                <xs:element name="CD_FONC" type="xs:string" minOccurs="0" />
+                <xs:element name="CD_ETAB" type="xs:string" minOccurs="0" />
+                <xs:element name="PPR" type="xs:int" minOccurs="0" />
+                <xs:element name="CINA" type="xs:string" minOccurs="0" />
+                <xs:element name="CINN" type="xs:int" minOccurs="0" />
+                <xs:element name="CD_SERVICE" type="xs:int" minOccurs="0" />
+                <xs:element name="CD_DIVISION" type="xs:int" minOccurs="0" />
+                <xs:element name="CD_ENTADM" type="xs:int" minOccurs="0" />
+                <xs:element name="CD_CYCLE" type="xs:string" minOccurs="0" />
+                <xs:element name="ACTIV_PRINC" type="xs:boolean" minOccurs="0" />
+                <xs:element name="DT_DEB_EXERCICE" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DT_FIN_EXERCICE" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DATEAFFECT" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DT_AFF_ETAB" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DT_AFF_PROV" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DT_AFF_REG" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DT_AFF_POSTE" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="R_TABSERV">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CD_TSERVICE" type="xs:decimal" minOccurs="0" />
+                <xs:element name="CD_DISCIP" type="xs:string" minOccurs="0" />
+                <xs:element name="CD_FILIERE" type="xs:string" minOccurs="0" />
+                <xs:element name="CD_NIVENS" type="xs:string" minOccurs="0" />
+                <xs:element name="CD_ACTIVITES" type="xs:decimal" minOccurs="0" />
+                <xs:element name="CD_TYPEENS" type="xs:string" minOccurs="0" />
+                <xs:element name="NBR_HEURE_ENS" type="xs:decimal" minOccurs="0" />
+                <xs:element name="NBR_HEURE_SUP" type="xs:decimal" minOccurs="0" />
+                <xs:element name="NBR_CLASSE" type="xs:double" minOccurs="0" />
+                <xs:element name="NEFSTAT10" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="R_TABSERV_INSP">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CD_TABSERVINS" type="xs:decimal" minOccurs="0" />
+                <xs:element name="CD_CYCLE" type="xs:string" minOccurs="0" />
+                <xs:element name="CD_DISCIP" type="xs:string" minOccurs="0" />
+                <xs:element name="CD_ACTIVITES" type="xs:decimal" minOccurs="0" />
+                <xs:element name="NBR_DELEGATIONS" type="xs:int" minOccurs="0" />
+                <xs:element name="NBR_RENCONTRES" type="xs:int" minOccurs="0" />
+                <xs:element name="NBRVISITEPRIVE" type="xs:int" minOccurs="0" />
+                <xs:element name="NBRVISITEPUBLIC" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="DATAIDENTIFPERSONNEL">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="PPR" type="xs:int" minOccurs="0" />
+                <xs:element name="CINA" type="xs:string" minOccurs="0" />
+                <xs:element name="CINN" type="xs:int" minOccurs="0" />
+                <xs:element name="CD_POSITION" type="xs:string" minOccurs="0" />
+                <xs:element name="CD_NATION" type="xs:string" minOccurs="0" />
+                <xs:element name="CD_DIPS" type="xs:string" minOccurs="0" />
+                <xs:element name="CD_DIPP" type="xs:string" minOccurs="0" />
+                <xs:element name="CD_DISCIP" type="xs:string" minOccurs="0" />
+                <xs:element name="CD_STATUT" type="xs:string" minOccurs="0" />
+                <xs:element name="CD_GRADE" type="xs:string" minOccurs="0" />
+                <xs:element name="MODAVGRA" type="xs:string" minOccurs="0" />
+                <xs:element name="SIT_FAM" type="xs:string" minOccurs="0" />
+                <xs:element name="NOML" type="xs:string" minOccurs="0" />
+                <xs:element name="PRENOML" type="xs:string" minOccurs="0" />
+                <xs:element name="NOMA" type="xs:string" minOccurs="0" />
+                <xs:element name="PRENOMA" type="xs:string" minOccurs="0" />
+                <xs:element name="JOUR_NAIS" type="xs:int" minOccurs="0" />
+                <xs:element name="MOIS_NAIS" type="xs:int" minOccurs="0" />
+                <xs:element name="AN_NAIS" type="xs:int" minOccurs="0" />
+                <xs:element name="LIEU_NAIS" type="xs:string" minOccurs="0" />
+                <xs:element name="GENRE" type="xs:string" minOccurs="0" />
+                <xs:element name="ADRESSE" type="xs:string" minOccurs="0" />
+                <xs:element name="CODE_POSTAL" type="xs:int" minOccurs="0" />
+                <xs:element name="VILLE" type="xs:string" minOccurs="0" />
+                <xs:element name="TEL_FIXE" type="xs:string" minOccurs="0" />
+                <xs:element name="TEL_PORTABLE" type="xs:string" minOccurs="0" />
+                <xs:element name="ADRESSE_ELEC" type="xs:string" minOccurs="0" />
+                <xs:element name="DATE_REC" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DT_TITUL" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ANC_ADM" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ANC_GRADE" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ECHELON" type="xs:int" minOccurs="0" />
+                <xs:element name="DT_ECHELON" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ANC_ECHELON" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DATEAFFIL" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="AFFILIE" type="xs:boolean" minOccurs="0" />
+                <xs:element name="VILLEFORM" type="xs:string" minOccurs="0" />
+                <xs:element name="DATE_POSITION" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CD_CADRE" type="xs:string" minOccurs="0" />
+                <xs:element name="DT_DIPSCOL" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DT_DIPPROF" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DT_SITSTAT" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DT_GRADE" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DATE_SITFAM" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DT_CADRE" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="AffectationPrincipale" type="xs:boolean" minOccurs="0" />
+                <xs:element name="NumAFFIL" type="xs:int" minOccurs="0" />
+                <xs:element name="NumImma" type="xs:int" minOccurs="0" />
+                <xs:element name="ID_tech" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="R_SitFam">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Sit_Fam" type="xs:string" minOccurs="0" />
+                <xs:element name="LL_SitFam" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="R_Position">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CD_Position" type="xs:string" minOccurs="0" />
+                <xs:element name="LL_POSITION" type="xs:string" minOccurs="0" />
+                <xs:element name="LA_POSITION" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="R_NATION">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CD_NATION" type="xs:string" minOccurs="0" />
+                <xs:element name="LL_NATION" type="xs:string" minOccurs="0" />
+                <xs:element name="LA_NATION" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="R_MODEAFFE">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CD_MODAFFE" type="xs:string" minOccurs="0" />
+                <xs:element name="LL_MODEAFFE" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="R_CYCLE">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CD_CYCLE" type="xs:string" minOccurs="0" />
+                <xs:element name="LL_CYCLE" type="xs:string" minOccurs="0" />
+                <xs:element name="LA_CYCLE" type="xs:string" minOccurs="0" />
+                <xs:element name="flag" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="R_NIVEAUENS">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CD_NIVENS" type="xs:string" minOccurs="0" />
+                <xs:element name="CD_CYCLE" type="xs:string" minOccurs="0" />
+                <xs:element name="LC_NIVENS" type="xs:string" minOccurs="0" />
+                <xs:element name="LL_NIVENS" type="xs:string" minOccurs="0" />
+                <xs:element name="cycle" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="R_TYPEENS">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CD_TYPEENS" type="xs:string" minOccurs="0" />
+                <xs:element name="LL_TYPEENS" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="R_Discip">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CD_Discip" type="xs:string" minOccurs="0" />
+                <xs:element name="LL_DISCIP" type="xs:string" minOccurs="0" />
+                <xs:element name="LA_DISCIP" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:unsignedByte" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="R_FILIERE">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CD_FILIERE" type="xs:string" minOccurs="0" />
+                <xs:element name="LIB_Filière" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="R_DipSCol">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CD_DIPS" type="xs:string" minOccurs="0" />
+                <xs:element name="LL_DIPS" type="xs:string" minOccurs="0" />
+                <xs:element name="LA_DIPS" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="R_DipProf">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CD_DIPP" type="xs:string" minOccurs="0" />
+                <xs:element name="LL_DIPP" type="xs:string" minOccurs="0" />
+                <xs:element name="LA_DIPP" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="R_CADRE">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CD_CADRE" type="xs:string" minOccurs="0" />
+                <xs:element name="CD_CORPS" type="xs:string" minOccurs="0" />
+                <xs:element name="LL_CADRE" type="xs:string" minOccurs="0" />
+                <xs:element name="LA_CADRE" type="xs:string" minOccurs="0" />
+                <xs:element name="CD_CATEG" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="R_Statut">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CD_Statut" type="xs:string" minOccurs="0" />
+                <xs:element name="LL_STATUT" type="xs:string" minOccurs="0" />
+                <xs:element name="LA_STATUT" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="R_MOD_ACCES_GRADE">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MODAVGRA" type="xs:string" minOccurs="0" />
+                <xs:element name="DESLMODAV" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="R_DIVISION">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CD_DIVISION" type="xs:int" minOccurs="0" />
+                <xs:element name="CD_ENTADM" type="xs:int" minOccurs="0" />
+                <xs:element name="LL_DIVISION" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="R_SERVICE">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CD_SERVICE" type="xs:int" minOccurs="0" />
+                <xs:element name="CD_DIVISION" type="xs:int" minOccurs="0" />
+                <xs:element name="LL_SERVICE" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="R_ENTADM">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CD_ENTADM" type="xs:int" minOccurs="0" />
+                <xs:element name="LL_ENTADM" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="R_FONCT">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CD_Fonc" type="xs:string" minOccurs="0" />
+                <xs:element name="LL_FONC" type="xs:string" minOccurs="0" />
+                <xs:element name="LA_Fonc" type="xs:string" minOccurs="0" />
+                <xs:element name="Flag" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="R_CentreForm">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="NOM_ETABL" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="R_GRADE">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CD_GRADE" type="xs:string" minOccurs="0" />
+                <xs:element name="CD_CATEG" type="xs:string" minOccurs="0" />
+                <xs:element name="CD_CORPS" type="xs:string" minOccurs="0" />
+                <xs:element name="CD_CADRE" type="xs:string" minOccurs="0" />
+                <xs:element name="LL_GRADE" type="xs:string" minOccurs="0" />
+                <xs:element name="LA_GRADE" type="xs:string" minOccurs="0" />
+                <xs:element name="ECHELLE" type="xs:string" minOccurs="0" />
+                <xs:element name="Flag" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ACTIVITE>
+    <CD_ACTIVITES>746394</CD_ACTIVITES>
+    <CD_MODAFFE>12</CD_MODAFFE>
+    <CD_FONC>E001</CD_FONC>
+    <CD_ETAB>0356U</CD_ETAB>
+    <PPR>00555000</PPR>
+    <CINA>B </CINA>
+    <CINN>0005200</CINN>
+    <CD_CYCLE>10</CD_CYCLE>
+    <ACTIV_PRINC>true</ACTIV_PRINC>
+    <DATEAFFECT>1993-09-21T00:00:00+00:00</DATEAFFECT>
+    <DT_AFF_ETAB>2000-09-15T00:00:00+00:00</DT_AFF_ETAB>
+    <DT_AFF_PROV>2000-09-15T00:00:00+00:00</DT_AFF_PROV>
+    <DT_AFF_REG>2002-09-19T00:00:00+00:00</DT_AFF_REG>
+    <DT_AFF_POSTE>1999-09-15T00:00:00+00:00</DT_AFF_POSTE>
+  </ACTIVITE>
+  <R_TABSERV>
+    <CD_TSERVICE>40466186</CD_TSERVICE>
+    <CD_DISCIP>0012</CD_DISCIP>
+    <CD_FILIERE>1</CD_FILIERE>
+    <CD_NIVENS>105</CD_NIVENS>
+    <CD_ACTIVITES>746394</CD_ACTIVITES>
+    <NBR_HEURE_ENS>30</NBR_HEURE_ENS>
+    <NBR_HEURE_SUP>0</NBR_HEURE_SUP>
+    <NBR_CLASSE>2</NBR_CLASSE>
+    <NEFSTAT10>1065101010</NEFSTAT10>
+  </R_TABSERV>
+  <R_TABSERV>
+    <CD_TSERVICE>40444629</CD_TSERVICE>
+    <CD_DISCIP>0012</CD_DISCIP>
+    <CD_FILIERE>1</CD_FILIERE>
+    <CD_NIVENS>106</CD_NIVENS>
+    <CD_ACTIVITES>666071</CD_ACTIVITES>
+    <NBR_HEURE_ENS>30</NBR_HEURE_ENS>
+    <NBR_HEURE_SUP>0</NBR_HEURE_SUP>
+    <NBR_CLASSE>2</NBR_CLASSE>
+    <NEFSTAT10>1066101010</NEFSTAT10>
+  </R_TABSERV>
+  <R_TABSERV>
+    <CD_TSERVICE>40180220</CD_TSERVICE>
+    <CD_DISCIP>0011</CD_DISCIP>
+    <CD_FILIERE>1</CD_FILIERE>
+    <CD_NIVENS>102</CD_NIVENS>
+    <CD_ACTIVITES>924207</CD_ACTIVITES>
+    <NBR_HEURE_ENS>30</NBR_HEURE_ENS>
+    <NBR_HEURE_SUP>0</NBR_HEURE_SUP>
+    <NBR_CLASSE>1</NBR_CLASSE>
+    <NEFSTAT10>1062101010</NEFSTAT10>
+  </R_TABSERV>
+  <R_TABSERV>
+    <CD_TSERVICE>40430621</CD_TSERVICE>
+    <CD_DISCIP>0012</CD_DISCIP>
+    <CD_FILIERE>1</CD_FILIERE>
+    <CD_NIVENS>104</CD_NIVENS>
+    <CD_ACTIVITES>892136</CD_ACTIVITES>
+    <NBR_HEURE_ENS>30</NBR_HEURE_ENS>
+    <NBR_HEURE_SUP>0</NBR_HEURE_SUP>
+    <NBR_CLASSE>2</NBR_CLASSE>
+    <NEFSTAT10>1064101010</NEFSTAT10>
+  </R_TABSERV>
+  <R_TABSERV>
+    <CD_TSERVICE>40342804</CD_TSERVICE>
+    <CD_DISCIP>0011</CD_DISCIP>
+    <CD_FILIERE>1</CD_FILIERE>
+    <CD_NIVENS>101</CD_NIVENS>
+    <CD_ACTIVITES>1212292</CD_ACTIVITES>
+    <NBR_HEURE_ENS>30</NBR_HEURE_ENS>
+    <NBR_HEURE_SUP>0</NBR_HEURE_SUP>
+    <NBR_CLASSE>1</NBR_CLASSE>
+    <NEFSTAT10>1061101010</NEFSTAT10>
+  </R_TABSERV>
+  <R_TABSERV>
+    <CD_TSERVICE>40390987</CD_TSERVICE>
+    <CD_DISCIP>0012</CD_DISCIP>
+    <CD_FILIERE>1</CD_FILIERE>
+    <CD_NIVENS>103</CD_NIVENS>
+    <CD_ACTIVITES>1290499</CD_ACTIVITES>
+    <NBR_HEURE_ENS>30</NBR_HEURE_ENS>
+    <NBR_HEURE_SUP>0</NBR_HEURE_SUP>
+    <NBR_CLASSE>2</NBR_CLASSE>
+    <NEFSTAT10>1063101010</NEFSTAT10>
+  </R_TABSERV>
+  <R_TABSERV>
+    <CD_TSERVICE>40208093</CD_TSERVICE>
+    <CD_DISCIP>0011</CD_DISCIP>
+    <CD_FILIERE>1</CD_FILIERE>
+    <CD_NIVENS>106</CD_NIVENS>
+    <CD_ACTIVITES>1212285</CD_ACTIVITES>
+    <NBR_HEURE_ENS>30</NBR_HEURE_ENS>
+    <NBR_HEURE_SUP>0</NBR_HEURE_SUP>
+    <NBR_CLASSE>2</NBR_CLASSE>
+    <NEFSTAT10>1066101010</NEFSTAT10>
+  </R_TABSERV>
+  <R_TABSERV>
+    <CD_TSERVICE>40224983</CD_TSERVICE>
+    <CD_DISCIP>0011</CD_DISCIP>
+    <CD_FILIERE>1</CD_FILIERE>
+    <CD_NIVENS>102</CD_NIVENS>
+    <CD_ACTIVITES>1098930</CD_ACTIVITES>
+    <NBR_HEURE_ENS>30</NBR_HEURE_ENS>
+    <NBR_HEURE_SUP>0</NBR_HEURE_SUP>
+    <NBR_CLASSE>1</NBR_CLASSE>
+    <NEFSTAT10>1062101010</NEFSTAT10>
+  </R_TABSERV>
+  <DATAIDENTIFPERSONNEL>
+    <PPR>00555000</PPR>
+    <CINA>B </CINA>
+    <CINN>0005200</CINN>
+    <CD_POSITION>53</CD_POSITION>
+    <CD_NATION>350</CD_NATION>
+    <CD_DIPS>03</CD_DIPS>
+    <CD_DIPP>04</CD_DIPP>
+    <CD_DISCIP>0012</CD_DISCIP>
+    <CD_STATUT>1</CD_STATUT>
+    <CD_GRADE>11090102</CD_GRADE>
+    <MODAVGRA>3</MODAVGRA>
+    <SIT_FAM>M</SIT_FAM>
+    <NOML>Nom latin</NOML>
+    <NOMA>الإسم عربية</NOMA>
+    <JOUR_NAIS>22</JOUR_NAIS>
+    <MOIS_NAIS>11</MOIS_NAIS>
+    <AN_NAIS>1980</AN_NAIS>
+    <LIEU_NAIS>casa</LIEU_NAIS>
+    <GENRE>M</GENRE>
+    <ADRESSE>derb falah rue8  n 20</ADRESSE>
+    <CODE_POSTAL>00000500</CODE_POSTAL>
+    <VILLE>casa</VILLE>
+    <TEL_FIXE>0674042366</TEL_FIXE>
+    <TEL_PORTABLE>06055689</TEL_PORTABLE>
+    <DATE_REC>1992-09-21T00:00:00+00:00</DATE_REC>
+    <DT_TITUL>1993-09-21T00:00:00+00:00</DT_TITUL>
+    <ANC_ADM>2002-09-21T00:00:00+00:00</ANC_ADM>
+    <ANC_GRADE>2007-07-01T00:00:00+00:00</ANC_GRADE>
+    <ECHELON>12</ECHELON>
+    <DT_ECHELON>2016-07-01T00:00:00+01:00</DT_ECHELON>
+    <ANC_ECHELON>2016-07-01T00:00:00+01:00</ANC_ECHELON>
+    <DATEAFFIL>1992-05-01T00:00:00+00:00</DATEAFFIL>
+    <AFFILIE>true</AFFILIE>
+    <VILLEFORM>CFI HAY EL HASSANI</VILLEFORM>
+    <DATE_POSITION>1993-09-21T00:00:00+00:00</DATE_POSITION>
+    <CD_CADRE>110901</CD_CADRE>
+    <DT_DIPSCOL>1991-06-30T00:00:00+00:00</DT_DIPSCOL>
+    <DT_DIPPROF>1991-06-30T00:00:00+00:00</DT_DIPPROF>
+    <DT_SITSTAT>1997-09-21T00:00:00+00:00</DT_SITSTAT>
+    <DT_GRADE>2007-07-01T00:00:00+00:00</DT_GRADE>
+    <DATE_SITFAM>2007-06-06T00:00:00+00:00</DATE_SITFAM>
+    <DT_CADRE>1983-09-21T00:00:00+00:00</DT_CADRE>
+    <AffectationPrincipale>true</AffectationPrincipale>
+    <NumAFFIL>10592</NumAFFIL>
+    <NumImma>931479586</NumImma>
+    <ID_tech>11193</ID_tech>
+  </DATAIDENTIFPERSONNEL>
+  <R_SitFam>
+    <Sit_Fam>C</Sit_Fam>
+    <LL_SitFam>Célibataire</LL_SitFam>
+  </R_SitFam>
+  <R_SitFam>
+    <Sit_Fam>D</Sit_Fam>
+    <LL_SitFam>Divorcé(e)</LL_SitFam>
+  </R_SitFam>
+  <R_SitFam>
+    <Sit_Fam>M</Sit_Fam>
+    <LL_SitFam>Marié(e)</LL_SitFam>
+  </R_SitFam>
+  <R_SitFam>
+    <Sit_Fam>V</Sit_Fam>
+    <LL_SitFam>Veuf | veuve</LL_SitFam>
+  </R_SitFam>
+  <R_Position>
+    <CD_Position>10</CD_Position>
+    <LL_POSITION>En activité</LL_POSITION>
+    <LA_POSITION />
+  </R_Position>
+  <R_Position>
+    <CD_Position>11</CD_Position>
+    <LL_POSITION>Mis à la disposition - parti politique</LL_POSITION>
+    <LA_POSITION />
+  </R_Position>
+  <R_Position>
+    <CD_Position>12</CD_Position>
+    <LL_POSITION>Mis à la disposition - syndicat</LL_POSITION>
+    <LA_POSITION />
+  </R_Position>
+  <R_Position>
+    <CD_Position>13</CD_Position>
+    <LL_POSITION>Mis à la disposition</LL_POSITION>
+    <LA_POSITION />
+  </R_Position>
+  <R_Position>
+    <CD_Position>14</CD_Position>
+    <LL_POSITION>Mis à la disposition - autre instance</LL_POSITION>
+    <LA_POSITION />
+  </R_Position>
+  <R_Position>
+    <CD_Position>15</CD_Position>
+    <LL_POSITION>Congé courte durée</LL_POSITION>
+  </R_Position>
+  <R_Position>
+    <CD_Position>16</CD_Position>
+    <LL_POSITION>Congé moyenne durée</LL_POSITION>
+  </R_Position>
+  <R_Position>
+    <CD_Position>17</CD_Position>
+    <LL_POSITION>Congé longue durée</LL_POSITION>
+  </R_Position>
+  <R_Position>
+    <CD_Position>18</CD_Position>
+    <LL_POSITION>Congé Administratif</LL_POSITION>
+  </R_Position>
+  <R_Position>
+    <CD_Position>19</CD_Position>
+    <LL_POSITION>Congé de Maternité</LL_POSITION>
+  </R_Position>
+  <R_Position>
+    <CD_Position>20</CD_Position>
+    <LL_POSITION>Détaché dans le secteur privé</LL_POSITION>
+    <LA_POSITION />
+  </R_Position>
+  <R_Position>
+    <CD_Position>21</CD_Position>
+    <LL_POSITION>Détaché dans un autre département ministériel</LL_POSITION>
+    <LA_POSITION />
+  </R_Position>
+  <R_Position>
+    <CD_Position>22</CD_Position>
+    <LL_POSITION>Détaché dans un organisme international</LL_POSITION>
+    <LA_POSITION />
+  </R_Position>
+  <R_Position>
+    <CD_Position>23</CD_Position>
+    <LL_POSITION>Détaché dans une autre instance</LL_POSITION>
+  </R_Position>
+  <R_Position>
+    <CD_Position>24</CD_Position>
+    <LL_POSITION>DETACHEMENT AUPRES D'UN OFFICE AVEC PENSION R.G.R</LL_POSITION>
+  </R_Position>
+  <R_Position>
+    <CD_Position>25</CD_Position>
+    <LL_POSITION>DETACHEMENT AUPRES D'UN ETAT ETRANGER</LL_POSITION>
+  </R_Position>
+  <R_Position>
+    <CD_Position>26</CD_Position>
+    <LL_POSITION>DETACHEMENT POUR MANDAT PUBLIC</LL_POSITION>
+  </R_Position>
+  <R_Position>
+    <CD_Position>27</CD_Position>
+    <LL_POSITION>RENOUVELLEMENT DE DETACHEMENT</LL_POSITION>
+  </R_Position>
+  <R_Position>
+    <CD_Position>30</CD_Position>
+    <LL_POSITION>Disponibilité</LL_POSITION>
+    <LA_POSITION />
+  </R_Position>
+  <R_Position>
+    <CD_Position>31</CD_Position>
+    <LL_POSITION>Stage de Formation</LL_POSITION>
+  </R_Position>
+  <R_Position>
+    <CD_Position>32</CD_Position>
+    <LL_POSITION>Stage de formation   au COPE</LL_POSITION>
+  </R_Position>
+  <R_Position>
+    <CD_Position>33</CD_Position>
+    <LL_POSITION>Stage de formation   au CFIE </LL_POSITION>
+  </R_Position>
+  <R_Position>
+    <CD_Position>34</CD_Position>
+    <LL_POSITION>Stage de formation au CRMEF (ADM.PEDAG.)</LL_POSITION>
+  </R_Position>
+  <R_Position>
+    <CD_Position>35</CD_Position>
+    <LL_POSITION>Formation au cycle d’agrégation au CRMEF</LL_POSITION>
+    <LA_POSITION>سلك التبريز بالمركز الجهوي لمهن التربية والتكوين</LA_POSITION>
+  </R_Position>
+  <R_Position>
+    <CD_Position>40</CD_Position>
+    <LL_POSITION>Sous les drapeaux</LL_POSITION>
+  </R_Position>
+  <R_Position>
+    <CD_Position>50</CD_Position>
+    <LL_POSITION>Sortie de service (Retraite,Révocation)</LL_POSITION>
+    <LA_POSITION />
+  </R_Position>
+  <R_Position>
+    <CD_Position>51</CD_Position>
+    <LL_POSITION>Abandon de Poste</LL_POSITION>
+  </R_Position>
+  <R_Position>
+    <CD_Position>52</CD_Position>
+    <LL_POSITION>Absence non Justifiée</LL_POSITION>
+  </R_Position>
+  <R_Position>
+    <CD_Position>53</CD_Position>
+    <LL_POSITION>Suspension Provisoire</LL_POSITION>
+  </R_Position>
+  <R_Position>
+    <CD_Position>54</CD_Position>
+    <LL_POSITION>Décès</LL_POSITION>
+  </R_Position>
+  <R_Position>
+    <CD_Position>55</CD_Position>
+    <LL_POSITION>Sortie de service (FIN DETACHEMENT,FIN MIS E.DISP)</LL_POSITION>
+    <LA_POSITION />
+  </R_Position>
+  <R_Position>
+    <CD_Position>60</CD_Position>
+    <LL_POSITION>Issus de province du sud et Inactif</LL_POSITION>
+  </R_Position>
+  <R_NATION>
+    <CD_NATION>100</CD_NATION>
+    <LL_NATION>Française</LL_NATION>
+    <LA_NATION>FRANCE</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>118</CD_NATION>
+    <LL_NATION>Bosnie-Herzegovine</LL_NATION>
+    <LA_NATION>BOSNIE-HER</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>124</CD_NATION>
+    <LL_NATION>Turque</LL_NATION>
+    <LA_NATION>TURQUIE</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>125</CD_NATION>
+    <LL_NATION>Albanie</LL_NATION>
+    <LA_NATION>ALBANIE</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>127</CD_NATION>
+    <LL_NATION>Italienne</LL_NATION>
+    <LA_NATION>ITALIE</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>131</CD_NATION>
+    <LL_NATION>Belge</LL_NATION>
+    <LA_NATION>BELGIQUE</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>132</CD_NATION>
+    <LL_NATION>Anglaise</LL_NATION>
+    <LA_NATION>ROYAUME-UN</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>133</CD_NATION>
+    <LL_NATION>Gibraltar</LL_NATION>
+    <LA_NATION>GIBRALTAR</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>134</CD_NATION>
+    <LL_NATION>Espagnole</LL_NATION>
+    <LA_NATION>ESPAGNE</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>135</CD_NATION>
+    <LL_NATION>Holandaise</LL_NATION>
+    <LA_NATION>PAYS-BAS</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>139</CD_NATION>
+    <LL_NATION>Portugaise</LL_NATION>
+    <LA_NATION>PORTUGAL</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>140</CD_NATION>
+    <LL_NATION>Suisse</LL_NATION>
+    <LA_NATION>SUISSE</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>142</CD_NATION>
+    <LL_NATION>Allemande</LL_NATION>
+    <LA_NATION>RFA</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>149</CD_NATION>
+    <LL_NATION>Kazakhstanienne</LL_NATION>
+    <LA_NATION>KAZAKHSTAN</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>152</CD_NATION>
+    <LL_NATION>Ouzbekistanienne</LL_NATION>
+    <LA_NATION>OUZBEKISTA</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>201</CD_NATION>
+    <LL_NATION>Saoudienne</LL_NATION>
+    <LA_NATION>ARABIE SAO</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>202</CD_NATION>
+    <LL_NATION>Yemenaise</LL_NATION>
+    <LA_NATION>YEMEN</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>203</CD_NATION>
+    <LL_NATION>Iraqienne</LL_NATION>
+    <LA_NATION>IRAQ</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>204</CD_NATION>
+    <LL_NATION>Iranienne</LL_NATION>
+    <LA_NATION>IRAN</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>205</CD_NATION>
+    <LL_NATION>Libanaise</LL_NATION>
+    <LA_NATION>LIBAN</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>206</CD_NATION>
+    <LL_NATION>Syrienne</LL_NATION>
+    <LA_NATION>SYRIE</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>212</CD_NATION>
+    <LL_NATION>Afghanistanaise</LL_NATION>
+    <LA_NATION>AFGHANISTA</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>213</CD_NATION>
+    <LL_NATION>Pakistanaise</LL_NATION>
+    <LA_NATION>PAKISTAN</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>222</CD_NATION>
+    <LL_NATION>Jordanienne</LL_NATION>
+    <LA_NATION>JORDANIE</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>223</CD_NATION>
+    <LL_NATION>Indou</LL_NATION>
+    <LA_NATION>INDE</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>227</CD_NATION>
+    <LL_NATION>Malisienne</LL_NATION>
+    <LA_NATION>MALISIE</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>231</CD_NATION>
+    <LL_NATION>Indonesienne</LL_NATION>
+    <LA_NATION>INDONESIE</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>240</CD_NATION>
+    <LL_NATION>Koweitienne</LL_NATION>
+    <LA_NATION>KOWEIT</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>246</CD_NATION>
+    <LL_NATION>Bangladesh</LL_NATION>
+    <LA_NATION>BANGLADESH</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>247</CD_NATION>
+    <LL_NATION>Emaratienne</LL_NATION>
+    <LA_NATION>EMARATS-AU</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>248</CD_NATION>
+    <LL_NATION>Qatarienne</LL_NATION>
+    <LA_NATION>QATAR</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>249</CD_NATION>
+    <LL_NATION>Bahrein</LL_NATION>
+    <LA_NATION>BAHREIN</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>250</CD_NATION>
+    <LL_NATION>Omanaise</LL_NATION>
+    <LA_NATION>OMAN</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>261</CD_NATION>
+    <LL_NATION>Palestinienne</LL_NATION>
+    <LA_NATION>PALESTINE</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>301</CD_NATION>
+    <LL_NATION>Egyptienne</LL_NATION>
+    <LA_NATION>EGYPTE</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>315</CD_NATION>
+    <LL_NATION>Ethiopienne</LL_NATION>
+    <LA_NATION>ETHIOPIE</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>316</CD_NATION>
+    <LL_NATION>Libyienne</LL_NATION>
+    <LA_NATION>LIBYE</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>317</CD_NATION>
+    <LL_NATION>Erytherienne</LL_NATION>
+    <LA_NATION>ERYTHEREE</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>318</CD_NATION>
+    <LL_NATION>Somalienne</LL_NATION>
+    <LA_NATION>SOMALIE</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>326</CD_NATION>
+    <LL_NATION>Ivoirienne</LL_NATION>
+    <LA_NATION>COTE D'IVO</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>328</CD_NATION>
+    <LL_NATION>Gabonaise</LL_NATION>
+    <LA_NATION>GABON</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>330</CD_NATION>
+    <LL_NATION>Guinienne</LL_NATION>
+    <LA_NATION>GUINEE</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>336</CD_NATION>
+    <LL_NATION>Mauritanienne</LL_NATION>
+    <LA_NATION>MAURITANIE</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>337</CD_NATION>
+    <LL_NATION>Niger</LL_NATION>
+    <LA_NATION>NIGER</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>338</CD_NATION>
+    <LL_NATION>Nigeria</LL_NATION>
+    <LA_NATION>NIGERIA</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>341</CD_NATION>
+    <LL_NATION>Sénégalaise</LL_NATION>
+    <LA_NATION>SENEGAL</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>343</CD_NATION>
+    <LL_NATION>Soudanaise</LL_NATION>
+    <LA_NATION>SOUDAN</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>344</CD_NATION>
+    <LL_NATION>Tchadienne</LL_NATION>
+    <LA_NATION>TCHAD</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>350</CD_NATION>
+    <LL_NATION>Marocaine</LL_NATION>
+    <LA_NATION>MAROC</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>351</CD_NATION>
+    <LL_NATION>Tunisienne</LL_NATION>
+    <LA_NATION>TUNISIE</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>352</CD_NATION>
+    <LL_NATION>Algerienne</LL_NATION>
+    <LA_NATION>ALGERIE</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>399</CD_NATION>
+    <LL_NATION>Djiboutienne</LL_NATION>
+    <LA_NATION>DJIBOUTI</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>401</CD_NATION>
+    <LL_NATION>Canadienne</LL_NATION>
+    <LA_NATION>CANADA</LA_NATION>
+  </R_NATION>
+  <R_NATION>
+    <CD_NATION>999</CD_NATION>
+    <LL_NATION>Autre</LL_NATION>
+    <LA_NATION>AUTRE</LA_NATION>
+  </R_NATION>
+  <R_MODEAFFE>
+    <CD_MODAFFE>01</CD_MODAFFE>
+    <LL_MODEAFFE>RECRUTEMENT DIRECT</LL_MODEAFFE>
+  </R_MODEAFFE>
+  <R_MODEAFFE>
+    <CD_MODAFFE>02</CD_MODAFFE>
+    <LL_MODEAFFE>SORTIE DU C.F.INSPECTEURS</LL_MODEAFFE>
+  </R_MODEAFFE>
+  <R_MODEAFFE>
+    <CD_MODAFFE>03</CD_MODAFFE>
+    <LL_MODEAFFE>SORTIE DE L'ENS</LL_MODEAFFE>
+  </R_MODEAFFE>
+  <R_MODEAFFE>
+    <CD_MODAFFE>05</CD_MODAFFE>
+    <LL_MODEAFFE>SORTIE DU C.F.I</LL_MODEAFFE>
+  </R_MODEAFFE>
+  <R_MODEAFFE>
+    <CD_MODAFFE>06</CD_MODAFFE>
+    <LL_MODEAFFE>SORTIE DU C.P.R</LL_MODEAFFE>
+  </R_MODEAFFE>
+  <R_MODEAFFE>
+    <CD_MODAFFE>07</CD_MODAFFE>
+    <LL_MODEAFFE>SORTIE DU CYCLE D'AGREGATION</LL_MODEAFFE>
+  </R_MODEAFFE>
+  <R_MODEAFFE>
+    <CD_MODAFFE>08</CD_MODAFFE>
+    <LL_MODEAFFE>SORTIE DU C.O.P.E</LL_MODEAFFE>
+  </R_MODEAFFE>
+  <R_MODEAFFE>
+    <CD_MODAFFE>10</CD_MODAFFE>
+    <LL_MODEAFFE>MOUVEMENT NATIONAL</LL_MODEAFFE>
+  </R_MODEAFFE>
+  <R_MODEAFFE>
+    <CD_MODAFFE>11</CD_MODAFFE>
+    <LL_MODEAFFE>MOUVEMENT REGIONAL</LL_MODEAFFE>
+  </R_MODEAFFE>
+  <R_MODEAFFE>
+    <CD_MODAFFE>12</CD_MODAFFE>
+    <LL_MODEAFFE>MOUVEMENT PROVINCIAL</LL_MODEAFFE>
+  </R_MODEAFFE>
+  <R_MODEAFFE>
+    <CD_MODAFFE>13</CD_MODAFFE>
+    <LL_MODEAFFE>MUTATION  POUR NECESSITE DE SERVICE</LL_MODEAFFE>
+  </R_MODEAFFE>
+  <R_MODEAFFE>
+    <CD_MODAFFE>14</CD_MODAFFE>
+    <LL_MODEAFFE>REPRISE APRES MALADIE LONGUE DUREE</LL_MODEAFFE>
+  </R_MODEAFFE>
+  <R_MODEAFFE>
+    <CD_MODAFFE>15</CD_MODAFFE>
+    <LL_MODEAFFE>REPRISE APRES MALADIE MOYENNE DUREE</LL_MODEAFFE>
+  </R_MODEAFFE>
+  <R_MODEAFFE>
+    <CD_MODAFFE>16</CD_MODAFFE>
+    <LL_MODEAFFE>REPRISE APRES MALADIE COURTE DUREE</LL_MODEAFFE>
+  </R_MODEAFFE>
+  <R_MODEAFFE>
+    <CD_MODAFFE>17</CD_MODAFFE>
+    <LL_MODEAFFE>CHARGE DE FONCTION  PROVISOIRE</LL_MODEAFFE>
+  </R_MODEAFFE>
+  <R_MODEAFFE>
+    <CD_MODAFFE>18</CD_MODAFFE>
+    <LL_MODEAFFE>FIN - DETACHEMENT</LL_MODEAFFE>
+  </R_MODEAFFE>
+  <R_MODEAFFE>
+    <CD_MODAFFE>19</CD_MODAFFE>
+    <LL_MODEAFFE>FIN - MISE EN DISPONIBILITE</LL_MODEAFFE>
+  </R_MODEAFFE>
+  <R_MODEAFFE>
+    <CD_MODAFFE>20</CD_MODAFFE>
+    <LL_MODEAFFE>REAFFECTATION - DECHARGE DE FONCTION</LL_MODEAFFE>
+  </R_MODEAFFE>
+  <R_MODEAFFE>
+    <CD_MODAFFE>21</CD_MODAFFE>
+    <LL_MODEAFFE>REPRISE - SANCTION DISCIPLINAIRE</LL_MODEAFFE>
+  </R_MODEAFFE>
+  <R_MODEAFFE>
+    <CD_MODAFFE>22</CD_MODAFFE>
+    <LL_MODEAFFE>MUTATION SUR DEMANDE</LL_MODEAFFE>
+  </R_MODEAFFE>
+  <R_CYCLE>
+    <CD_CYCLE>00</CD_CYCLE>
+    <LL_CYCLE>Enseignement Préscolaire</LL_CYCLE>
+    <LA_CYCLE>التعليم الأولي</LA_CYCLE>
+  </R_CYCLE>
+  <R_CYCLE>
+    <CD_CYCLE>10</CD_CYCLE>
+    <LL_CYCLE>PRIMAIRE</LL_CYCLE>
+    <LA_CYCLE> الابتدائي</LA_CYCLE>
+  </R_CYCLE>
+  <R_CYCLE>
+    <CD_CYCLE>2A</CD_CYCLE>
+    <LL_CYCLE>Enseignement Secondaire collégial</LL_CYCLE>
+    <LA_CYCLE>التعليم الثانوي الإعدادي</LA_CYCLE>
+  </R_CYCLE>
+  <R_CYCLE>
+    <CD_CYCLE>3A</CD_CYCLE>
+    <LL_CYCLE>Enseignement Secondaire qualifiant</LL_CYCLE>
+    <LA_CYCLE>التعليم الثانوي التأهيلي</LA_CYCLE>
+  </R_CYCLE>
+  <R_CYCLE>
+    <CD_CYCLE>4A</CD_CYCLE>
+    <LL_CYCLE>Classes Préparatoires aux Grandes Ecoles (CPGE)</LL_CYCLE>
+    <LA_CYCLE>الأقسام التحضيرية للمعاهد العليا</LA_CYCLE>
+  </R_CYCLE>
+  <R_CYCLE>
+    <CD_CYCLE>4B</CD_CYCLE>
+    <LL_CYCLE>Brevet de Technicien Supérieur (BTS)</LL_CYCLE>
+    <LA_CYCLE>شهادة التقني العالي</LA_CYCLE>
+  </R_CYCLE>
+  <R_CYCLE>
+    <CD_CYCLE>5A</CD_CYCLE>
+    <LL_CYCLE>Cycle de formation des enseignants</LL_CYCLE>
+    <LA_CYCLE>سلك تكوين المدرسين</LA_CYCLE>
+    <flag>2</flag>
+  </R_CYCLE>
+  <R_CYCLE>
+    <CD_CYCLE>5B</CD_CYCLE>
+    <LL_CYCLE>Cycle d'agrégation</LL_CYCLE>
+    <LA_CYCLE>سلك التبريز</LA_CYCLE>
+    <flag>3</flag>
+  </R_CYCLE>
+  <R_CYCLE>
+    <CD_CYCLE>5C</CD_CYCLE>
+    <LL_CYCLE>Cycle de formation des cadres de l'administration</LL_CYCLE>
+    <LA_CYCLE>سلك تكوين أطر هيئة الإدارة</LA_CYCLE>
+    <flag>4</flag>
+  </R_CYCLE>
+  <R_CYCLE>
+    <CD_CYCLE>5D</CD_CYCLE>
+    <LL_CYCLE>Cycle de formation des cadres d'orientation et de planificat</LL_CYCLE>
+    <LA_CYCLE>سلك تكوين أطرالتوجيه والتخطيط التربوي</LA_CYCLE>
+    <flag>1</flag>
+  </R_CYCLE>
+  <R_CYCLE>
+    <CD_CYCLE>5E</CD_CYCLE>
+    <LL_CYCLE>Cycle de formation des inspecteurs pédagogiques</LL_CYCLE>
+    <LA_CYCLE>سلك تكوين أطر هيئة التفتيش التربوي</LA_CYCLE>
+    <flag>5</flag>
+  </R_CYCLE>
+  <R_CYCLE>
+    <CD_CYCLE>99</CD_CYCLE>
+    <LL_CYCLE>Classes à besoin spécifique</LL_CYCLE>
+    <LA_CYCLE>أقسام ذوي الاحتياجات الخاصة</LA_CYCLE>
+  </R_CYCLE>
+  <R_NIVEAUENS>
+    <CD_NIVENS>001</CD_NIVENS>
+    <CD_CYCLE>00</CD_CYCLE>
+    <LL_NIVENS>Préscolaire</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>101</CD_NIVENS>
+    <CD_CYCLE>10</CD_CYCLE>
+    <LL_NIVENS>1°Année primaire</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>102</CD_NIVENS>
+    <CD_CYCLE>10</CD_CYCLE>
+    <LL_NIVENS>2°Année primaire</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>103</CD_NIVENS>
+    <CD_CYCLE>10</CD_CYCLE>
+    <LL_NIVENS>3°Année primaire</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>104</CD_NIVENS>
+    <CD_CYCLE>10</CD_CYCLE>
+    <LL_NIVENS>4°Année primaire</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>105</CD_NIVENS>
+    <CD_CYCLE>10</CD_CYCLE>
+    <LL_NIVENS>5°Année primaire</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>106</CD_NIVENS>
+    <CD_CYCLE>10</CD_CYCLE>
+    <LL_NIVENS>6°Année primaire</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>2A1</CD_NIVENS>
+    <CD_CYCLE>2A</CD_CYCLE>
+    <LL_NIVENS>1°Année collégial</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>2A2</CD_NIVENS>
+    <CD_CYCLE>2A</CD_CYCLE>
+    <LL_NIVENS>2°Année collégial</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>2A3</CD_NIVENS>
+    <CD_CYCLE>2A</CD_CYCLE>
+    <LL_NIVENS>3°Année collégial</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>3A1</CD_NIVENS>
+    <CD_CYCLE>3A</CD_CYCLE>
+    <LL_NIVENS>Tronc commun Qualifiant</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>3A2</CD_NIVENS>
+    <CD_CYCLE>3A</CD_CYCLE>
+    <LL_NIVENS>1°Année bac</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>3A3</CD_NIVENS>
+    <CD_CYCLE>3A</CD_CYCLE>
+    <LL_NIVENS>2°Année bac</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>4A1</CD_NIVENS>
+    <CD_CYCLE>4A</CD_CYCLE>
+    <LL_NIVENS>1°Année Classes préparatoires</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>4A2</CD_NIVENS>
+    <CD_CYCLE>4A</CD_CYCLE>
+    <LL_NIVENS>2°Année Classes préparatoires</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>4B1</CD_NIVENS>
+    <CD_CYCLE>4B</CD_CYCLE>
+    <LL_NIVENS>1°Année BTS</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>4B2</CD_NIVENS>
+    <CD_CYCLE>4B</CD_CYCLE>
+    <LL_NIVENS>2°Année BTS</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5A1</CD_NIVENS>
+    <CD_CYCLE>5A</CD_CYCLE>
+    <LL_NIVENS>1°Année CFI</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5A2</CD_NIVENS>
+    <CD_CYCLE>5A</CD_CYCLE>
+    <LL_NIVENS>2°Année CFI</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5B1</CD_NIVENS>
+    <CD_CYCLE>5B</CD_CYCLE>
+    <LL_NIVENS>1°Année CPR</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5B2</CD_NIVENS>
+    <CD_CYCLE>5B</CD_CYCLE>
+    <LL_NIVENS>2°Année CPR</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5C1</CD_NIVENS>
+    <CD_CYCLE>5C</CD_CYCLE>
+    <LL_NIVENS>1°Année ENS/ENSET</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5C2</CD_NIVENS>
+    <CD_CYCLE>5C</CD_CYCLE>
+    <LL_NIVENS>2°Année ENS/ENSET</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5C3</CD_NIVENS>
+    <CD_CYCLE>5C</CD_CYCLE>
+    <LL_NIVENS>3°Année ENS/ENSET</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5C4</CD_NIVENS>
+    <CD_CYCLE>5C</CD_CYCLE>
+    <LL_NIVENS>4°Année ENS/ENSET</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5C5</CD_NIVENS>
+    <CD_CYCLE>5C</CD_CYCLE>
+    <LL_NIVENS>1°Année Agrégation</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5C6</CD_NIVENS>
+    <CD_CYCLE>5C</CD_CYCLE>
+    <LL_NIVENS>2°Année Agrégation</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5D1</CD_NIVENS>
+    <CD_CYCLE>5D</CD_CYCLE>
+    <LL_NIVENS>Tronc commun planif./Orient.</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5D2</CD_NIVENS>
+    <CD_CYCLE>5D</CD_CYCLE>
+    <LL_NIVENS>2°Année conseillers en planifIcation</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5D3</CD_NIVENS>
+    <CD_CYCLE>5D</CD_CYCLE>
+    <LL_NIVENS>2°Année  conseillers en orientation</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5D4</CD_NIVENS>
+    <CD_CYCLE>5D</CD_CYCLE>
+    <LL_NIVENS>1°Année inspecteurs planif.</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5D5</CD_NIVENS>
+    <CD_CYCLE>5D</CD_CYCLE>
+    <LL_NIVENS>2°Année inspecteurs planif.</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5D6</CD_NIVENS>
+    <CD_CYCLE>5D</CD_CYCLE>
+    <LL_NIVENS>1°Année inspecteurs orient.</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5D7</CD_NIVENS>
+    <CD_CYCLE>5D</CD_CYCLE>
+    <LL_NIVENS>2°Année inspecteurs orient.</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5E1</CD_NIVENS>
+    <CD_CYCLE>5E</CD_CYCLE>
+    <LL_NIVENS>1°Année inspecteurs pédag.primaire</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5E2</CD_NIVENS>
+    <CD_CYCLE>5E</CD_CYCLE>
+    <LL_NIVENS>2°Année inspecteurs pédag.primaire</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5E3</CD_NIVENS>
+    <CD_CYCLE>5E</CD_CYCLE>
+    <LL_NIVENS>1°Année inspecteurs pédag.collégial</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5E4</CD_NIVENS>
+    <CD_CYCLE>5E</CD_CYCLE>
+    <LL_NIVENS>2°Année inspecteurs pédag.collégial</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5E5</CD_NIVENS>
+    <CD_CYCLE>5E</CD_CYCLE>
+    <LL_NIVENS>1°Année inspecteurs pédag.qualifiant</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>5E6</CD_NIVENS>
+    <CD_CYCLE>5E</CD_CYCLE>
+    <LL_NIVENS>2°Année inspecteurs pédag.qualifiant</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_NIVEAUENS>
+    <CD_NIVENS>999</CD_NIVENS>
+    <CD_CYCLE>99</CD_CYCLE>
+    <LL_NIVENS>Classes à besoin spécifique</LL_NIVENS>
+  </R_NIVEAUENS>
+  <R_Discip>
+    <CD_Discip>0000</CD_Discip>
+    <LL_DISCIP>NEANT</LL_DISCIP>
+    <LA_DISCIP>لا شئ</LA_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0010</CD_Discip>
+    <LL_DISCIP>LINGUISTIQUE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0011</CD_Discip>
+    <LL_DISCIP>ARABE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0012</CD_Discip>
+    <LL_DISCIP>FRANCAIS</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0013</CD_Discip>
+    <LL_DISCIP>ANGLAIS</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0014</CD_Discip>
+    <LL_DISCIP>ESPAGNOL</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0015</CD_Discip>
+    <LL_DISCIP>ALLEMAND</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0016</CD_Discip>
+    <LL_DISCIP>ITALIEN</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0017</CD_Discip>
+    <LL_DISCIP>AMAZIGHIA</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0018</CD_Discip>
+    <LL_DISCIP>HISTOIRE GEOGRAPHIE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0019</CD_Discip>
+    <LL_DISCIP>MATHEMATIQUES</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0020</CD_Discip>
+    <LL_DISCIP>SCIENCES DE LA VIE ET DE LA TERRE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0021</CD_Discip>
+    <LL_DISCIP>SCIENCES AGRONOMIQUES</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0022</CD_Discip>
+    <LL_DISCIP>SCIENCES ECONOMIQUES ET GESTION</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0023</CD_Discip>
+    <LL_DISCIP>PHYSIQUE CHIMIE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0024</CD_Discip>
+    <LL_DISCIP>EDUCATION ISLAMIQUE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0025</CD_Discip>
+    <LL_DISCIP>FIKH AL ISLAMI</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0026</CD_Discip>
+    <LL_DISCIP>EDUCATION PHYSIQUE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0027</CD_Discip>
+    <LL_DISCIP>EDUCATION FAMILIALE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0028</CD_Discip>
+    <LL_DISCIP>EDUCATION PLASTIQUES</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0029</CD_Discip>
+    <LL_DISCIP>EDUCATION MUSICALE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0030</CD_Discip>
+    <LL_DISCIP>INFORMATIQUE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0033</CD_Discip>
+    <LL_DISCIP>TECHNOLOGIE INDUSTRIELLE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0034</CD_Discip>
+    <LL_DISCIP>TECHNOLOGIE AGRICOLE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0035</CD_Discip>
+    <LL_DISCIP>DOCUMENTATION</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0036</CD_Discip>
+    <LL_DISCIP>PHILOSOPHIE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0037</CD_Discip>
+    <LL_DISCIP>TRADUCTION</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0038</CD_Discip>
+    <LL_DISCIP>SCIENCES ET TECHNOLOGIES ELECTRIQUES</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0039</CD_Discip>
+    <LL_DISCIP>SCIENCES ET TECHNOLOGIES MECANIQUES</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0111</CD_Discip>
+    <LL_DISCIP>CULTURE ARTISTIQUE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0112</CD_Discip>
+    <LL_DISCIP>ART ET INDUSTRIE GRAPHIQUE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0113</CD_Discip>
+    <LL_DISCIP>GENIE MACANIQUE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0114</CD_Discip>
+    <LL_DISCIP>GENIE ELECTRIQUE ET ELECTRONIQUE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0115</CD_Discip>
+    <LL_DISCIP>GENIE ELECTRIQUE ET ELECTROTECHNIQUE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0116</CD_Discip>
+    <LL_DISCIP>GENIE INDUSTRIEL DES PLASTIQUES ET COMPOSITES</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0117</CD_Discip>
+    <LL_DISCIP>BATIMENT ET GENIE CIVIL</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0118</CD_Discip>
+    <LL_DISCIP>FONDERIE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0119</CD_Discip>
+    <LL_DISCIP>DEPOT ET ENTRETIEN</LL_DISCIP>
+    <LA_DISCIP>المستودع والصيانة</LA_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0120</CD_Discip>
+    <LL_DISCIP>ENTRETIEN MATERIEL INFORMATIQUE</LL_DISCIP>
+    <LA_DISCIP>صيانة الآلات المعلومياتية</LA_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0310</CD_Discip>
+    <LL_DISCIP>BIOLOGIE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0311</CD_Discip>
+    <LL_DISCIP>GEOLOGIE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0312</CD_Discip>
+    <LL_DISCIP>TERMINOLOGIE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0313</CD_Discip>
+    <LL_DISCIP>COORDINATION</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0314</CD_Discip>
+    <LL_DISCIP>LEGISLATION</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0316</CD_Discip>
+    <LL_DISCIP>METHODOLOGIE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0317</CD_Discip>
+    <LL_DISCIP>PHYSIOLOGIE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0318</CD_Discip>
+    <LL_DISCIP>SCIENCE DE L'EDUCATION</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0319</CD_Discip>
+    <LL_DISCIP>ETYMOLOGIE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0320</CD_Discip>
+    <LL_DISCIP>AUDIO_VISUEL</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0321</CD_Discip>
+    <LL_DISCIP>DIDACTIQUE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0322</CD_Discip>
+    <LL_DISCIP>SCIENCE ET TECHNIQUE ADMINISTRATIVE</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0323</CD_Discip>
+    <LL_DISCIP>AUDIO-VISUEL</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>0324</CD_Discip>
+    <LL_DISCIP>Sciences de l’ingénieur</LL_DISCIP>
+  </R_Discip>
+  <R_Discip>
+    <CD_Discip>9999</CD_Discip>
+    <LL_DISCIP>Autres disciplines</LL_DISCIP>
+  </R_Discip>
+  <R_FILIERE>
+    <CD_FILIERE>1</CD_FILIERE>
+    <LIB_Filière>Général</LIB_Filière>
+  </R_FILIERE>
+  <R_FILIERE>
+    <CD_FILIERE>10</CD_FILIERE>
+    <LIB_Filière>Formation des Cadres</LIB_Filière>
+  </R_FILIERE>
+  <R_FILIERE>
+    <CD_FILIERE>11</CD_FILIERE>
+    <LIB_Filière>Classes à Besoins Spécifiques</LIB_Filière>
+  </R_FILIERE>
+  <R_FILIERE>
+    <CD_FILIERE>12</CD_FILIERE>
+    <LIB_Filière>ENF</LIB_Filière>
+  </R_FILIERE>
+  <R_FILIERE>
+    <CD_FILIERE>2</CD_FILIERE>
+    <LIB_Filière>Originel</LIB_Filière>
+  </R_FILIERE>
+  <R_FILIERE>
+    <CD_FILIERE>3</CD_FILIERE>
+    <LIB_Filière>Technique</LIB_Filière>
+  </R_FILIERE>
+  <R_FILIERE>
+    <CD_FILIERE>4</CD_FILIERE>
+    <LIB_Filière>Lettres et Sciences Humaines</LIB_Filière>
+  </R_FILIERE>
+  <R_FILIERE>
+    <CD_FILIERE>5</CD_FILIERE>
+    <LIB_Filière>Sciences</LIB_Filière>
+  </R_FILIERE>
+  <R_FILIERE>
+    <CD_FILIERE>6</CD_FILIERE>
+    <LIB_Filière>Enseignement Originel</LIB_Filière>
+  </R_FILIERE>
+  <R_FILIERE>
+    <CD_FILIERE>7</CD_FILIERE>
+    <LIB_Filière>Technique</LIB_Filière>
+  </R_FILIERE>
+  <R_FILIERE>
+    <CD_FILIERE>8</CD_FILIERE>
+    <LIB_Filière>Préscolaire Moderne</LIB_Filière>
+  </R_FILIERE>
+  <R_FILIERE>
+    <CD_FILIERE>9</CD_FILIERE>
+    <LIB_Filière>Post Bac</LIB_Filière>
+  </R_FILIERE>
+  <R_DipSCol>
+    <CD_DIPS>01</CD_DIPS>
+    <LL_DIPS>CERTIFICAT DE L'ENS.PRIMAIRE</LL_DIPS>
+    <LA_DIPS>ش.الدروس الابتدائية</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>02</CD_DIPS>
+    <LL_DIPS>CERTIFICAT DE L'ENS.SECONDAIRE COLLEGIAL</LL_DIPS>
+    <LA_DIPS>ش.التعليم الثانوي الاعدادي</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>03</CD_DIPS>
+    <LL_DIPS>BACCALAUREAT OU EQUIVALENT</LL_DIPS>
+    <LA_DIPS>الباكا لو ريا أو ما يعادلها</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>04</CD_DIPS>
+    <LL_DIPS>D.E.U.G</LL_DIPS>
+    <LA_DIPS>شهادة الدرسات الجامعية العامة (D.E.U.G)</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>05</CD_DIPS>
+    <LL_DIPS>LICENCE OU EQUIVALENT</LL_DIPS>
+    <LA_DIPS>الإجازة أو ما يعادلها</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>06</CD_DIPS>
+    <LL_DIPS>MASTERS</LL_DIPS>
+    <LA_DIPS>الماستر</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>07</CD_DIPS>
+    <LL_DIPS>D.E.S.A</LL_DIPS>
+    <LA_DIPS>دبلوم الدراسات العليا المعمقة (D.E.S.A)</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>09</CD_DIPS>
+    <LL_DIPS>D.E.S.S</LL_DIPS>
+    <LA_DIPS>دبلوم الدراسات العليا المتخصصة (D.E.S.S)</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>10</CD_DIPS>
+    <LL_DIPS>MAITRISE</LL_DIPS>
+    <LA_DIPS>الميتريز</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>11</CD_DIPS>
+    <LL_DIPS>DIPL. d'études approffondies (D.E.A)</LL_DIPS>
+    <LA_DIPS>دبلوم الدراسات  المعمقة (D.E.A)</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>12</CD_DIPS>
+    <LL_DIPS>DIPL. de technicien</LL_DIPS>
+    <LA_DIPS>دبلوم التقني</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>13</CD_DIPS>
+    <LL_DIPS>DIPL.D'ETUDES APPROFONDIES</LL_DIPS>
+    <LA_DIPS>د.الدراسات المعمقة</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>14</CD_DIPS>
+    <LL_DIPS>DIPL.D'ETUDES SUPPERIEURES</LL_DIPS>
+    <LA_DIPS>د.الدراسات العليا</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>15</CD_DIPS>
+    <LL_DIPS>DIPL.D'INGENIEUR OU EQUIVALENT</LL_DIPS>
+    <LA_DIPS>د.مهندس أو ما يعادله</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>16</CD_DIPS>
+    <LL_DIPS>DIPL. DE L'.I.S.P</LL_DIPS>
+    <LA_DIPS>دبلوم المعهد العالي للصحافة</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>17</CD_DIPS>
+    <LL_DIPS>DIPL. DE TECHNICIEN SUPERIEUR</LL_DIPS>
+    <LA_DIPS>شهادة التقني العالي</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>20</CD_DIPS>
+    <LL_DIPS>DOCTORAT D'ETAT OU EQUIVALENT</LL_DIPS>
+    <LA_DIPS>دكتوراه الدولة أو ما يعادلها</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>21</CD_DIPS>
+    <LL_DIPS>DOCTORAT NATIONAL</LL_DIPS>
+    <LA_DIPS>الدكتوراه الوطنية</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>22</CD_DIPS>
+    <LL_DIPS>DOCTORAT Français</LL_DIPS>
+    <LA_DIPS>الدكتوراة الفرنسية</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>23</CD_DIPS>
+    <LL_DIPS>Doctorat de 3 ème cycle (D.E.S)</LL_DIPS>
+    <LA_DIPS>دكتورة السلك 3  (D.E.S)</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>30</CD_DIPS>
+    <LL_DIPS>DIPL.  DE L'.E.N.A</LL_DIPS>
+    <LA_DIPS>دبلوم التخرج من المدرسة الوطنية للإدارة</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>31</CD_DIPS>
+    <LL_DIPS>DIPL.  DE L'.E.S.I</LL_DIPS>
+    <LA_DIPS>دبلوم مدرسة علوم الإعلام</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>32</CD_DIPS>
+    <LL_DIPS>DIPL. DE L'.I.A.H</LL_DIPS>
+    <LA_DIPS> دبلوم معهد التهيئة والتعمير</LA_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>33</CD_DIPS>
+    <LL_DIPS>NEANT</LL_DIPS>
+  </R_DipSCol>
+  <R_DipSCol>
+    <CD_DIPS>99</CD_DIPS>
+    <LL_DIPS>AUTRE DIPLÔME</LL_DIPS>
+    <LA_DIPS>شهادة أخرى</LA_DIPS>
+  </R_DipSCol>
+  <R_DipProf>
+    <CD_DIPP>00</CD_DIPP>
+    <LL_DIPP>NEANT</LL_DIPP>
+  </R_DipProf>
+  <R_DipProf>
+    <CD_DIPP>01</CD_DIPP>
+    <LL_DIPP>CERTIFICAT D'APTITUDE PEDAGOGIQUE</LL_DIPP>
+    <LA_DIPP>ش.الأهلية التربوية</LA_DIPP>
+  </R_DipProf>
+  <R_DipProf>
+    <CD_DIPP>02</CD_DIPP>
+    <LL_DIPP>C.E.N.M.</LL_DIPP>
+    <LA_DIPP>ش.الدروس العادية</LA_DIPP>
+  </R_DipProf>
+  <R_DipProf>
+    <CD_DIPP>03</CD_DIPP>
+    <LL_DIPP>C.E.N.I</LL_DIPP>
+    <LA_DIPP>ش.الدروس العادية لأساتذة الإبتدائي</LA_DIPP>
+  </R_DipProf>
+  <R_DipProf>
+    <CD_DIPP>04</CD_DIPP>
+    <LL_DIPP>EXAMEN DE SORTIE DU C.F.I</LL_DIPP>
+    <LA_DIPP>دبلـــوم التخرج مركز تكويــن المعلمين</LA_DIPP>
+  </R_DipProf>
+  <R_DipProf>
+    <CD_DIPP>05</CD_DIPP>
+    <LL_DIPP>CAPES</LL_DIPP>
+    <LA_DIPP>شهادة الكفاءة التربوية</LA_DIPP>
+  </R_DipProf>
+  <R_DipProf>
+    <CD_DIPP>20</CD_DIPP>
+    <LL_DIPP>CERTIFICAT D'APTITUDE PEDAG.PROFESSIONNEL</LL_DIPP>
+    <LA_DIPP>ش.الأهلية التربوية المهنية</LA_DIPP>
+  </R_DipProf>
+  <R_DipProf>
+    <CD_DIPP>21</CD_DIPP>
+    <LL_DIPP>EXAMEN DE SORTIE DU C.P.R.</LL_DIPP>
+    <LA_DIPP>دبلوم التخرج من المركز التربوي الجهوي</LA_DIPP>
+  </R_DipProf>
+  <R_DipProf>
+    <CD_DIPP>22</CD_DIPP>
+    <LL_DIPP>DIPL.ECOLE NORMALE SUPERIEURE</LL_DIPP>
+    <LA_DIPP>د.المدرسة العليا للأساتذة</LA_DIPP>
+  </R_DipProf>
+  <R_DipProf>
+    <CD_DIPP>23</CD_DIPP>
+    <LL_DIPP>DIPL.FAC.SCIENCES DE L'EDUCATION</LL_DIPP>
+    <LA_DIPP>د.كلية علوم التربية</LA_DIPP>
+  </R_DipProf>
+  <R_DipProf>
+    <CD_DIPP>24</CD_DIPP>
+    <LL_DIPP>EXAMEN DE SORTIE CY.SPE.MAROC</LL_DIPP>
+    <LA_DIPP>امتحان التخرج من السلك الخاص بالمغرب</LA_DIPP>
+  </R_DipProf>
+  <R_DipProf>
+    <CD_DIPP>25</CD_DIPP>
+    <LL_DIPP>EXAMEN DE SORTIE CY.SPE.ETRANGER</LL_DIPP>
+    <LA_DIPP>امتحان التخرج من السلك الخاص بالخارج</LA_DIPP>
+  </R_DipProf>
+  <R_DipProf>
+    <CD_DIPP>26</CD_DIPP>
+    <LL_DIPP>C.A.P.E.S. DU 1ER CYCLE</LL_DIPP>
+    <LA_DIPP>ش.الأهلية التربوية للتعليم الثانوي (سلك 1)</LA_DIPP>
+  </R_DipProf>
+  <R_DipProf>
+    <CD_DIPP>27</CD_DIPP>
+    <LL_DIPP>C.A.P.E.S 2EME CYCLE</LL_DIPP>
+    <LA_DIPP>ش.الأهلية التربوية للتعليم الثانوي (سلك 2)</LA_DIPP>
+  </R_DipProf>
+  <R_DipProf>
+    <CD_DIPP>31</CD_DIPP>
+    <LL_DIPP>CERTIFICAT D'AGREGATION</LL_DIPP>
+    <LA_DIPP>شهادة التبريز</LA_DIPP>
+  </R_DipProf>
+  <R_DipProf>
+    <CD_DIPP>38</CD_DIPP>
+    <LL_DIPP>Certificats d'études speciales (ou équivalent)</LL_DIPP>
+    <LA_DIPP>شهادة الدراسات الخاصة (أو ما يعادلها)</LA_DIPP>
+  </R_DipProf>
+  <R_DipProf>
+    <CD_DIPP>40</CD_DIPP>
+    <LL_DIPP>DIPL. DES INSPECTEURS DE L' ENS. SECONDAIRE</LL_DIPP>
+    <LA_DIPP>دبلوم مفتش التعليم الثانوي</LA_DIPP>
+  </R_DipProf>
+  <R_DipProf>
+    <CD_DIPP>41</CD_DIPP>
+    <LL_DIPP>DIPL. DES INSPECTEURS DE L' ENS. PRIMAIRE</LL_DIPP>
+    <LA_DIPP>دبلوم مفتش التعليم الإبتدائي</LA_DIPP>
+  </R_DipProf>
+  <R_DipProf>
+    <CD_DIPP>60</CD_DIPP>
+    <LL_DIPP>PLANIFICATION OU ORIENTATION</LL_DIPP>
+    <LA_DIPP>دبلوم مستشار في التوجيه أو التخطيط التربوي</LA_DIPP>
+  </R_DipProf>
+  <R_DipProf>
+    <CD_DIPP>97</CD_DIPP>
+    <LL_DIPP>CERTIFICAT 3EME ANNEE A L'ENS</LL_DIPP>
+    <LA_DIPP>شهادة السنة الثالثة للمدرسة العليا للأساتذة</LA_DIPP>
+  </R_DipProf>
+  <R_DipProf>
+    <CD_DIPP>98</CD_DIPP>
+    <LL_DIPP>DIP D'INSP/ORIENT/PLANIF/EDUC</LL_DIPP>
+    <LA_DIPP>دبلوم مفتش في التوجيه أو التخطيط التربوي</LA_DIPP>
+  </R_DipProf>
+  <R_DipProf>
+    <CD_DIPP>99</CD_DIPP>
+    <LL_DIPP>AUTRE DIPLÔME</LL_DIPP>
+    <LA_DIPP>شهادة أخرى</LA_DIPP>
+  </R_DipProf>
+  <R_CADRE>
+    <CD_CADRE>100001</CD_CADRE>
+    <CD_CORPS>1000</CD_CORPS>
+    <LL_CADRE>Professeurs de l'enseignement superieur</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>10</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>100002</CD_CADRE>
+    <CD_CORPS>1000</CD_CORPS>
+    <LL_CADRE>Maitre de conferences</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>10</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>100003</CD_CADRE>
+    <CD_CORPS>1000</CD_CORPS>
+    <LL_CADRE>Maitres assistants</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>10</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>100004</CD_CADRE>
+    <CD_CORPS>1000</CD_CORPS>
+    <LL_CADRE>Assistants</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>10</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>100099</CD_CADRE>
+    <CD_CORPS>1000</CD_CORPS>
+    <LL_CADRE xml:space="preserve"> </LL_CADRE>
+    <CD_CATEG>10</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>100101</CD_CADRE>
+    <CD_CORPS>1001</CD_CORPS>
+    <LL_CADRE xml:space="preserve"> </LL_CADRE>
+    <CD_CATEG>10</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>100102</CD_CADRE>
+    <CD_CORPS>1001</CD_CORPS>
+    <LL_CADRE xml:space="preserve"> </LL_CADRE>
+    <CD_CATEG>10</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>100103</CD_CADRE>
+    <CD_CORPS>1001</CD_CORPS>
+    <LL_CADRE xml:space="preserve"> </LL_CADRE>
+    <CD_CATEG>10</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>100201</CD_CADRE>
+    <CD_CORPS>1002</CD_CORPS>
+    <LL_CADRE>Professeur de l'Enseignement Superieur</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>10</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>100202</CD_CADRE>
+    <CD_CORPS>1002</CD_CORPS>
+    <LL_CADRE>Professeur Habilite</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>10</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>100203</CD_CADRE>
+    <CD_CORPS>1002</CD_CORPS>
+    <LL_CADRE>Professeur Assistant</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>10</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>100301</CD_CADRE>
+    <CD_CORPS>1003</CD_CORPS>
+    <LL_CADRE xml:space="preserve"> </LL_CADRE>
+    <CD_CATEG>10</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>100302</CD_CADRE>
+    <CD_CORPS>1003</CD_CORPS>
+    <LL_CADRE xml:space="preserve"> </LL_CADRE>
+    <CD_CATEG>10</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>100303</CD_CADRE>
+    <CD_CORPS>1003</CD_CORPS>
+    <LL_CADRE xml:space="preserve"> </LL_CADRE>
+    <CD_CATEG>10</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110101</CD_CADRE>
+    <CD_CORPS>1101</CD_CORPS>
+    <LL_CADRE>Inspecteurs principaux</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110102</CD_CADRE>
+    <CD_CORPS>1101</CD_CORPS>
+    <LL_CADRE>Inpecteurs de l'enseignement secondaire</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110103</CD_CADRE>
+    <CD_CORPS>1101</CD_CORPS>
+    <LL_CADRE>Inspecteur adjoint de l'enseignement du 1er degre</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110104</CD_CADRE>
+    <CD_CORPS>1101</CD_CORPS>
+    <LL_CADRE>Inspecteurs de l'enseignement primaire</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110201</CD_CADRE>
+    <CD_CORPS>1102</CD_CORPS>
+    <LL_CADRE>Professeurs du second cycle de l'enseignement secondaire</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110202</CD_CADRE>
+    <CD_CORPS>1102</CD_CORPS>
+    <LL_CADRE>Professeurs du 1er cycle de l'enseignement secondaire</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110203</CD_CADRE>
+    <CD_CORPS>1102</CD_CORPS>
+    <LL_CADRE>Instituteurs</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110204</CD_CADRE>
+    <CD_CORPS>1102</CD_CORPS>
+    <LL_CADRE>Regroupement de grades de conseiller et de moniteur</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110301</CD_CADRE>
+    <CD_CORPS>1103</CD_CORPS>
+    <LL_CADRE>Inspecteurs des services economiques</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110302</CD_CADRE>
+    <CD_CORPS>1103</CD_CORPS>
+    <LL_CADRE>Intendants</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110303</CD_CADRE>
+    <CD_CORPS>1103</CD_CORPS>
+    <LL_CADRE>Economes</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110304</CD_CADRE>
+    <CD_CORPS>1103</CD_CORPS>
+    <LL_CADRE>Adjoint des services economiques</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110305</CD_CADRE>
+    <CD_CORPS>1103</CD_CORPS>
+    <LL_CADRE>Secretaires des services economiques</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110401</CD_CADRE>
+    <CD_CORPS>1104</CD_CORPS>
+    <LL_CADRE>Inspecteurs en orientation et planification de l'education</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110402</CD_CADRE>
+    <CD_CORPS>1104</CD_CORPS>
+    <LL_CADRE>Conseillers en orientation et planification de l'education</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110403</CD_CADRE>
+    <CD_CORPS>1104</CD_CORPS>
+    <LL_CADRE>Cadre des adjoints en orientation et planification</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110501</CD_CADRE>
+    <CD_CORPS>1105</CD_CORPS>
+    <LL_CADRE>Conservateurs des bibliotheques et archives</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110502</CD_CADRE>
+    <CD_CORPS>1105</CD_CORPS>
+    <LL_CADRE>Conservateurs adjoints des bibliotheques et archives</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110503</CD_CADRE>
+    <CD_CORPS>1105</CD_CORPS>
+    <LL_CADRE>Documentalistes de l'education nationale</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110599</CD_CADRE>
+    <CD_CORPS>1105</CD_CORPS>
+    <LL_CADRE xml:space="preserve"> </LL_CADRE>
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110601</CD_CADRE>
+    <CD_CORPS>1106</CD_CORPS>
+    <LL_CADRE>Surveillants d'externat et d'internat</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110701</CD_CADRE>
+    <CD_CORPS>1107</CD_CORPS>
+    <LL_CADRE>Preparateurs des laboratoires scolaires et universitaires</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110801</CD_CADRE>
+    <CD_CORPS>1108</CD_CORPS>
+    <LL_CADRE>inspecteurs peda. Ens. primaire</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110802</CD_CADRE>
+    <CD_CORPS>1108</CD_CORPS>
+    <LL_CADRE>inspecteurs peda. Ens. Secondaire collégial</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110803</CD_CADRE>
+    <CD_CORPS>1108</CD_CORPS>
+    <LL_CADRE>inspecteurs peda. Ens. Secondaire qualifiant</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110901</CD_CADRE>
+    <CD_CORPS>1109</CD_CORPS>
+    <LL_CADRE>Professeur de l enseig primaire</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110902</CD_CADRE>
+    <CD_CORPS>1109</CD_CORPS>
+    <LL_CADRE>Professeur de l enseig secondaire collegial</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110903</CD_CADRE>
+    <CD_CORPS>1109</CD_CORPS>
+    <LL_CADRE>Professeur de l enseig secondaire qualif</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>110904</CD_CADRE>
+    <CD_CORPS>1109</CD_CORPS>
+    <LL_CADRE>PROFESSEUR AGREGE DE L'ENSEIG.SECONDAIRE QUALIF</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>111001</CD_CADRE>
+    <CD_CORPS>1110</CD_CORPS>
+    <LL_CADRE>Intendant</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>111002</CD_CADRE>
+    <CD_CORPS>1110</CD_CORPS>
+    <LL_CADRE>INSPECTEUR DES SERVICES MATERIELS ET FINANCIERS</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>111101</CD_CADRE>
+    <CD_CORPS>1111</CD_CORPS>
+    <LL_CADRE>Conseiller en orientation de l'éducation</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>111102</CD_CADRE>
+    <CD_CORPS>1111</CD_CORPS>
+    <LL_CADRE>Inspecteur en orientation de l'éducation</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>111103</CD_CADRE>
+    <CD_CORPS>1111</CD_CORPS>
+    <LL_CADRE>Conseiller en planification de l'éducation</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>111104</CD_CADRE>
+    <CD_CORPS>1111</CD_CORPS>
+    <LL_CADRE>Inspecteur en planification de l'éducation</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>111201</CD_CADRE>
+    <CD_CORPS>1112</CD_CORPS>
+    <LL_CADRE>Attaché Pédagogique</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>111202</CD_CADRE>
+    <CD_CORPS>1112</CD_CORPS>
+    <LL_CADRE>ATTACHE D'ECONOMIE ET D'ADMINISTRATION</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>111203</CD_CADRE>
+    <CD_CORPS>1112</CD_CORPS>
+    <LL_CADRE>ATTACHE SOCIAL</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>111204</CD_CADRE>
+    <CD_CORPS>1112</CD_CORPS>
+    <LL_CADRE>ADMINISTRATEUR PEDAGOGIQUE</LL_CADRE>
+    <CD_CATEG>11</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>130301</CD_CADRE>
+    <CD_CORPS>1303</CD_CORPS>
+    <LL_CADRE>Corps de l'inspection generale des Finances</LL_CADRE>
+    <CD_CATEG>13</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>980001</CD_CADRE>
+    <CD_CORPS>9800</CD_CORPS>
+    <LL_CADRE>Administrateurs</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>98</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>980002</CD_CADRE>
+    <CD_CORPS>9800</CD_CORPS>
+    <LL_CADRE>Administrateur adjoint</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>98</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>980003</CD_CADRE>
+    <CD_CORPS>9800</CD_CORPS>
+    <LL_CADRE>Redacteurs</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>98</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>980004</CD_CADRE>
+    <CD_CORPS>9800</CD_CORPS>
+    <LL_CADRE>Secretaires</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>98</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>980005</CD_CADRE>
+    <CD_CORPS>9800</CD_CORPS>
+    <LL_CADRE>Agents d'execution</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>98</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>980006</CD_CADRE>
+    <CD_CORPS>9800</CD_CORPS>
+    <LL_CADRE>Agents de service</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>98</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>980101</CD_CADRE>
+    <CD_CORPS>9801</CD_CORPS>
+    <LL_CADRE>Agents publics</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>98</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>980201</CD_CADRE>
+    <CD_CORPS>9802</CD_CORPS>
+    <LL_CADRE>Chefs d'ateliers</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>98</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>980202</CD_CADRE>
+    <CD_CORPS>9802</CD_CORPS>
+    <LL_CADRE>Agents de maitrise</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>98</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>980203</CD_CADRE>
+    <CD_CORPS>9802</CD_CORPS>
+    <LL_CADRE>Agents specialises</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>98</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>980204</CD_CADRE>
+    <CD_CORPS>9802</CD_CORPS>
+    <LL_CADRE>Aides imprimeurs</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>98</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>980205</CD_CADRE>
+    <CD_CORPS>9802</CD_CORPS>
+    <LL_CADRE>Agents de manutention</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>98</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>980299</CD_CADRE>
+    <CD_CORPS>9802</CD_CORPS>
+    <LL_CADRE xml:space="preserve"> </LL_CADRE>
+    <CD_CATEG>98</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990099</CD_CADRE>
+    <CD_CORPS>9900</CD_CORPS>
+    <LL_CADRE xml:space="preserve"> </LL_CADRE>
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990101</CD_CADRE>
+    <CD_CORPS>9901</CD_CORPS>
+    <LL_CADRE>Emploi superieur d'ingenieur General</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990102</CD_CADRE>
+    <CD_CORPS>9901</CD_CORPS>
+    <LL_CADRE>Ingenieur en chef</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990103</CD_CADRE>
+    <CD_CORPS>9901</CD_CORPS>
+    <LL_CADRE>Ingenieurs d'Etat</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990104</CD_CADRE>
+    <CD_CORPS>9901</CD_CORPS>
+    <LL_CADRE>Ingenieurs d'application</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990105</CD_CADRE>
+    <CD_CORPS>9901</CD_CORPS>
+    <LL_CADRE>Emploi superieur d'architecte general</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990106</CD_CADRE>
+    <CD_CORPS>9901</CD_CORPS>
+    <LL_CADRE>Architecte en chef</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990107</CD_CADRE>
+    <CD_CORPS>9901</CD_CORPS>
+    <LL_CADRE>Architectes</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990201</CD_CADRE>
+    <CD_CORPS>9902</CD_CORPS>
+    <LL_CADRE>Analystes concepteurs</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990202</CD_CADRE>
+    <CD_CORPS>9902</CD_CORPS>
+    <LL_CADRE>Analystes</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990203</CD_CADRE>
+    <CD_CORPS>9902</CD_CORPS>
+    <LL_CADRE>Programmeurs</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990204</CD_CADRE>
+    <CD_CORPS>9902</CD_CORPS>
+    <LL_CADRE>Moniteur</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990205</CD_CADRE>
+    <CD_CORPS>9902</CD_CORPS>
+    <LL_CADRE>Operateurs</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990301</CD_CADRE>
+    <CD_CORPS>9903</CD_CORPS>
+    <LL_CADRE>Informatistes</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990400</CD_CADRE>
+    <CD_CORPS>9904</CD_CORPS>
+    <LL_CADRE>Regroupement des grades de techniciens</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990501</CD_CADRE>
+    <CD_CORPS>9905</CD_CORPS>
+    <LL_CADRE>Professeurs de l'enseignement superieur</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990502</CD_CADRE>
+    <CD_CORPS>9905</CD_CORPS>
+    <LL_CADRE>Maitres de conference</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990503</CD_CADRE>
+    <CD_CORPS>9905</CD_CORPS>
+    <LL_CADRE>Maitres assistants</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990504</CD_CADRE>
+    <CD_CORPS>9905</CD_CORPS>
+    <LL_CADRE>Assistant</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990601</CD_CADRE>
+    <CD_CORPS>9906</CD_CORPS>
+    <LL_CADRE>Membres de cabinet</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990602</CD_CADRE>
+    <CD_CORPS>9906</CD_CORPS>
+    <LL_CADRE>Personnel de bureau</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990603</CD_CADRE>
+    <CD_CORPS>9906</CD_CORPS>
+    <LL_CADRE>Personnel de maison</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990701</CD_CADRE>
+    <CD_CORPS>9907</CD_CORPS>
+    <LL_CADRE>Civilistes</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990702</CD_CADRE>
+    <CD_CORPS>9907</CD_CORPS>
+    <LL_CADRE>Agents a contrat</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990801</CD_CADRE>
+    <CD_CORPS>9908</CD_CORPS>
+    <LL_CADRE>Agents permanents</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990901</CD_CADRE>
+    <CD_CORPS>9909</CD_CORPS>
+    <LL_CADRE>Cadre des inspecteurs de la formation professionnelle</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990902</CD_CADRE>
+    <CD_CORPS>9909</CD_CORPS>
+    <LL_CADRE>Cadre des conseillers en orientation et en planification professionnelle</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990903</CD_CADRE>
+    <CD_CORPS>9909</CD_CORPS>
+    <LL_CADRE>Cadre des professeurs</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>990904</CD_CADRE>
+    <CD_CORPS>9909</CD_CORPS>
+    <LL_CADRE>Cadre des chefs de travaux</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>991001</CD_CADRE>
+    <CD_CORPS>9910</CD_CORPS>
+    <LL_CADRE>Professeurs de l'Enseignement Superieur</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>991002</CD_CADRE>
+    <CD_CORPS>9910</CD_CORPS>
+    <LL_CADRE>Professeurs Habilites</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>991003</CD_CADRE>
+    <CD_CORPS>9910</CD_CORPS>
+    <LL_CADRE>Professeurs Assistants</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>991101</CD_CADRE>
+    <CD_CORPS>9911</CD_CORPS>
+    <LL_CADRE>MEDECIN</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>991102</CD_CADRE>
+    <CD_CORPS>9911</CD_CORPS>
+    <LL_CADRE>PHARMACIEN</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>991103</CD_CADRE>
+    <CD_CORPS>9911</CD_CORPS>
+    <LL_CADRE>CHURIGIEN DENTISTE</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>991201</CD_CADRE>
+    <CD_CORPS>9912</CD_CORPS>
+    <LL_CADRE>MEDECIN VETERINAIRE</LL_CADRE>
+    <LA_CADRE />
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>991301</CD_CADRE>
+    <CD_CORPS>9913</CD_CORPS>
+    <LL_CADRE>ADMINISTRATEUR</LL_CADRE>
+    <LA_CADRE xml:space="preserve"> </LA_CADRE>
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>991302</CD_CADRE>
+    <CD_CORPS>9913</CD_CORPS>
+    <LL_CADRE>ADMINISTRATEUR</LL_CADRE>
+    <LA_CADRE xml:space="preserve"> </LA_CADRE>
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>991401</CD_CADRE>
+    <CD_CORPS>9914</CD_CORPS>
+    <LL_CADRE xml:space="preserve"> </LL_CADRE>
+    <LA_CADRE xml:space="preserve"> </LA_CADRE>
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>991501</CD_CADRE>
+    <CD_CORPS>9915</CD_CORPS>
+    <LL_CADRE xml:space="preserve"> </LL_CADRE>
+    <LA_CADRE xml:space="preserve"> </LA_CADRE>
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>991601</CD_CADRE>
+    <CD_CORPS>9916</CD_CORPS>
+    <LL_CADRE xml:space="preserve"> </LL_CADRE>
+    <LA_CADRE xml:space="preserve"> </LA_CADRE>
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>991701</CD_CADRE>
+    <CD_CORPS>9917</CD_CORPS>
+    <LL_CADRE xml:space="preserve"> </LL_CADRE>
+    <LA_CADRE xml:space="preserve"> </LA_CADRE>
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>991702</CD_CADRE>
+    <CD_CORPS>9917</CD_CORPS>
+    <LL_CADRE xml:space="preserve"> </LL_CADRE>
+    <LA_CADRE xml:space="preserve"> </LA_CADRE>
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>991703</CD_CADRE>
+    <CD_CORPS>9917</CD_CORPS>
+    <LL_CADRE xml:space="preserve"> </LL_CADRE>
+    <LA_CADRE xml:space="preserve"> </LA_CADRE>
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>991704</CD_CADRE>
+    <CD_CORPS>9917</CD_CORPS>
+    <LL_CADRE xml:space="preserve"> </LL_CADRE>
+    <LA_CADRE xml:space="preserve"> </LA_CADRE>
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>991705</CD_CADRE>
+    <CD_CORPS>9917</CD_CORPS>
+    <LL_CADRE xml:space="preserve"> </LL_CADRE>
+    <LA_CADRE xml:space="preserve"> </LA_CADRE>
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>991706</CD_CADRE>
+    <CD_CORPS>9917</CD_CORPS>
+    <LL_CADRE xml:space="preserve"> </LL_CADRE>
+    <LA_CADRE xml:space="preserve"> </LA_CADRE>
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_CADRE>
+    <CD_CADRE>999900</CD_CADRE>
+    <CD_CORPS>9999</CD_CORPS>
+    <LL_CADRE xml:space="preserve"> </LL_CADRE>
+    <LA_CADRE xml:space="preserve"> </LA_CADRE>
+    <CD_CATEG>99</CD_CATEG>
+  </R_CADRE>
+  <R_Statut>
+    <CD_Statut>1</CD_Statut>
+    <LL_STATUT>Titulaire</LL_STATUT>
+  </R_Statut>
+  <R_Statut>
+    <CD_Statut>2</CD_Statut>
+    <LL_STATUT>Stagiaire</LL_STATUT>
+  </R_Statut>
+  <R_Statut>
+    <CD_Statut>3</CD_Statut>
+    <LL_STATUT>Temporaire</LL_STATUT>
+  </R_Statut>
+  <R_Statut>
+    <CD_Statut>4</CD_Statut>
+    <LL_STATUT>Permanent</LL_STATUT>
+  </R_Statut>
+  <R_Statut>
+    <CD_Statut>5</CD_Statut>
+    <LL_STATUT>Contrat de droit commun</LL_STATUT>
+  </R_Statut>
+  <R_Statut>
+    <CD_Statut>6</CD_Statut>
+    <LL_STATUT>Cooperant</LL_STATUT>
+  </R_Statut>
+  <R_Statut>
+    <CD_Statut>7</CD_Statut>
+    <LL_STATUT>Civiliste</LL_STATUT>
+  </R_Statut>
+  <R_Statut>
+    <CD_Statut>8</CD_Statut>
+    <LL_STATUT>Occasionnel</LL_STATUT>
+  </R_Statut>
+  <R_Statut>
+    <CD_Statut>9</CD_Statut>
+    <LL_STATUT>Fonctionnaire de L'AREF</LL_STATUT>
+  </R_Statut>
+  <R_MOD_ACCES_GRADE>
+    <MODAVGRA>0</MODAVGRA>
+    <DESLMODAV>Néant</DESLMODAV>
+  </R_MOD_ACCES_GRADE>
+  <R_MOD_ACCES_GRADE>
+    <MODAVGRA>1</MODAVGRA>
+    <DESLMODAV>Sur titre</DESLMODAV>
+  </R_MOD_ACCES_GRADE>
+  <R_MOD_ACCES_GRADE>
+    <MODAVGRA>12</MODAVGRA>
+    <DESLMODAV>Promotion 15/9</DESLMODAV>
+  </R_MOD_ACCES_GRADE>
+  <R_MOD_ACCES_GRADE>
+    <MODAVGRA>2</MODAVGRA>
+    <DESLMODAV>Concours</DESLMODAV>
+  </R_MOD_ACCES_GRADE>
+  <R_MOD_ACCES_GRADE>
+    <MODAVGRA>3</MODAVGRA>
+    <DESLMODAV>Au choix</DESLMODAV>
+  </R_MOD_ACCES_GRADE>
+  <R_MOD_ACCES_GRADE>
+    <MODAVGRA>4</MODAVGRA>
+    <DESLMODAV>Examen</DESLMODAV>
+  </R_MOD_ACCES_GRADE>
+  <R_MOD_ACCES_GRADE>
+    <MODAVGRA>5</MODAVGRA>
+    <DESLMODAV>Intégration</DESLMODAV>
+  </R_MOD_ACCES_GRADE>
+  <R_MOD_ACCES_GRADE>
+    <MODAVGRA>6</MODAVGRA>
+    <DESLMODAV>Titularisation d'un permanent</DESLMODAV>
+  </R_MOD_ACCES_GRADE>
+  <R_MOD_ACCES_GRADE>
+    <MODAVGRA>7</MODAVGRA>
+    <DESLMODAV>Promotion Interne du Men</DESLMODAV>
+  </R_MOD_ACCES_GRADE>
+  <R_MOD_ACCES_GRADE>
+    <MODAVGRA>9</MODAVGRA>
+    <DESLMODAV>Promotion Exceptionnelle</DESLMODAV>
+  </R_MOD_ACCES_GRADE>
+  <R_DIVISION>
+    <CD_DIVISION>1</CD_DIVISION>
+    <CD_ENTADM>1</CD_ENTADM>
+    <LL_DIVISION>Division11</LL_DIVISION>
+  </R_DIVISION>
+  <R_DIVISION>
+    <CD_DIVISION>2</CD_DIVISION>
+    <CD_ENTADM>1</CD_ENTADM>
+    <LL_DIVISION>Division12</LL_DIVISION>
+  </R_DIVISION>
+  <R_DIVISION>
+    <CD_DIVISION>3</CD_DIVISION>
+    <CD_ENTADM>1</CD_ENTADM>
+    <LL_DIVISION>Division13</LL_DIVISION>
+  </R_DIVISION>
+  <R_DIVISION>
+    <CD_DIVISION>4</CD_DIVISION>
+    <CD_ENTADM>2</CD_ENTADM>
+    <LL_DIVISION>Division21</LL_DIVISION>
+  </R_DIVISION>
+  <R_DIVISION>
+    <CD_DIVISION>5</CD_DIVISION>
+    <CD_ENTADM>2</CD_ENTADM>
+    <LL_DIVISION>Division22</LL_DIVISION>
+  </R_DIVISION>
+  <R_DIVISION>
+    <CD_DIVISION>6</CD_DIVISION>
+    <CD_ENTADM>2</CD_ENTADM>
+    <LL_DIVISION>Division23</LL_DIVISION>
+  </R_DIVISION>
+  <R_DIVISION>
+    <CD_DIVISION>7</CD_DIVISION>
+    <CD_ENTADM>3</CD_ENTADM>
+    <LL_DIVISION>Division31</LL_DIVISION>
+  </R_DIVISION>
+  <R_DIVISION>
+    <CD_DIVISION>8</CD_DIVISION>
+    <CD_ENTADM>3</CD_ENTADM>
+    <LL_DIVISION>Division32</LL_DIVISION>
+  </R_DIVISION>
+  <R_DIVISION>
+    <CD_DIVISION>9</CD_DIVISION>
+    <CD_ENTADM>3</CD_ENTADM>
+    <LL_DIVISION>Division33</LL_DIVISION>
+  </R_DIVISION>
+  <R_DIVISION>
+    <CD_DIVISION>10</CD_DIVISION>
+    <CD_ENTADM>4</CD_ENTADM>
+    <LL_DIVISION>Division41</LL_DIVISION>
+  </R_DIVISION>
+  <R_DIVISION>
+    <CD_DIVISION>11</CD_DIVISION>
+    <CD_ENTADM>5</CD_ENTADM>
+    <LL_DIVISION>Division51</LL_DIVISION>
+  </R_DIVISION>
+  <R_DIVISION>
+    <CD_DIVISION>12</CD_DIVISION>
+    <CD_ENTADM>6</CD_ENTADM>
+    <LL_DIVISION>Division61</LL_DIVISION>
+  </R_DIVISION>
+  <R_DIVISION>
+    <CD_DIVISION>13</CD_DIVISION>
+    <CD_ENTADM>6</CD_ENTADM>
+    <LL_DIVISION>Division62</LL_DIVISION>
+  </R_DIVISION>
+  <R_DIVISION>
+    <CD_DIVISION>14</CD_DIVISION>
+    <CD_ENTADM>5</CD_ENTADM>
+    <LL_DIVISION>Division52</LL_DIVISION>
+  </R_DIVISION>
+  <R_DIVISION>
+    <CD_DIVISION>15</CD_DIVISION>
+    <CD_ENTADM>4</CD_ENTADM>
+    <LL_DIVISION>Division42</LL_DIVISION>
+  </R_DIVISION>
+  <R_SERVICE>
+    <CD_SERVICE>1</CD_SERVICE>
+    <CD_DIVISION>1</CD_DIVISION>
+    <LL_SERVICE>Service11</LL_SERVICE>
+  </R_SERVICE>
+  <R_SERVICE>
+    <CD_SERVICE>2</CD_SERVICE>
+    <CD_DIVISION>1</CD_DIVISION>
+    <LL_SERVICE>Service12</LL_SERVICE>
+  </R_SERVICE>
+  <R_SERVICE>
+    <CD_SERVICE>3</CD_SERVICE>
+    <CD_DIVISION>2</CD_DIVISION>
+    <LL_SERVICE>Service21</LL_SERVICE>
+  </R_SERVICE>
+  <R_SERVICE>
+    <CD_SERVICE>4</CD_SERVICE>
+    <CD_DIVISION>2</CD_DIVISION>
+    <LL_SERVICE>Service22</LL_SERVICE>
+  </R_SERVICE>
+  <R_SERVICE>
+    <CD_SERVICE>5</CD_SERVICE>
+    <CD_DIVISION>3</CD_DIVISION>
+    <LL_SERVICE>Service32</LL_SERVICE>
+  </R_SERVICE>
+  <R_SERVICE>
+    <CD_SERVICE>6</CD_SERVICE>
+    <CD_DIVISION>3</CD_DIVISION>
+    <LL_SERVICE>Service31</LL_SERVICE>
+  </R_SERVICE>
+  <R_SERVICE>
+    <CD_SERVICE>7</CD_SERVICE>
+    <CD_DIVISION>4</CD_DIVISION>
+    <LL_SERVICE>Service41</LL_SERVICE>
+  </R_SERVICE>
+  <R_SERVICE>
+    <CD_SERVICE>8</CD_SERVICE>
+    <CD_DIVISION>4</CD_DIVISION>
+    <LL_SERVICE>Service42</LL_SERVICE>
+  </R_SERVICE>
+  <R_FONCT>
+    <CD_Fonc>9999</CD_Fonc>
+    <LL_FONC>SANS FONCTION</LL_FONC>
+    <Flag />
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>A001</CD_Fonc>
+    <LL_FONC>Adjoint au Directeur</LL_FONC>
+    <LA_Fonc>مدير مساعد</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>A002</CD_Fonc>
+    <LL_FONC>ADJOINT ECONOME</LL_FONC>
+    <LA_Fonc>مساعد مقتصد</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>A003</CD_Fonc>
+    <LL_FONC>AGENT DE SERVICE</LL_FONC>
+    <LA_Fonc>عون خدمة</LA_Fonc>
+    <Flag>S</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>A004</CD_Fonc>
+    <LL_FONC>AGENT D'EXECUTION</LL_FONC>
+    <LA_Fonc>عون تنفيد</LA_Fonc>
+    <Flag>S</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>A005</CD_Fonc>
+    <LL_FONC>AIDE CUISINIER</LL_FONC>
+    <LA_Fonc>مساعد طباخ</LA_Fonc>
+    <Flag>S</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>A006</CD_Fonc>
+    <LL_FONC>AIDE LINGERE</LL_FONC>
+    <LA_Fonc>مساعد منظف</LA_Fonc>
+    <Flag>S</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>A007</CD_Fonc>
+    <LL_FONC>ANALYSTE</LL_FONC>
+    <LA_Fonc>محلل</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>A008</CD_Fonc>
+    <LL_FONC>Analyste concepteur général</LL_FONC>
+    <LA_Fonc>محلل مخطط عام</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>A009</CD_Fonc>
+    <LL_FONC>ANIMATEUR D'EDUCATION PHYSIQUE</LL_FONC>
+    <LA_Fonc>منشط التربية البدنية</LA_Fonc>
+    <Flag>E</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>A010</CD_Fonc>
+    <LL_FONC>ANIMATEUR PEDAGOGIQUE</LL_FONC>
+    <LA_Fonc>منشط تربوي</LA_Fonc>
+    <Flag>E</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>A011</CD_Fonc>
+    <LL_FONC>Architecte général</LL_FONC>
+    <LA_Fonc>مهندس معماري عام</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>A012</CD_Fonc>
+    <LL_FONC>ARCHIVISTE</LL_FONC>
+    <LA_Fonc> أمين محفوظات</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>B001</CD_Fonc>
+    <LL_FONC>BALAYEUR</LL_FONC>
+    <LA_Fonc>منظف</LA_Fonc>
+    <Flag>S</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>B002</CD_Fonc>
+    <LL_FONC>BIBLIOTHECAIRE</LL_FONC>
+    <LA_Fonc>قيم على الحزانة</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C001</CD_Fonc>
+    <LL_FONC>CADRE A LA DELEGATION</LL_FONC>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C002</CD_Fonc>
+    <LL_FONC>CADRE A L'ACADEMIE</LL_FONC>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C003</CD_Fonc>
+    <LL_FONC>CADRE DE DIRECTION CENTRALE</LL_FONC>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C004</CD_Fonc>
+    <LL_FONC>CARTOGRAPHE</LL_FONC>
+    <LA_Fonc>خرائطي(ة)</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C005</CD_Fonc>
+    <LL_FONC>CENSEUR AU CFI</LL_FONC>
+    <LA_Fonc>ناظر بمركز تكوين المعلمين</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C006</CD_Fonc>
+    <LL_FONC>CENSEUR AU CPR</LL_FONC>
+    <LA_Fonc>ناظر بالمركز التربوي الجهوي</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C007</CD_Fonc>
+    <LL_FONC>CENSEUR AU Lycee</LL_FONC>
+    <LA_Fonc>ناظر ثانوية</LA_Fonc>
+    <Flag>AP</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C008</CD_Fonc>
+    <LL_FONC>CHARGE DE COURS</LL_FONC>
+    <LA_Fonc>مكلف بالدروس</LA_Fonc>
+    <Flag>E</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C009</CD_Fonc>
+    <LL_FONC>charge de fonction</LL_FONC>
+    <LA_Fonc>مكلف بمهمة</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C010</CD_Fonc>
+    <LL_FONC>CHARGE D'ETUDE</LL_FONC>
+    <LA_Fonc>مكلف بالدراسة</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C011</CD_Fonc>
+    <LL_FONC>CHARGE D'INSPECTION PEDAGOGIQUE</LL_FONC>
+    <LA_Fonc>مكلف  بالتفتيش</LA_Fonc>
+    <Flag>I</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C012</CD_Fonc>
+    <LL_FONC>CHAUFFEUR</LL_FONC>
+    <LA_Fonc>سائق</LA_Fonc>
+    <Flag>S</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C013</CD_Fonc>
+    <LL_FONC>COMPTABLE</LL_FONC>
+    <LA_Fonc>محاسب</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C014</CD_Fonc>
+    <LL_FONC>CONCIERGE</LL_FONC>
+    <LA_Fonc>حارس</LA_Fonc>
+    <Flag>S</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C015</CD_Fonc>
+    <LL_FONC>Conseiller à la communication</LL_FONC>
+    <LA_Fonc>مستشار في الاتصال</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C016</CD_Fonc>
+    <LL_FONC>Conseiller économique</LL_FONC>
+    <LA_Fonc>مستار اقتصادي</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C017</CD_Fonc>
+    <LL_FONC>CONSEILLER EN ORIENTATION</LL_FONC>
+    <LA_Fonc>مستشار في التوجيه</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C018</CD_Fonc>
+    <LL_FONC>CONSEILLER EN PLANIFICATION</LL_FONC>
+    <LA_Fonc>مستشار في التخطيط</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C019</CD_Fonc>
+    <LL_FONC>Conseiller juridique</LL_FONC>
+    <LA_Fonc>مستشار قانوني</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C020</CD_Fonc>
+    <LL_FONC>CONSEILLER PEDAGOGIQUE</LL_FONC>
+    <LA_Fonc>مستشار تربوي</LA_Fonc>
+    <Flag>I</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C021</CD_Fonc>
+    <LL_FONC>conseiller technique</LL_FONC>
+    <LA_Fonc>مستشار تقني</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C022</CD_Fonc>
+    <LL_FONC>coordinateur d'inspection</LL_FONC>
+    <LA_Fonc>مفتش منسق</LA_Fonc>
+    <Flag>I</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C023</CD_Fonc>
+    <LL_FONC>CUISINIER</LL_FONC>
+    <LA_Fonc>طباخ</LA_Fonc>
+    <Flag>S</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C024</CD_Fonc>
+    <LL_FONC>CENSEUR AU CRMEF</LL_FONC>
+    <LA_Fonc>ناظر بالمركز  الجهوي لمهن التربية و التكوين</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C025</CD_Fonc>
+    <LL_FONC>CHARGE DE DIRECTION CENTRALE</LL_FONC>
+    <LA_Fonc> مكلف بالمديرية المركزية</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C026</CD_Fonc>
+    <LL_FONC>CHARGE DE DIRECTION AREF</LL_FONC>
+    <LA_Fonc> مكلف بالأكاديمية</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C027</CD_Fonc>
+    <LL_FONC>CHARGE DE DIRECTION PROVINCIALE</LL_FONC>
+    <LA_Fonc>مكلف بالمديرية الإقليمية</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C028</CD_Fonc>
+    <LL_FONC>CHEF DE DIVISION</LL_FONC>
+    <LA_Fonc>رئيس قسم</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C029</CD_Fonc>
+    <LL_FONC>CHARGE DE DIVISION</LL_FONC>
+    <LA_Fonc>مكلف بقسم</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C030</CD_Fonc>
+    <LL_FONC>CHEF DE TRAVAUX AU LYCEE</LL_FONC>
+    <LA_Fonc>CHEF DE TRAVAUX AU LYCEE</LA_Fonc>
+    <Flag>AP</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C031</CD_Fonc>
+    <LL_FONC>CHARGE DE SERVICE</LL_FONC>
+    <LA_Fonc>مكلف بمصلحة</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C032</CD_Fonc>
+    <LL_FONC>CHARGE DE BUREAU</LL_FONC>
+    <LA_Fonc>مكلف بمكتب</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C033</CD_Fonc>
+    <LL_FONC>CHEF DE SERVICE</LL_FONC>
+    <LA_Fonc>رئيس مصلحة</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C034</CD_Fonc>
+    <LL_FONC>CHEF DE BUREAU</LL_FONC>
+    <LA_Fonc>رئيس مكتب</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C035</CD_Fonc>
+    <LL_FONC>CHEF D'UNITE</LL_FONC>
+    <LA_Fonc>رئيس وحدة</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C036</CD_Fonc>
+    <LL_FONC>CHEF DE CABINET</LL_FONC>
+    <LA_Fonc>رئيس الديوان</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C037</CD_Fonc>
+    <LL_FONC>CADRE A LA DIRECTION PROVINCIALE</LL_FONC>
+    <LA_Fonc>إطار في المديرية الإقليمية</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C038</CD_Fonc>
+    <LL_FONC>COORDINATEUR D'INSPECTION REGIONALE</LL_FONC>
+    <LA_Fonc>تنسيق التفتيش الجهوي</LA_Fonc>
+    <Flag>I</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>C039</CD_Fonc>
+    <LL_FONC>COORDINATEUR D'INSPECTION REGIONALE SPECIALISEE</LL_FONC>
+    <LA_Fonc>تنسيق التفتيش الجهوي التخصصي</LA_Fonc>
+    <Flag>I</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D001</CD_Fonc>
+    <LL_FONC>DACTYLOGRAPHE</LL_FONC>
+    <LA_Fonc>راقن(ة)</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D002</CD_Fonc>
+    <LL_FONC>DIRECTEUR PROVINCIAL</LL_FONC>
+    <LA_Fonc>مدير اقليمي</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D003</CD_Fonc>
+    <LL_FONC>DIRECTEUR ADJOINT  DE L'ACADEMIE</LL_FONC>
+    <LA_Fonc>مدير مساعد بالأكاديمية</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D004</CD_Fonc>
+    <LL_FONC>Directeur adjoint CPR</LL_FONC>
+    <LA_Fonc>مدير مساعد بالمركز التربوي الجهوي</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D005</CD_Fonc>
+    <LL_FONC>Directeur Adjoint de CNFI</LL_FONC>
+    <LA_Fonc>مدير مساعد بالمركز الوطني لتكوين المفتشين</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D006</CD_Fonc>
+    <LL_FONC>Directeur Adjoint de COPE</LL_FONC>
+    <LA_Fonc>مدير مساعد بمركز التوجيه والتخطيط التربوي</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D007</CD_Fonc>
+    <LL_FONC>Directeur adjoint ENS</LL_FONC>
+    <LA_Fonc>مدير مساعد بالمدرسة العليا للأساتذة</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D008</CD_Fonc>
+    <LL_FONC>DIRECTEUR CENTRAL</LL_FONC>
+    <LA_Fonc>مدير</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D009</CD_Fonc>
+    <LL_FONC>DIRECTEUR D'ACADEMIE</LL_FONC>
+    <LA_Fonc>مدير أكاديمية</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D010</CD_Fonc>
+    <LL_FONC>Directeur de CFI</LL_FONC>
+    <LA_Fonc>مدير مركز تكوين المعلمين</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D011</CD_Fonc>
+    <LL_FONC>Directeur de CNFI</LL_FONC>
+    <LA_Fonc>مدير المركز الوطني لتكوين المفتشين</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D012</CD_Fonc>
+    <LL_FONC>Directeur de Collège</LL_FONC>
+    <LA_Fonc>مدير إعدادية</LA_Fonc>
+    <Flag>AP</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D013</CD_Fonc>
+    <LL_FONC>Directeur de COPE</LL_FONC>
+    <LA_Fonc>مدير مركز التوجيه والتخطيط التربوي</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D014</CD_Fonc>
+    <LL_FONC>Directeur de CPR</LL_FONC>
+    <LA_Fonc>مدير المركز التربوي الجهوي</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D015</CD_Fonc>
+    <LL_FONC>DIRECTEUR DE L'ECONOMAT REG.</LL_FONC>
+    <LA_Fonc>مدير مقتصدية جهوية</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D016</CD_Fonc>
+    <LL_FONC>Directeur de Lycée</LL_FONC>
+    <LA_Fonc>مدير ثانوية</LA_Fonc>
+    <Flag>AP</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D017</CD_Fonc>
+    <LL_FONC>Directeur de Secteur Scolaire</LL_FONC>
+    <LA_Fonc>مدير مجموعة مدرسية</LA_Fonc>
+    <Flag>AP</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D018</CD_Fonc>
+    <LL_FONC>Directeur d'E.N.S</LL_FONC>
+    <LA_Fonc>مدير المدرسة العليا للأساتذة</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D019</CD_Fonc>
+    <LL_FONC>Directeur d'Ecole Primaire</LL_FONC>
+    <LA_Fonc>مدير مدرسة ابتدائية</LA_Fonc>
+    <Flag>AP</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D020</CD_Fonc>
+    <LL_FONC>Directeur des études A L'ENS</LL_FONC>
+    <LA_Fonc>مدير الدروس بالمدرسة العليا للأساتذة</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D021</CD_Fonc>
+    <LL_FONC>Directeur des études AU CFI</LL_FONC>
+    <LA_Fonc>مدير الدراسات بمركز تكوين المعلمين</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D022</CD_Fonc>
+    <LL_FONC>Directeur des études AU CPR</LL_FONC>
+    <LA_Fonc>مدير الدروس بالمركز التربوي الجهوي</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D023</CD_Fonc>
+    <LL_FONC>Directeur d'institut de technologie</LL_FONC>
+    <LA_Fonc>مدير معهد للتكنولوجيا</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D024</CD_Fonc>
+    <LL_FONC>DOCUMENTALISTE</LL_FONC>
+    <LA_Fonc>موثق</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D025</CD_Fonc>
+    <LL_FONC>DIRECTEUR PROVINCIAL</LL_FONC>
+    <LA_Fonc>مدير إقليمي</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D026</CD_Fonc>
+    <LL_FONC>DIRECTEUR CRMEF</LL_FONC>
+    <LA_Fonc>مدير  المركز  الجهوي لمهن التربية و التكوين</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D027</CD_Fonc>
+    <LL_FONC>DIRECTEUR ADJOINT CRMEF</LL_FONC>
+    <LA_Fonc>مدير مساعد بالمركز  الجهوي لمهن التربية و التكوين</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>D030</CD_Fonc>
+    <LL_FONC>DIRECTEUR DES ETUDES</LL_FONC>
+    <LA_Fonc>DIRECTEUR DES ETUDES</LA_Fonc>
+    <Flag>AP</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>E001</CD_Fonc>
+    <LL_FONC>ENSEIGNANT EN CLASSE</LL_FONC>
+    <LA_Fonc>مدرس</LA_Fonc>
+    <Flag>EN</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>E002</CD_Fonc>
+    <LL_FONC>ENSEIGNANT EN SURNOMBRE</LL_FONC>
+    <LA_Fonc>مدرس</LA_Fonc>
+    <Flag>EN</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>E020</CD_Fonc>
+    <LL_FONC>ELECTRICIEN</LL_FONC>
+    <LA_Fonc>كهربائي</LA_Fonc>
+    <Flag>S</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>F001</CD_Fonc>
+    <LL_FONC>FEMME DE MENAGE</LL_FONC>
+    <LA_Fonc>منظفة</LA_Fonc>
+    <Flag>S</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>F009</CD_Fonc>
+    <LL_FONC>FONCTION ADMINISTRATIVE</LL_FONC>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>G001</CD_Fonc>
+    <LL_FONC>GARDIEN</LL_FONC>
+    <LA_Fonc>حارس</LA_Fonc>
+    <Flag>S</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>G002</CD_Fonc>
+    <LL_FONC>GUIDE D'INSPECTION</LL_FONC>
+    <LA_Fonc>مرشد التفتيش </LA_Fonc>
+    <Flag>I</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>I001</CD_Fonc>
+    <LL_FONC>INFIRMIER</LL_FONC>
+    <LA_Fonc>ممرض(ة)</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>I002</CD_Fonc>
+    <LL_FONC>Ingenieur général</LL_FONC>
+    <LA_Fonc>مهندس عام</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>I003</CD_Fonc>
+    <LL_FONC>INSPECT. POUR ECOLE CORANIQUE</LL_FONC>
+    <LA_Fonc>مفتش الكتاتيب القرآنية</LA_Fonc>
+    <Flag>I</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>I004</CD_Fonc>
+    <LL_FONC>INSPECTEUR EN ORIENTATION</LL_FONC>
+    <LA_Fonc>مفتش في التوجيه التربوي</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>I005</CD_Fonc>
+    <LL_FONC>INSPECTEUR EN PLANIFICATION</LL_FONC>
+    <LA_Fonc>مفتش في التخطيط</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>I006</CD_Fonc>
+    <LL_FONC>INSPECTEUR PEDAGOGIQUE</LL_FONC>
+    <LA_Fonc>مفتش تربوي</LA_Fonc>
+    <Flag>I</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>I007</CD_Fonc>
+    <LL_FONC>INTENDANT/ECONOME</LL_FONC>
+    <LA_Fonc>ممون</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>I008</CD_Fonc>
+    <LL_FONC>INSPECTEUR DES SERVICES MATER. ET FIN. </LL_FONC>
+    <Flag>I</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>I009</CD_Fonc>
+    <LL_FONC>INSPECTEUR GENERAL</LL_FONC>
+    <Flag>I</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>J001</CD_Fonc>
+    <LL_FONC>JARDINIER</LL_FONC>
+    <LA_Fonc>بستاني</LA_Fonc>
+    <Flag>S</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>M001</CD_Fonc>
+    <LL_FONC>MACON</LL_FONC>
+    <LA_Fonc>بناء</LA_Fonc>
+    <Flag>S</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>M002</CD_Fonc>
+    <LL_FONC>MAGASINIER</LL_FONC>
+    <LA_Fonc>أمين مخزن</LA_Fonc>
+    <Flag>S</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>M003</CD_Fonc>
+    <LL_FONC>MENUISIER</LL_FONC>
+    <LA_Fonc>نجار</LA_Fonc>
+    <Flag>S</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>M004</CD_Fonc>
+    <LL_FONC>MONITEUR</LL_FONC>
+    <LA_Fonc>مدرب</LA_Fonc>
+    <Flag>E</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>M005</CD_Fonc>
+    <LL_FONC>MINISTRE</LL_FONC>
+    <LA_Fonc>وزير</LA_Fonc>
+    <Flag />
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>P001</CD_Fonc>
+    <LL_FONC>PEINTRE</LL_FONC>
+    <LA_Fonc>صباغ</LA_Fonc>
+    <Flag>S</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>P002</CD_Fonc>
+    <LL_FONC>PHOTOGRAPHE</LL_FONC>
+    <LA_Fonc>مصور</LA_Fonc>
+    <Flag>S</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>P003</CD_Fonc>
+    <LL_FONC>PLOMBIER</LL_FONC>
+    <LA_Fonc>رصاص</LA_Fonc>
+    <Flag>S</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>P004</CD_Fonc>
+    <LL_FONC>PREPARATEUR DE LABO. PHYSIQUE</LL_FONC>
+    <LA_Fonc>محضر مختبرات الفزياء</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>P005</CD_Fonc>
+    <LL_FONC>PREPARATEUR LABO. SCIENCES NAT</LL_FONC>
+    <LA_Fonc>محضر مختبرات العلوم الطبيعية</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>P006</CD_Fonc>
+    <LL_FONC>Professeur de l'enseignement supérieur</LL_FONC>
+    <LA_Fonc>أستاذ التعليم العالي</LA_Fonc>
+    <Flag>E</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>P007</CD_Fonc>
+    <LL_FONC>PROGRAMMEUR</LL_FONC>
+    <LA_Fonc>مبرمج</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>P009</CD_Fonc>
+    <LL_FONC>PERSONNEL DE SERVICE</LL_FONC>
+    <Flag>S</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>P010</CD_Fonc>
+    <LL_FONC>PROFESSEUR ACCOMPAGNATEUR</LL_FONC>
+    <LA_Fonc>الأستاذ المصاحب </LA_Fonc>
+    <Flag>E</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>R001</CD_Fonc>
+    <LL_FONC>REPARATEUR MOBILIERS SCOLAIRES</LL_FONC>
+    <LA_Fonc>مكلف بصيانة المعدات المدرسية</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>R002</CD_Fonc>
+    <LL_FONC>RESPONSABLE DES EXAMENS DU BAC.</LL_FONC>
+    <LA_Fonc>مكلف بامتحانات البكالوريا</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>R003</CD_Fonc>
+    <LL_FONC>RESPONSABLE THEATRE SCOLAIRE</LL_FONC>
+    <LA_Fonc>مكلف بالمسرح المدرسي</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>R004</CD_Fonc>
+    <LL_FONC>RESPONSABLE CELLULE D'INSPECTION</LL_FONC>
+    <LA_Fonc>منسق خلية التفتيش </LA_Fonc>
+    <Flag>I</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>S000</CD_Fonc>
+    <LL_FONC>sans fonction</LL_FONC>
+    <LA_Fonc>بدون مهمة</LA_Fonc>
+    <Flag />
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>S001</CD_Fonc>
+    <LL_FONC>SECRETAIRE</LL_FONC>
+    <LA_Fonc>كاتب(ة)</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>S002</CD_Fonc>
+    <LL_FONC>Secretaire général de L'ENS</LL_FONC>
+    <LA_Fonc>كاتب عام بالمدرسة العليا للأساتذة</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>S003</CD_Fonc>
+    <LL_FONC>Secretaire Général du CNFI</LL_FONC>
+    <LA_Fonc>كاتب عام بالمركز الوطني لتكوين المفتشين</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>S004</CD_Fonc>
+    <LL_FONC>Secretaire Général du COPE</LL_FONC>
+    <LA_Fonc>كاتب عام بمركز التوجيه والتخطيط التربوي</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>S005</CD_Fonc>
+    <LL_FONC>Secretaire Général du CPR</LL_FONC>
+    <LA_Fonc>كاتب عام بالمركز التربوي الجهوي</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>S006</CD_Fonc>
+    <LL_FONC>SECRETAIRE GENERAL DU MINISTERE DE L'EDUCATION</LL_FONC>
+    <LA_Fonc>كاتب عام</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>S007</CD_Fonc>
+    <LL_FONC>STANDARDISTE</LL_FONC>
+    <LA_Fonc> عامل المقسم الهاتفي</LA_Fonc>
+    <Flag>S</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>S008</CD_Fonc>
+    <LL_FONC>SURVEILLANT D'INTERNAT</LL_FONC>
+    <LA_Fonc>حارس  للداخلية</LA_Fonc>
+    <Flag>AP</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>S009</CD_Fonc>
+    <LL_FONC>SURVEILLANT EXTERNAT(REPETITEUR)</LL_FONC>
+    <LA_Fonc>حارس  للخارجية</LA_Fonc>
+    <Flag>AP</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>S010</CD_Fonc>
+    <LL_FONC>SURVEILLANT GENERAL AU COLLEGE</LL_FONC>
+    <LA_Fonc>حارس عام بالإعدادية</LA_Fonc>
+    <Flag>AP</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>S011</CD_Fonc>
+    <LL_FONC>SURVEILLANT GENERAL CFI</LL_FONC>
+    <LA_Fonc>حارس عام بمركز تكوين المعلمين</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>S012</CD_Fonc>
+    <LL_FONC>SURVEILLANT GENERAL CPR</LL_FONC>
+    <LA_Fonc>حارس عام بالمركز التربوي الجهوي</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>S013</CD_Fonc>
+    <LL_FONC>SURVEILLANT GENERAL D'EXTERNAT</LL_FONC>
+    <LA_Fonc>حارس عام للخارجية</LA_Fonc>
+    <Flag>AP</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>S014</CD_Fonc>
+    <LL_FONC>Surveillant Général d'Externat au collège</LL_FONC>
+    <LA_Fonc>حارس عام للخارجية بإعدادية</LA_Fonc>
+    <Flag>AP</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>S015</CD_Fonc>
+    <LL_FONC>Surveillant Général d'Externat au Lycee</LL_FONC>
+    <LA_Fonc>حارس عام للخارجية بثانوية</LA_Fonc>
+    <Flag>AP</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>S016</CD_Fonc>
+    <LL_FONC>SURVEILLANT GENERAL D'INTERNAT</LL_FONC>
+    <LA_Fonc>حارس عام للداخلية</LA_Fonc>
+    <Flag>AP</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>S017</CD_Fonc>
+    <LL_FONC>SURVEILLANT GL. INTERNAT CFI</LL_FONC>
+    <LA_Fonc>حارس عام للداخلية بمركز تكوين المعلمين</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>S018</CD_Fonc>
+    <LL_FONC>SECRETAIRE GENERAL CRMEF</LL_FONC>
+    <LA_Fonc>كاتب عام المركز الجهوي لمهن التربية و التكوين</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>S019</CD_Fonc>
+    <LL_FONC>SURVEILLANT GENERAL CRMEF</LL_FONC>
+    <LA_Fonc>حارس عام بالمركز  الجهوي لمهن التربية و التكوين</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_FONCT>
+    <CD_Fonc>T001</CD_Fonc>
+    <LL_FONC>TECHNICIEN DE MAINTENANCE</LL_FONC>
+    <LA_Fonc>تقني في الصيانة</LA_Fonc>
+    <Flag>A</Flag>
+  </R_FONCT>
+  <R_CentreForm>
+    <NOM_ETABL>CFI AGADIR IDA OUTANANE</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI AL HOCEIMA</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CPR MEKNES</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>ENS MEKNES</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI MEKNES</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI BENI MELLAL</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI BENSLIMANE</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI BOULMANE</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CPR CASA - ANFA</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>ENS AIN CHOK HAY EL HASSANI</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI HAY EL HASSANI</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CPR EL JADIDA</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI EL JADIDA</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI EL KALAA DES SRAGHNA</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI ERRACHIDIA</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI ESSAOUIRA</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CPR FES</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>ENS FES</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI FES</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI GUELMIM</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CPR INZEGANE AIT MELLOUL</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CPR KENITRA</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI KENITRA</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI KHEMISSET</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI KHENIFRA</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI KHOURIBGA</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI LAAYOUNE</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI LARACHE</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CPR MARAKECH</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>ENS MARRAKECH</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI MARRAKECH</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>ENSET MOHAMMADIA</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI NADOR</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI OUARZAZATE</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CPR OUJDA ANGAD</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI OUJDA ANGAD</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CPR RABAT</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CENTRE NATIONALDE FORMATION DES INSPECTEURS</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CENTRE D'ORIENTATION ET DE PLANIFICATION</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>ENS RABAT</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>ENSET RABAT</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI RABAT</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CPR SAFI</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI SAFI</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI SEFROU</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CENTRE  DE TECHNOLOGIE SEFROU</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI SETTAT</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CPR DE TECHNOLOGIE SETTAT</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI SIDI KACEM</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CPR TANGER ASSILAH</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI TANGER ASSILAH</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CPR TANGER</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI TAROUDANT</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI TATA</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CPR TAZA</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI TAZA</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI TETOUN</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>CFI TIZNIT</NOM_ETABL>
+  </R_CentreForm>
+  <R_CentreForm>
+    <NOM_ETABL>ENS TETOUAN</NOM_ETABL>
+  </R_CentreForm>
+  <R_GRADE>
+    <CD_GRADE>10000101</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1000</CD_CORPS>
+    <CD_CADRE>100001</CD_CADRE>
+    <LL_GRADE>"PROFESSEUR DE L'ENSEIGNEMENT SUPERIEUR DU GRADE ""B"" (ANCIEN.STATUT)"</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10000102</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1000</CD_CORPS>
+    <CD_CADRE>100001</CD_CADRE>
+    <LL_GRADE>"PROFESSEUR DE L'ENSEIGNEMENT SUPERIEUR DU GRADE ""A"" (ANCIEN.STATUT)"</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10000201</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1000</CD_CORPS>
+    <CD_CADRE>100002</CD_CADRE>
+    <LL_GRADE>MAITRE DE CONFERENCES (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10000301</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1000</CD_CORPS>
+    <CD_CADRE>100003</CD_CADRE>
+    <LL_GRADE>"MAITRE ASSISTANT DU GRADE ""C"" (ANCIEN.STATUT)"</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10000302</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1000</CD_CORPS>
+    <CD_CADRE>100003</CD_CADRE>
+    <LL_GRADE>"MAITRE ASSISTANT DU GRADE ""B"" (ANCIEN.STATUT)"</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10000303</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1000</CD_CORPS>
+    <CD_CADRE>100003</CD_CADRE>
+    <LL_GRADE>"MAITRE ASSISTANT DU GRADE ""A"" (ANCIEN.STATUT)"</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10000401</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1000</CD_CORPS>
+    <CD_CADRE>100004</CD_CADRE>
+    <LL_GRADE>"ASSISTANT DU GRADE ""B"" (ANCIEN.STATUT)"</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10000402</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1000</CD_CORPS>
+    <CD_CADRE>100004</CD_CADRE>
+    <LL_GRADE>"ASSISTANT DU GRADE ""A"" (ANCIEN.STATUT)"</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10009902</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1000</CD_CORPS>
+    <CD_CADRE>100099</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DE L' ENSEIGNEMENT SUPERIEUR.( STATUT DU 26/02/75 )(CBR)</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10009904</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1000</CD_CORPS>
+    <CD_CADRE>100099</CD_CADRE>
+    <LL_GRADE>MAITRE-ASSISTANT DE L' ENSEIG SUPER. ( A.S )(CBR)</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10009905</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1000</CD_CORPS>
+    <CD_CADRE>100099</CD_CADRE>
+    <LL_GRADE>ASSISTANT DE L' ENSEIGNEMENT SUPERIEUR.(A.S)(CBR)</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10010101</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1001</CD_CORPS>
+    <CD_CADRE>100101</CD_CADRE>
+    <LL_GRADE>PROF DE MEDECINE DEUXIEME GRADE (CBR)</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10010102</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1001</CD_CORPS>
+    <CD_CADRE>100101</CD_CADRE>
+    <LL_GRADE>PROF DE MEDECINE PREMIER GRADE (CBR)</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10010201</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1001</CD_CORPS>
+    <CD_CADRE>100102</CD_CADRE>
+    <LL_GRADE>PROF AGREGE DE MEDECINE(CBR)</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10010301</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1001</CD_CORPS>
+    <CD_CADRE>100103</CD_CADRE>
+    <LL_GRADE>MAITRE ASSISTANT 3EME GRADE (CBR)</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10010302</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1001</CD_CORPS>
+    <CD_CADRE>100103</CD_CADRE>
+    <LL_GRADE>MAITRE ASSISTANT 2EME GRADE (CBR)</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10010303</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1001</CD_CORPS>
+    <CD_CADRE>100103</CD_CADRE>
+    <LL_GRADE>MAITRE ASSISTANT 1ER GRADE (CBR)</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10020101</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1002</CD_CORPS>
+    <CD_CADRE>100201</CD_CADRE>
+    <LL_GRADE>PROF. DE L'ENSEIG. SUPERIEUR GRADE C (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10020102</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1002</CD_CORPS>
+    <CD_CADRE>100201</CD_CADRE>
+    <LL_GRADE>PROF.DE L'ENSEIG.SUPERIEUR GRADE B (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10020103</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1002</CD_CORPS>
+    <CD_CADRE>100201</CD_CADRE>
+    <LL_GRADE>PROF.DE L'ENSEIG.SUPERIEUR GRADE A (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10020201</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1002</CD_CORPS>
+    <CD_CADRE>100202</CD_CADRE>
+    <LL_GRADE>PROF. HABILITE GRADE C (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10020202</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1002</CD_CORPS>
+    <CD_CADRE>100202</CD_CADRE>
+    <LL_GRADE>PROF. HABILITE GRADE B (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10020203</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1002</CD_CORPS>
+    <CD_CADRE>100202</CD_CADRE>
+    <LL_GRADE>PROF. HABILITE GRADE A (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10020301</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1002</CD_CORPS>
+    <CD_CADRE>100203</CD_CADRE>
+    <LL_GRADE>PROFESSEUR ASSISTANT GRADE D (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10020302</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1002</CD_CORPS>
+    <CD_CADRE>100203</CD_CADRE>
+    <LL_GRADE>PROFESSEUR ASSISTANT GRADE C (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10020303</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1002</CD_CORPS>
+    <CD_CADRE>100203</CD_CADRE>
+    <LL_GRADE>PROFESSEUR ASSISTANT GRADE B (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10020304</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1002</CD_CORPS>
+    <CD_CADRE>100203</CD_CADRE>
+    <LL_GRADE>PROFESSEUR ASSISTANT GRADE A (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10030101</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1003</CD_CORPS>
+    <CD_CADRE>100301</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DE L'ENSEIGNEMENT SUPERIEUR GRADE "C" (CBR)</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10030102</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1003</CD_CORPS>
+    <CD_CADRE>100301</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DE L'ENSEIGNEMENT SUPERIEUR GRADE "B" (CBR)</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10030103</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1003</CD_CORPS>
+    <CD_CADRE>100301</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DE L'ENSEIGNEMENT SUPERIEUR GRADE "A" (CBR)</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10030201</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1003</CD_CORPS>
+    <CD_CADRE>100302</CD_CADRE>
+    <LL_GRADE>PROFESSEUR AGREGE DU GRADE "C" (CBR)</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10030202</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1003</CD_CORPS>
+    <CD_CADRE>100302</CD_CADRE>
+    <LL_GRADE>PROFESSEUR AGREGE DU GRADE "B" (CBR)</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10030203</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1003</CD_CORPS>
+    <CD_CADRE>100302</CD_CADRE>
+    <LL_GRADE>PROFESSEUR AGREGE DU GRADE "A" (CBR)</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10030301</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1003</CD_CORPS>
+    <CD_CADRE>100303</CD_CADRE>
+    <LL_GRADE>PROFESSEUR ASSISTANT DU GRADE "D" (CBR)</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10030302</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1003</CD_CORPS>
+    <CD_CADRE>100303</CD_CADRE>
+    <LL_GRADE>PROFESSEUR ASSISTANT DU GRADE "C" (CBR)</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10030303</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1003</CD_CORPS>
+    <CD_CADRE>100303</CD_CADRE>
+    <LL_GRADE>PROFESSEUR ASSISTANT DU GRADE "B" (CBR)</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>10030304</CD_GRADE>
+    <CD_CATEG>10</CD_CATEG>
+    <CD_CORPS>1003</CD_CORPS>
+    <CD_CADRE>100303</CD_CADRE>
+    <LL_GRADE>PROFESSEUR ASSISTANT DU GRADE "A" (CBR)</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11010101</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1101</CD_CORPS>
+    <CD_CADRE>110101</CD_CADRE>
+    <LL_GRADE>INSPECTEUR PRINCIPAL (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11010201</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1101</CD_CORPS>
+    <CD_CADRE>110102</CD_CADRE>
+    <LL_GRADE>INSPECTEUR DE L'ENSEIGNEMENT SECONDAIRE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11010301</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1101</CD_CORPS>
+    <CD_CADRE>110103</CD_CADRE>
+    <LL_GRADE>INSPECTEUR ADJOINT DE L'ENSEIGNEMENT DU 1ER DEGRE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11010401</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1101</CD_CORPS>
+    <CD_CADRE>110104</CD_CADRE>
+    <LL_GRADE>INSPECTEUR EN CHEF DE L'ENSEIGNEMENT PRIMAIRE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11010402</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1101</CD_CORPS>
+    <CD_CADRE>110104</CD_CADRE>
+    <LL_GRADE>INSPECTEUR DE L'ENSEIGNEMENT PRIMAIRE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11010499</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1101</CD_CORPS>
+    <CD_CADRE>110104</CD_CADRE>
+    <LL_GRADE>INSPECTEUR DU PRIMAIR LICENCIE</LL_GRADE>
+    <ECHELLE>10</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11020101</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1102</CD_CORPS>
+    <CD_CADRE>110201</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DU SECOND CYCLE DU GRADE PRINCIPAL (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11020102</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1102</CD_CORPS>
+    <CD_CADRE>110201</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DU SECOND CYCLE DU 1ER GRADE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11020103</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1102</CD_CORPS>
+    <CD_CADRE>110201</CD_CADRE>
+    <LL_GRADE>PROFESSUR DU SECOND CYCLE DU 2EME GRADE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11020198</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1102</CD_CORPS>
+    <CD_CADRE>110201</CD_CADRE>
+    <LL_GRADE>PROFESSEUR AGREGE DU 2ME CYCLE ( A.S )</LL_GRADE>
+    <ECHELLE>11</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11020201</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1102</CD_CORPS>
+    <CD_CADRE>110202</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DU PREMIER CYCLE DE 1ER GRADE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11020202</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1102</CD_CORPS>
+    <CD_CADRE>110202</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DU PREMIER CYCLE DU 2EME GRADE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11020203</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1102</CD_CORPS>
+    <CD_CADRE>110202</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DU PREMIER CYCLE DU 3EME GRADE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11020301</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1102</CD_CORPS>
+    <CD_CADRE>110203</CD_CADRE>
+    <LL_GRADE>INSTITUTEUR DU 1ER GRADE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11020302</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1102</CD_CORPS>
+    <CD_CADRE>110203</CD_CADRE>
+    <LL_GRADE>INSTITUTEUR DU 2EME GRADE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11020303</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1102</CD_CORPS>
+    <CD_CADRE>110203</CD_CADRE>
+    <LL_GRADE>INSTITUTEUR DU 3EME GRADE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11020304</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1102</CD_CORPS>
+    <CD_CADRE>110203</CD_CADRE>
+    <LL_GRADE>INSTITUTEUR DU 4EME GRADE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11020305</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1102</CD_CORPS>
+    <CD_CADRE>110203</CD_CADRE>
+    <LL_GRADE>Grade3</LL_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11020401</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1102</CD_CORPS>
+    <CD_CADRE>110204</CD_CADRE>
+    <LL_GRADE>CONSEILLER DU PREMIER DEGRE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11020402</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1102</CD_CORPS>
+    <CD_CADRE>110204</CD_CADRE>
+    <LL_GRADE>MONITEUR (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11030101</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1103</CD_CORPS>
+    <CD_CADRE>110301</CD_CADRE>
+    <LL_GRADE>INSPECTEUR PRINCIPAL DES SERVICES ECONOMIQUES (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11030102</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1103</CD_CORPS>
+    <CD_CADRE>110301</CD_CADRE>
+    <LL_GRADE>INSPECTEUR DES SERVICES ECONOMIQUES (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11030201</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1103</CD_CORPS>
+    <CD_CADRE>110302</CD_CADRE>
+    <LL_GRADE>INTENDANT (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11030301</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1103</CD_CORPS>
+    <CD_CADRE>110303</CD_CADRE>
+    <LL_GRADE>ECONOME PRINCIPAL (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11030302</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1103</CD_CORPS>
+    <CD_CADRE>110303</CD_CADRE>
+    <LL_GRADE>ECONOME (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11030401</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1103</CD_CORPS>
+    <CD_CADRE>110304</CD_CADRE>
+    <LL_GRADE>ADJOINT DES SERVICES ECONOMIQUES (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11030501</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1103</CD_CORPS>
+    <CD_CADRE>110305</CD_CADRE>
+    <LL_GRADE>SECRETAIRE D'ECONOMAT PRINCIPAL (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11030502</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1103</CD_CORPS>
+    <CD_CADRE>110305</CD_CADRE>
+    <LL_GRADE>SECRETAIRE D'ECONOMAT (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11030599</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1103</CD_CORPS>
+    <CD_CADRE>110305</CD_CADRE>
+    <LL_GRADE>SECRETAIRE D' ECONOMAT PRINCIPAL -ECHELLE 7-</LL_GRADE>
+    <ECHELLE>7</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11040101</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1104</CD_CORPS>
+    <CD_CADRE>110401</CD_CADRE>
+    <LL_GRADE>INSPECTEUR PRINCIPAL EN ORIENTATION OU EN PLANIFICATION DE L'EDUCATION (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11040102</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1104</CD_CORPS>
+    <CD_CADRE>110401</CD_CADRE>
+    <LL_GRADE>INSPECTEUR EN ORIENTATION OU EN PLANIFICATION DE L'EDUCATION (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11040201</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1104</CD_CORPS>
+    <CD_CADRE>110402</CD_CADRE>
+    <LL_GRADE>CONSEILLER EN ORIENTATION OU EN PLANIFICATION DE L'EDUCATION (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11040298</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1104</CD_CORPS>
+    <CD_CADRE>110402</CD_CADRE>
+    <LL_GRADE>CONSEILLER EN ORIENTATION SCOLAIRE</LL_GRADE>
+    <ECHELLE>9</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11040301</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1104</CD_CORPS>
+    <CD_CADRE>110403</CD_CADRE>
+    <LL_GRADE>ADJOINT SPECIALISE EN ORIENTATION ET PLANIFICATION DE L'EDUCATION (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11040302</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1104</CD_CORPS>
+    <CD_CADRE>110403</CD_CADRE>
+    <LL_GRADE>ADJIONT EN ORIENTATION ET PLANIFICATION DE L'EDUCATION (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11050101</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1105</CD_CORPS>
+    <CD_CADRE>110501</CD_CADRE>
+    <LL_GRADE>CNSERVATEUR PRINCIPAL DES BIBLIOTHEQUES ET ARCHIVES (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11050102</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1105</CD_CORPS>
+    <CD_CADRE>110501</CD_CADRE>
+    <LL_GRADE>CONSERVATEUR DES BIBLIOTHEQUES ET ARCHIVES (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11050201</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1105</CD_CORPS>
+    <CD_CADRE>110502</CD_CADRE>
+    <LL_GRADE>CONSERVATEUR ADJOINT DES BIBLIOTHEQUES ET ARCHIVES (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11050301</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1105</CD_CORPS>
+    <CD_CADRE>110503</CD_CADRE>
+    <LL_GRADE>DOCUMENTALISTE PRINCIPAL (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11050302</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1105</CD_CORPS>
+    <CD_CADRE>110503</CD_CADRE>
+    <LL_GRADE>DOCUMENTALISTE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11050303</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1105</CD_CORPS>
+    <CD_CADRE>110503</CD_CADRE>
+    <LL_GRADE>DOCUMENTALISTE ADJOINT (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11059901</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1105</CD_CORPS>
+    <CD_CADRE>110599</CD_CADRE>
+    <LL_GRADE>BIBLIOTHECAIRE- ARCHIVISTE</LL_GRADE>
+    <ECHELLE>10</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11059902</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1105</CD_CORPS>
+    <CD_CADRE>110599</CD_CADRE>
+    <LL_GRADE>SECRETAIRE DOCUMENTALISTE</LL_GRADE>
+    <ECHELLE>5</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11059903</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1105</CD_CORPS>
+    <CD_CADRE>110599</CD_CADRE>
+    <LL_GRADE>SECRETAIRE DOCUMENTALISTE PRINCIPAL</LL_GRADE>
+    <ECHELLE>6</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11059904</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1105</CD_CORPS>
+    <CD_CADRE>110599</CD_CADRE>
+    <LL_GRADE>SECRETAIRE DOCUMENTALISTE PRINCIPAL -ECHELLE 7</LL_GRADE>
+    <ECHELLE>7</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11060101</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1106</CD_CORPS>
+    <CD_CADRE>110601</CD_CADRE>
+    <LL_GRADE>SURVEILLANT DU 1ER GRADE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11060102</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1106</CD_CORPS>
+    <CD_CADRE>110601</CD_CADRE>
+    <LL_GRADE>SURVEILLANT DU 2EME GRADE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11060103</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1106</CD_CORPS>
+    <CD_CADRE>110601</CD_CADRE>
+    <LL_GRADE>SURVEILLANT DU 3EME GRADE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11060104</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1106</CD_CORPS>
+    <CD_CADRE>110601</CD_CADRE>
+    <LL_GRADE>SURVEILLANT DU 4EME GRADE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11070101</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1107</CD_CORPS>
+    <CD_CADRE>110701</CD_CADRE>
+    <LL_GRADE>PREPARATEUR DU 1ERE GRADE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11070102</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1107</CD_CORPS>
+    <CD_CADRE>110701</CD_CADRE>
+    <LL_GRADE>PREPARATEUR DU 2EME GRADE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11070103</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1107</CD_CORPS>
+    <CD_CADRE>110701</CD_CADRE>
+    <LL_GRADE>PREPARATEUR DU 3EME GRADE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11070104</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1107</CD_CORPS>
+    <CD_CADRE>110701</CD_CADRE>
+    <LL_GRADE>PREPARATEUR DU 4EME GRADE (ANCIEN.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11080101</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1108</CD_CORPS>
+    <CD_CADRE>110801</CD_CADRE>
+    <LL_GRADE>INSPECTEUR PEDAGOGIQUE DE L'ENSEIG.PRIMAIRE GRADE PRINCIPAL (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11080102</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1108</CD_CORPS>
+    <CD_CADRE>110801</CD_CADRE>
+    <LL_GRADE>INSPECTEUR PEDAGOGIQUE DE L'ENSEIG.PRIMAIRE 1ER GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11080201</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1108</CD_CORPS>
+    <CD_CADRE>110802</CD_CADRE>
+    <LL_GRADE>INSPECTEUR PEDAGOGIQUE DE L'ENSEIG.SECONDAIRE COLLEGIAL GRADE PRINCIPAL (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11080202</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1108</CD_CORPS>
+    <CD_CADRE>110802</CD_CADRE>
+    <LL_GRADE>INSPECTEUR PEDAGOGIQUE DE L'ENSEIG.SECONDAIRE COLLEGIAL 1ER GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11080301</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1108</CD_CORPS>
+    <CD_CADRE>110803</CD_CADRE>
+    <LL_GRADE>INSPECTEUR PEDAGOGIQUE DE L'ENSEIG.SECONDAIRE QUALIFIANT GRADE PRINCIPAL (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11080302</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1108</CD_CORPS>
+    <CD_CADRE>110803</CD_CADRE>
+    <LL_GRADE>INSPECTEUR PEDAGOGIQUE DE L'ENSEIG.SECONDAIRE QUALIFIANT 1ER GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11090101</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1109</CD_CORPS>
+    <CD_CADRE>110901</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DE L'ENSEIG.PRIMAIRE 1ER GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11090102</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1109</CD_CORPS>
+    <CD_CADRE>110901</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DE LENSEIG.PRIMAIRE 2EME GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11090103</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1109</CD_CORPS>
+    <CD_CADRE>110901</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DE L'ENSEIG.PRIMAIRE 3EME GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11090201</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1109</CD_CORPS>
+    <CD_CADRE>110902</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DE L'ENSEIG.SECONDAIRE COLLEGIAL 1ER GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11090202</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1109</CD_CORPS>
+    <CD_CADRE>110902</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DE L'ENSEIG.SECONDAIRE COLLEGIAL 2EME GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11090203</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1109</CD_CORPS>
+    <CD_CADRE>110902</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DE L'ENSEIG.SECONDAIRE COLLEGIAL 3EME GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11090301</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1109</CD_CORPS>
+    <CD_CADRE>110903</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DE L'ENSEIG.SECONDAIRE QUALIF.GRADE PRINCIPAL (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11090302</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1109</CD_CORPS>
+    <CD_CADRE>110903</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DE L'ENSEIG.SECONDAIRE QUALIF.1ER GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11090303</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1109</CD_CORPS>
+    <CD_CADRE>110903</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DE L'ENSEIG.SECONDAIRE QUALIF.2EME GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11090401</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1109</CD_CORPS>
+    <CD_CADRE>110904</CD_CADRE>
+    <LL_GRADE>PROFESSEUR AGREGE DE L'ENSEIG.SECONDAIRE QUALIF.GRADE PRINCIPAL (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11090402</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1109</CD_CORPS>
+    <CD_CADRE>110904</CD_CADRE>
+    <LL_GRADE>PROFESSEUR AGREGE DE L'ENSEIG.SECONDAIRE QUALIF.1ER GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11100101</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1110</CD_CORPS>
+    <CD_CADRE>111001</CD_CADRE>
+    <LL_GRADE>INTENDANT GRADE PRINCIPAL (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11100102</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1110</CD_CORPS>
+    <CD_CADRE>111001</CD_CADRE>
+    <LL_GRADE>INTENDANT 1ER GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11100103</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1110</CD_CORPS>
+    <CD_CADRE>111001</CD_CADRE>
+    <LL_GRADE>INTENDANT 2EME GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11100201</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1110</CD_CORPS>
+    <CD_CADRE>111002</CD_CADRE>
+    <LL_GRADE>INSPECTEUR DES SERVICES MATERIELS ET FINANCIERS GRADE PRINCIPAL (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11100202</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1110</CD_CORPS>
+    <CD_CADRE>111002</CD_CADRE>
+    <LL_GRADE>INSPECTEUR DES SERVICES MATERIELS ET FINANCIERS 1ER GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11110101</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1111</CD_CORPS>
+    <CD_CADRE>111101</CD_CADRE>
+    <LL_GRADE>CONSEILLERS EN ORIENTATION DE L'EDUCATION GRADE PRINCIPAL (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11110102</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1111</CD_CORPS>
+    <CD_CADRE>111101</CD_CADRE>
+    <LL_GRADE>CONSEILLERS EN ORIENTATION DE L'EDUCATION 1ER GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11110103</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1111</CD_CORPS>
+    <CD_CADRE>111101</CD_CADRE>
+    <LL_GRADE>CONSEILLERS EN ORIENTATION DE L'EDUCATION 2EME GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11110201</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1111</CD_CORPS>
+    <CD_CADRE>111102</CD_CADRE>
+    <LL_GRADE>INSPECTEUR EN ORIENTATION DE L'EDUCATION GRADE PRINCIPAL (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11110202</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1111</CD_CORPS>
+    <CD_CADRE>111102</CD_CADRE>
+    <LL_GRADE>INSPECTEUR EN ORIENTATION DE L'EDUCATION 1ER GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11110301</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1111</CD_CORPS>
+    <CD_CADRE>111103</CD_CADRE>
+    <LL_GRADE>CONSEILLERS EN PLANIFICATION DE L'EDUCATION GRADE PRINCIPAL (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11110302</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1111</CD_CORPS>
+    <CD_CADRE>111103</CD_CADRE>
+    <LL_GRADE>CONSEILLERS EN PLANIFICATION DE L'EDUCATION 1ER GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11110303</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1111</CD_CORPS>
+    <CD_CADRE>111103</CD_CADRE>
+    <LL_GRADE>CONSEILLERS EN PLANIFICATION DE L'EDUCATION 2EME GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11110401</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1111</CD_CORPS>
+    <CD_CADRE>111104</CD_CADRE>
+    <LL_GRADE>INSPECTEUR EN PLANIFICATION DE L'EDUCATION GRADE PRINCIPAL (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11110402</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1111</CD_CORPS>
+    <CD_CADRE>111104</CD_CADRE>
+    <LL_GRADE>INSPECTEUR EN PLANIFICATION DE L'EDUCATION 1ER GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11120101</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1112</CD_CORPS>
+    <CD_CADRE>111201</CD_CADRE>
+    <LL_GRADE>ATTACHE PEDAGOGIQUE 1ER GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11120102</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1112</CD_CORPS>
+    <CD_CADRE>111201</CD_CADRE>
+    <LL_GRADE>ATTACHE PEDAGOGIQUE 2EME GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11120103</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1112</CD_CORPS>
+    <CD_CADRE>111201</CD_CADRE>
+    <LL_GRADE>ATTACHE PEDAGOGIQUE 3EME GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11120201</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1112</CD_CORPS>
+    <CD_CADRE>111202</CD_CADRE>
+    <LL_GRADE>ATTACHE D'ECONOMIE ET D'ADMINISTRATION 1ER GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11120202</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1112</CD_CORPS>
+    <CD_CADRE>111202</CD_CADRE>
+    <LL_GRADE>ATTACHE D'ECONOMIE ET D'ADMINISTRATION 2EME GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11120203</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1112</CD_CORPS>
+    <CD_CADRE>111202</CD_CADRE>
+    <LL_GRADE>ATTACHE D'ECONOMIE ET D'ADMINISTRATION 3EME GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11120301</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1112</CD_CORPS>
+    <CD_CADRE>111203</CD_CADRE>
+    <LL_GRADE>ATTACHE SOCIAL 1ER GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11120302</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1112</CD_CORPS>
+    <CD_CADRE>111203</CD_CADRE>
+    <LL_GRADE>ATTACHE SOCIAL 2EME GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11120303</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1112</CD_CORPS>
+    <CD_CADRE>111203</CD_CADRE>
+    <LL_GRADE>ATTACHE SOCIAL 3EME GRADE (NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11120401</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1112</CD_CORPS>
+    <CD_CADRE>111204</CD_CADRE>
+    <LL_GRADE>ADMINISTRATEUR PEDAGOGIQUE GRADE PRINCIPAL</LL_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11120402</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1112</CD_CORPS>
+    <CD_CADRE>111204</CD_CADRE>
+    <LL_GRADE>ADMINISTRATEUR PEDAGOGIQUE 1 ER GRADE</LL_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>11120403</CD_GRADE>
+    <CD_CATEG>11</CD_CATEG>
+    <CD_CORPS>1112</CD_CORPS>
+    <CD_CADRE>111204</CD_CADRE>
+    <LL_GRADE>ADMINISTRATEUR PEDAGOGIQUE 2 EME GRADE</LL_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>13030102</CD_GRADE>
+    <CD_CATEG>13</CD_CATEG>
+    <CD_CORPS>1303</CD_CORPS>
+    <CD_CADRE>130301</CD_CADRE>
+    <LL_GRADE>Corps de l'inspection generale des Finances</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>13030103</CD_GRADE>
+    <CD_CATEG>13</CD_CATEG>
+    <CD_CORPS>1303</CD_CORPS>
+    <CD_CADRE>130301</CD_CADRE>
+    <LL_GRADE>Corps de l'inspection generale des Finances</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98000101</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9800</CD_CORPS>
+    <CD_CADRE>980001</CD_CADRE>
+    <LL_GRADE>ADMINISTRATEUR PRINCIPAL</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98000102</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9800</CD_CORPS>
+    <CD_CADRE>980001</CD_CADRE>
+    <LL_GRADE>ADMINISTRATEUR</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98000201</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9800</CD_CORPS>
+    <CD_CADRE>980002</CD_CADRE>
+    <LL_GRADE>ADMINISTRATEUR ADJOINT</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98000301</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9800</CD_CORPS>
+    <CD_CADRE>980003</CD_CADRE>
+    <LL_GRADE>REDACTEUR PRINCIPAL</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98000302</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9800</CD_CORPS>
+    <CD_CADRE>980003</CD_CADRE>
+    <LL_GRADE>REDACTEUR</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98000401</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9800</CD_CORPS>
+    <CD_CADRE>980004</CD_CADRE>
+    <LL_GRADE>SECRETAIRE PRINCIPAL</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98000402</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9800</CD_CORPS>
+    <CD_CADRE>980004</CD_CADRE>
+    <LL_GRADE>SECRETAIRE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98000499</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9800</CD_CORPS>
+    <CD_CADRE>980004</CD_CADRE>
+    <LL_GRADE>SECRETAIRE  PRINCIPAL- ECHELLE  7</LL_GRADE>
+    <ECHELLE>7</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98000501</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9800</CD_CORPS>
+    <CD_CADRE>980005</CD_CADRE>
+    <LL_GRADE>AGENT D'EXECUTION PRINCIPAL</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98000502</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9800</CD_CORPS>
+    <CD_CADRE>980005</CD_CADRE>
+    <LL_GRADE>AGENT D'EXECUTION</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98000601</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9800</CD_CORPS>
+    <CD_CADRE>980006</CD_CADRE>
+    <LL_GRADE>AGENT DE SERVICE PRINCIPAL</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98000602</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9800</CD_CORPS>
+    <CD_CADRE>980006</CD_CADRE>
+    <LL_GRADE>AGENT DE SERVICE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98010101</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9801</CD_CORPS>
+    <CD_CADRE>980101</CD_CADRE>
+    <LL_GRADE>AGENT PUBLIC HORS CATEGORIE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98010102</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9801</CD_CORPS>
+    <CD_CADRE>980101</CD_CADRE>
+    <LL_GRADE>AGENT PUBLIC DE 1ERE CATEGORIE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98010103</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9801</CD_CORPS>
+    <CD_CADRE>980101</CD_CADRE>
+    <LL_GRADE>AGENT PUBLIC DE 2EME CATEGORIE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98010104</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9801</CD_CORPS>
+    <CD_CADRE>980101</CD_CADRE>
+    <LL_GRADE>AGENT PUBLIC DE 3EME CATEGORIE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98010105</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9801</CD_CORPS>
+    <CD_CADRE>980101</CD_CADRE>
+    <LL_GRADE>AGENT PUBLIC DE 4EME CATEGORIE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98010106</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9801</CD_CORPS>
+    <CD_CADRE>980101</CD_CADRE>
+    <LL_GRADE>AGENT PUBLIC HORS CATEGORIE PRINCIPAL</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98020101</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9802</CD_CORPS>
+    <CD_CADRE>980201</CD_CADRE>
+    <LL_GRADE>CHEF D'ATELIER</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98020102</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9802</CD_CORPS>
+    <CD_CADRE>980201</CD_CADRE>
+    <LL_GRADE>CHEF D'ATELIER PRINCIPAL</LL_GRADE>
+    <ECHELLE>10</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98020201</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9802</CD_CORPS>
+    <CD_CADRE>980202</CD_CADRE>
+    <LL_GRADE>CONTREMAITRE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98020202</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9802</CD_CORPS>
+    <CD_CADRE>980202</CD_CADRE>
+    <LL_GRADE>AGENT DE MAITRISE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98020301</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9802</CD_CORPS>
+    <CD_CADRE>980203</CD_CADRE>
+    <LL_GRADE>AGENT SPECIALISE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98020401</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9802</CD_CORPS>
+    <CD_CADRE>980204</CD_CADRE>
+    <LL_GRADE>AIDE IMPRIMEUR</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98020501</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9802</CD_CORPS>
+    <CD_CADRE>980205</CD_CADRE>
+    <LL_GRADE>AGENT DE MANUTENTION</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98029901</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9802</CD_CORPS>
+    <CD_CADRE>980299</CD_CADRE>
+    <LL_GRADE>CHEF D ATELIER- ECHELLE 8 -IMPRIMERIE-</LL_GRADE>
+    <ECHELLE>8</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98029902</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9802</CD_CORPS>
+    <CD_CADRE>980299</CD_CADRE>
+    <LL_GRADE>AGENT PRINCIPAL DE MAITRISE-ECHELLE 7 -IMPRIMERIE</LL_GRADE>
+    <ECHELLE>7</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98029903</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9802</CD_CORPS>
+    <CD_CADRE>980299</CD_CADRE>
+    <LL_GRADE>AGENT DE MAITRISE-ECHELLE 6 -IMPRIMERIE</LL_GRADE>
+    <ECHELLE>6</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>98029904</CD_GRADE>
+    <CD_CATEG>98</CD_CATEG>
+    <CD_CORPS>9802</CD_CORPS>
+    <CD_CADRE>980299</CD_CADRE>
+    <LL_GRADE>AGENT SPECIALISE -ECHELLE E 5 -IMPRIMERIE</LL_GRADE>
+    <ECHELLE>5</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99009901</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9900</CD_CORPS>
+    <CD_CADRE>990099</CD_CADRE>
+    <LL_GRADE>CARTOGRAPHE PRINCIPAL</LL_GRADE>
+    <ECHELLE>9</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99010101</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9901</CD_CORPS>
+    <CD_CADRE>990101</CD_CADRE>
+    <LL_GRADE>EMPLOI SUPERIEUR D'INGENIEUR GENERAL</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99010199</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9901</CD_CORPS>
+    <CD_CADRE>990101</CD_CADRE>
+    <LL_GRADE>INGENIEUR GENERAL AS</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99010201</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9901</CD_CORPS>
+    <CD_CADRE>990102</CD_CADRE>
+    <LL_GRADE>INGENIEUR EN CHEF</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99010301</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9901</CD_CORPS>
+    <CD_CADRE>990103</CD_CADRE>
+    <LL_GRADE>INGENIEUR D'ETAT GRADE PRINCIPAL</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99010302</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9901</CD_CORPS>
+    <CD_CADRE>990103</CD_CADRE>
+    <LL_GRADE>INGENIEUR D'ETAT 1ER GRADE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99010399</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9901</CD_CORPS>
+    <CD_CADRE>990103</CD_CADRE>
+    <LL_GRADE>INGENIEUR D ETAT - ECHELLE 11</LL_GRADE>
+    <ECHELLE>11</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99010401</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9901</CD_CORPS>
+    <CD_CADRE>990104</CD_CADRE>
+    <LL_GRADE>INGENIEUR D'APPLICATION GRADE PRINCIPAL</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99010402</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9901</CD_CORPS>
+    <CD_CADRE>990104</CD_CADRE>
+    <LL_GRADE>INGENIEUR D'APPLICATION 1ER GRADE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99010499</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9901</CD_CORPS>
+    <CD_CADRE>990104</CD_CADRE>
+    <LL_GRADE>INGENIEUR D APPLICATION - ECHELLE 10</LL_GRADE>
+    <ECHELLE>10</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99010501</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9901</CD_CORPS>
+    <CD_CADRE>990105</CD_CADRE>
+    <LL_GRADE>EMPLOI SUPERIEUR D'ARCHITECTE GENERAL</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99010601</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9901</CD_CORPS>
+    <CD_CADRE>990106</CD_CADRE>
+    <LL_GRADE>ARCHITECTE EN CHEF</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99010701</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9901</CD_CORPS>
+    <CD_CADRE>990107</CD_CADRE>
+    <LL_GRADE>ARCHITECTE GRADE PRINCIPAL</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99010702</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9901</CD_CORPS>
+    <CD_CADRE>990107</CD_CADRE>
+    <LL_GRADE>ARCHITECTE PREMIER GRADE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99010799</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9901</CD_CORPS>
+    <CD_CADRE>990107</CD_CADRE>
+    <LL_GRADE>ARCHITECTE - ECHELLE 11</LL_GRADE>
+    <ECHELLE>11</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99020101</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9902</CD_CORPS>
+    <CD_CADRE>990201</CD_CADRE>
+    <LL_GRADE>EMPLOI SUPERIEUR D'ANALYSTE CONCEPTEUR GENERAL</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99020102</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9902</CD_CORPS>
+    <CD_CADRE>990201</CD_CADRE>
+    <LL_GRADE>ANALYSTE CONCEPTEUR PRINCIPAL</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99020103</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9902</CD_CORPS>
+    <CD_CADRE>990201</CD_CADRE>
+    <LL_GRADE>ANALYSTE CONCEPTEUR</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99020201</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9902</CD_CORPS>
+    <CD_CADRE>990202</CD_CADRE>
+    <LL_GRADE>ANALYSTE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99020301</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9902</CD_CORPS>
+    <CD_CADRE>990203</CD_CADRE>
+    <LL_GRADE>PROGRAMMEUR PRINCIPAL</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99020302</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9902</CD_CORPS>
+    <CD_CADRE>990203</CD_CADRE>
+    <LL_GRADE>PROGRAMMEUR</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99020303</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9902</CD_CORPS>
+    <CD_CADRE>990203</CD_CADRE>
+    <LL_GRADE>PROGRAMMEUR ANALYSTE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99020401</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9902</CD_CORPS>
+    <CD_CADRE>990204</CD_CADRE>
+    <LL_GRADE>MONITEUR</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99020501</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9902</CD_CORPS>
+    <CD_CADRE>990205</CD_CADRE>
+    <LL_GRADE>OPERATEUR PRINCIPAL</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99020502</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9902</CD_CORPS>
+    <CD_CADRE>990205</CD_CADRE>
+    <LL_GRADE>OPERATEUR</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99030101</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9903</CD_CORPS>
+    <CD_CADRE>990301</CD_CADRE>
+    <LL_GRADE>INFORMATISTE PRINCIPAL</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99030102</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9903</CD_CORPS>
+    <CD_CADRE>990301</CD_CADRE>
+    <LL_GRADE>INFORMATISTE SPECIALISE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99030103</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9903</CD_CORPS>
+    <CD_CADRE>990301</CD_CADRE>
+    <LL_GRADE>INFORMATISTE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99040001</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9904</CD_CORPS>
+    <CD_CADRE>990400</CD_CADRE>
+    <LL_GRADE>TECHNICIEN PRINCIPAL</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99040002</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9904</CD_CORPS>
+    <CD_CADRE>990400</CD_CADRE>
+    <LL_GRADE>Grade2</LL_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99040003</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9904</CD_CORPS>
+    <CD_CADRE>990400</CD_CADRE>
+    <LL_GRADE>Grade1</LL_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99040004</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9904</CD_CORPS>
+    <CD_CADRE>990400</CD_CADRE>
+    <LL_GRADE>ADJOINT TECHNIQUE SPECIALISE (EN VOIE D'EXTINCTION)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99040005</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9904</CD_CORPS>
+    <CD_CADRE>990400</CD_CADRE>
+    <LL_GRADE>ADJOINT TECHNIQUE (EN VOIE D'EXTINCTION)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99040006</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9904</CD_CORPS>
+    <CD_CADRE>990400</CD_CADRE>
+    <LL_GRADE>TECHNICIEN DE 1ER GRADE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99040007</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9904</CD_CORPS>
+    <CD_CADRE>990400</CD_CADRE>
+    <LL_GRADE>TECHNICIEN DE 2EME GRADE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99040008</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9904</CD_CORPS>
+    <CD_CADRE>990400</CD_CADRE>
+    <LL_GRADE>TECHNICIEN DE 3EME GRADE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99040009</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9904</CD_CORPS>
+    <CD_CADRE>990400</CD_CADRE>
+    <LL_GRADE>TECHNICIEN DE 4EME GRADE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99050101</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9905</CD_CORPS>
+    <CD_CADRE>990501</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DES ETABLISSEMENTS DE FORMATION DES CADRES DU GRADE B</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99050102</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9905</CD_CORPS>
+    <CD_CADRE>990501</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DES ETABLISSEMENTS DE FORMATION DES CADRES DU GRADE A</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99050199</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9905</CD_CORPS>
+    <CD_CADRE>990501</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DES E.F.C -( ST DU 01/10/75 )</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99050201</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9905</CD_CORPS>
+    <CD_CADRE>990502</CD_CADRE>
+    <LL_GRADE>MAITRE DE CONFERENCE DES ETABLISSEMENTS DE FORMATION DES CADRES</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99050299</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9905</CD_CORPS>
+    <CD_CADRE>990502</CD_CADRE>
+    <LL_GRADE>MAITRE DE CONFERENCE DES E.F.C. (A.S )</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99050301</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9905</CD_CORPS>
+    <CD_CADRE>990503</CD_CADRE>
+    <LL_GRADE>MAITRE ASSISTANT DES ETABLISSEMENTS DE FORMATION DES CADRES DU GRADE C</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99050302</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9905</CD_CORPS>
+    <CD_CADRE>990503</CD_CADRE>
+    <LL_GRADE>MAITRE ASSISTANT DES ETABLISSEMENTS DE FORMATION DES CADRES DU GRADE B</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99050303</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9905</CD_CORPS>
+    <CD_CADRE>990503</CD_CADRE>
+    <LL_GRADE>MAITRE ASSISTANT DES ETABLISSEMENTS DE FORMATION DES CADRES DU GRADE A</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99050399</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9905</CD_CORPS>
+    <CD_CADRE>990503</CD_CADRE>
+    <LL_GRADE>MAITRE-ASSISTANT DES E.F.C. - ECHELLE 11</LL_GRADE>
+    <ECHELLE>11</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99050401</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9905</CD_CORPS>
+    <CD_CADRE>990504</CD_CADRE>
+    <LL_GRADE>ASSISTANT DES ETABLISSEMENTS DE FORMATION DES CADRES DU GRADE B</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99050402</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9905</CD_CORPS>
+    <CD_CADRE>990504</CD_CADRE>
+    <LL_GRADE>ASSISTANT DES ETABLISSEMENTS DE FORMATION DES CADRES A</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99050499</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9905</CD_CORPS>
+    <CD_CADRE>990504</CD_CADRE>
+    <LL_GRADE>ASSISTANT DES E.F.C.- ECHELLE 10</LL_GRADE>
+    <ECHELLE>10</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99060101</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9906</CD_CORPS>
+    <CD_CADRE>990601</CD_CADRE>
+    <LL_GRADE>DIRECTEUR DE CABINET</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99060102</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9906</CD_CORPS>
+    <CD_CADRE>990601</CD_CADRE>
+    <LL_GRADE>CHEF DE CABINET</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99060103</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9906</CD_CORPS>
+    <CD_CADRE>990601</CD_CADRE>
+    <LL_GRADE>CONSEILLER TECHNIQUE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99060104</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9906</CD_CORPS>
+    <CD_CADRE>990601</CD_CADRE>
+    <LL_GRADE>ATTACHE DE CABINET</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99060105</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9906</CD_CORPS>
+    <CD_CADRE>990601</CD_CADRE>
+    <LL_GRADE>CHARGE DE MISSION</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99060106</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9906</CD_CORPS>
+    <CD_CADRE>990601</CD_CADRE>
+    <LL_GRADE>CHEF DE SECRETARIAT PARTICULIER</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99060107</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9906</CD_CORPS>
+    <CD_CADRE>990601</CD_CADRE>
+    <LL_GRADE>CONSEILLER JURIDIQUE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99060108</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9906</CD_CORPS>
+    <CD_CADRE>990601</CD_CADRE>
+    <LL_GRADE>CONSEILLER AUX AFFAIRES PARLEMENTAIRES</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99060109</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9906</CD_CORPS>
+    <CD_CADRE>990601</CD_CADRE>
+    <LL_GRADE>CONSEILLER A LA COMMUNICATION</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99060110</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9906</CD_CORPS>
+    <CD_CADRE>990601</CD_CADRE>
+    <LL_GRADE>ATTACHE DE PRESSE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99060201</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9906</CD_CORPS>
+    <CD_CADRE>990602</CD_CADRE>
+    <LL_GRADE>SECRETAIRE PRINCIPAL</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99060202</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9906</CD_CORPS>
+    <CD_CADRE>990602</CD_CADRE>
+    <LL_GRADE>SECRETAIRE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99060203</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9906</CD_CORPS>
+    <CD_CADRE>990602</CD_CADRE>
+    <LL_GRADE>AGENT D'EXECUTION</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99060204</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9906</CD_CORPS>
+    <CD_CADRE>990602</CD_CADRE>
+    <LL_GRADE>AGENT PUBLIC DE 3EME CATEGORIE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99060205</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9906</CD_CORPS>
+    <CD_CADRE>990602</CD_CADRE>
+    <LL_GRADE>AGENT DE SERVICE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99060301</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9906</CD_CORPS>
+    <CD_CADRE>990603</CD_CADRE>
+    <LL_GRADE>AGENT PUBLIC DE 1ER CATEGORIE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99060302</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9906</CD_CORPS>
+    <CD_CADRE>990603</CD_CADRE>
+    <LL_GRADE>AGENT PUBLIC DE 2EME CATEGORIE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99060303</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9906</CD_CORPS>
+    <CD_CADRE>990603</CD_CADRE>
+    <LL_GRADE>AGENT PUBLIC DE 4EME CATEGORIE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99070101</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9907</CD_CORPS>
+    <CD_CADRE>990701</CD_CADRE>
+    <LL_GRADE>CIVILISTE (ECHELLE 11)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99070102</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9907</CD_CORPS>
+    <CD_CADRE>990701</CD_CADRE>
+    <LL_GRADE>CIVILISTE (ECHELLE 10)</LL_GRADE>
+    <LA_GRADE>كاتب ممتاز</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99070103</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9907</CD_CORPS>
+    <CD_CADRE>990701</CD_CADRE>
+    <LL_GRADE>CIVILISTE (ECHELLE 8)</LL_GRADE>
+    <LA_GRADE>عون التنفيذ</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99070201</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9907</CD_CORPS>
+    <CD_CADRE>990702</CD_CADRE>
+    <LL_GRADE>AGENTS CONTRAT</LL_GRADE>
+    <LA_GRADE>عون خدمة</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99070299</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9907</CD_CORPS>
+    <CD_CADRE>990702</CD_CADRE>
+    <LL_GRADE>GRADE AVANT 01/04/1967</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99080101</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9908</CD_CORPS>
+    <CD_CADRE>990801</CD_CADRE>
+    <LL_GRADE>AGENT PERMANENT</LL_GRADE>
+    <LA_GRADE>مساعد تقني الصنف الاول</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99080102</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9908</CD_CORPS>
+    <CD_CADRE>990801</CD_CADRE>
+    <LL_GRADE>AGENT PERMANENT PERSONNEL TECHNIQUE ET DE MAITRISE</LL_GRADE>
+    <LA_GRADE>مساعد تقني الصنف  الثالث</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99080103</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9908</CD_CORPS>
+    <CD_CADRE>990801</CD_CADRE>
+    <LL_GRADE>PERSONNEL OUVRIER PERMANENT</LL_GRADE>
+    <LA_GRADE>مساعد تقني خارج الصنف ممتاز</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99090101</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9909</CD_CORPS>
+    <CD_CADRE>990901</CD_CADRE>
+    <LL_GRADE>INSPECTEUR DE PREMIER GRADE</LL_GRADE>
+    <LA_GRADE>مساعد مطباعي</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99090102</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9909</CD_CORPS>
+    <CD_CADRE>990901</CD_CADRE>
+    <LL_GRADE>INSPECTEUR DE DEUXIEME GRADE</LL_GRADE>
+    <LA_GRADE>خليفة الدرجة الأولى</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99090103</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9909</CD_CORPS>
+    <CD_CADRE>990901</CD_CADRE>
+    <LL_GRADE>INSPECTEUR DE TROISIEME GRADE</LL_GRADE>
+    <LA_GRADE>مهندس رئيسي</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99090201</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9909</CD_CORPS>
+    <CD_CADRE>990902</CD_CADRE>
+    <LL_GRADE>CONSEILLER EN ORIENTATION ET EN PLANIFICATION PROFESSIONNELLE</LL_GRADE>
+    <LA_GRADE>مهندس الدولة  الدرجة الممتازة</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99090301</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9909</CD_CORPS>
+    <CD_CADRE>990903</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DU PREMIER GRADE</LL_GRADE>
+    <LA_GRADE>مهندس التطبيق الدرجة الاولى</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99090302</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9909</CD_CORPS>
+    <CD_CADRE>990903</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DU DEUXIEME GRADE</LL_GRADE>
+    <LA_GRADE>مهندس معماري رئيسي</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99090303</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9909</CD_CORPS>
+    <CD_CADRE>990903</CD_CADRE>
+    <LL_GRADE>PROFESSEUR DU TROISIEME GRADE</LL_GRADE>
+    <LA_GRADE>مهندس معماري الدرجة الاولى</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99090401</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9909</CD_CORPS>
+    <CD_CADRE>990904</CD_CADRE>
+    <LL_GRADE>CHEF DE TRAVAUX DE PREMIER GRADE</LL_GRADE>
+    <LA_GRADE>محلل منظم رئيسي</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99090402</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9909</CD_CORPS>
+    <CD_CADRE>990904</CD_CADRE>
+    <LL_GRADE>CHEF DE TRAVAUX DE DEUXIEME GRADE</LL_GRADE>
+    <LA_GRADE>مبرمج  محلل</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99090403</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9909</CD_CORPS>
+    <CD_CADRE>990904</CD_CADRE>
+    <LL_GRADE>CHEF DE TRAVAUX DE TROISIEME GRADE</LL_GRADE>
+    <LA_GRADE>عامل ميكانيكي</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99100101</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9910</CD_CORPS>
+    <CD_CADRE>991001</CD_CADRE>
+    <LL_GRADE>PROF.DE L'ENS.SUP.GRADE C (F_C.NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE>اعلأمي مختص</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99100102</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9910</CD_CORPS>
+    <CD_CADRE>991001</CD_CADRE>
+    <LL_GRADE>PROF.DE L'ENS.SUP.GRADE B (F_C.NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE>تقني الد رجة الاولى</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99100103</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9910</CD_CORPS>
+    <CD_CADRE>991001</CD_CADRE>
+    <LL_GRADE>PRO. DE L'ENS.SUP.GRADE A (F_C.NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE>مساعد تقني مختص</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99100201</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9910</CD_CORPS>
+    <CD_CADRE>991002</CD_CADRE>
+    <LL_GRADE>PROFESSEUR HABILITE GRADE C (F_C.NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE>   B   لأستاذ مؤسسات تكوين الأطر الدرجة</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99100202</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9910</CD_CORPS>
+    <CD_CADRE>991002</CD_CADRE>
+    <LL_GRADE>PROFESSEUR HABILITE GRADE B (F_C.NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE>استاذ لمؤسسات تكوين الأطر</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99100203</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9910</CD_CORPS>
+    <CD_CADRE>991002</CD_CADRE>
+    <LL_GRADE>PROFESSEUR HABILITE GRADE A (F_C.NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE>B  أستاذ مؤسسات تكوين الأطر الدرجة</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99100301</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9910</CD_CORPS>
+    <CD_CADRE>991003</CD_CADRE>
+    <LL_GRADE>PROFESSEUR ASSISTANT GRADE D (F_C.NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE> B مساعد بمؤسسات التكوين المهني الدرجة</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99100302</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9910</CD_CORPS>
+    <CD_CADRE>991003</CD_CADRE>
+    <LL_GRADE>PROFESSEUR ASSISTANT GRADE C (F_C.NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE>ملحق بالديوان</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99100303</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9910</CD_CORPS>
+    <CD_CADRE>991003</CD_CADRE>
+    <LL_GRADE>PROFESSEUR ASSISTANT GRADE B (F_C.NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE>رئيس الكتابة الخاصة</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99100304</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9910</CD_CORPS>
+    <CD_CADRE>991003</CD_CADRE>
+    <LL_GRADE>PROFESSEUR ASSISTANT GRADE A (F_C.NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE>مستشار في الشؤون البرلمانية</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99110101</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9911</CD_CORPS>
+    <CD_CADRE>991101</CD_CADRE>
+    <LL_GRADE>MEDECIN HORS GRADE(NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE>كاتب</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99110102</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9911</CD_CORPS>
+    <CD_CADRE>991101</CD_CADRE>
+    <LL_GRADE>MEDECIN GRADE EXCEPTIONNEL(NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE>عون عمومي الصنف  الثالث</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99110103</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9911</CD_CORPS>
+    <CD_CADRE>991101</CD_CADRE>
+    <LL_GRADE>MEDECIN GRADE PRINCIPAL(NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE> Cأستــاذ التعلــيم العـــالي الدرجـــة</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99110104</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9911</CD_CORPS>
+    <CD_CADRE>991101</CD_CADRE>
+    <LL_GRADE>MEDECIN PREMIER GRADE(NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99110201</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9911</CD_CORPS>
+    <CD_CADRE>991102</CD_CADRE>
+    <LL_GRADE>PHARMACIEN HORS GRADE(NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99110202</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9911</CD_CORPS>
+    <CD_CADRE>991102</CD_CADRE>
+    <LL_GRADE>PHARMACIEN GRADE EXCEPTIONNEL(NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE> C   أستــاذ مســـاعــد الدرجـــة</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99110203</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9911</CD_CORPS>
+    <CD_CADRE>991102</CD_CADRE>
+    <LL_GRADE>PHARMACIEN GRADE PRINCIPAL(NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE> A أستــاذ مســـاعــد الدرجـــة</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99110204</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9911</CD_CORPS>
+    <CD_CADRE>991102</CD_CADRE>
+    <LL_GRADE>PHARMACIEN PREMIER GRADE(NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99110301</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9911</CD_CORPS>
+    <CD_CADRE>991103</CD_CADRE>
+    <LL_GRADE>CHIRURGIEN DENTISTE HORS GRADE(NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99110302</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9911</CD_CORPS>
+    <CD_CADRE>991103</CD_CADRE>
+    <LL_GRADE>CHIRURGIEN DENTISTE GRADE EXCEPTIONNEL(NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99110303</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9911</CD_CORPS>
+    <CD_CADRE>991103</CD_CADRE>
+    <LL_GRADE>CHIRURGIEN DENTISTE GRADE PRINCIPAL(NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99110304</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9911</CD_CORPS>
+    <CD_CADRE>991103</CD_CADRE>
+    <LL_GRADE>CHIRURGIEN DENTISTE PREMIER GRADE(NOUV.STATUT)</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99120101</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9912</CD_CORPS>
+    <CD_CADRE>991201</CD_CADRE>
+    <LL_GRADE>MEDECIN VETERINAIRE HORS GRADE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99120102</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9912</CD_CORPS>
+    <CD_CADRE>991201</CD_CADRE>
+    <LL_GRADE>MEDECIN VETERINAIRE GRADE EXCEPTIONNEL</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99120103</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9912</CD_CORPS>
+    <CD_CADRE>991201</CD_CADRE>
+    <LL_GRADE>MEDECIN VETERINAIRE GRADE PRINCIPAL</LL_GRADE>
+    <LA_GRADE>تقنى من الدرجة   الثالثة</LA_GRADE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99120104</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9912</CD_CORPS>
+    <CD_CADRE>991201</CD_CADRE>
+    <LL_GRADE>MEDECIN VETERINAIRE PREMIER GRADE</LL_GRADE>
+    <LA_GRADE />
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99130101</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9913</CD_CORPS>
+    <CD_CADRE>991301</CD_CADRE>
+    <LL_GRADE>Emploi supérieur d'administrateur général</LL_GRADE>
+    <LA_GRADE>منصب سامي لمتصرف عام</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99130201</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9913</CD_CORPS>
+    <CD_CADRE>991302</CD_CADRE>
+    <LL_GRADE>ADMINISTRATEUR DE 1ER GRADE</LL_GRADE>
+    <LA_GRADE>متصرف من الدرجة الأولى</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99130202</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9913</CD_CORPS>
+    <CD_CADRE>991302</CD_CADRE>
+    <LL_GRADE>ADMINISTRATEUR DE 2EME GRADE</LL_GRADE>
+    <LA_GRADE>متصرف من الدرجة الثانية</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99130203</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9913</CD_CORPS>
+    <CD_CADRE>991302</CD_CADRE>
+    <LL_GRADE>ADMINISTRATEUR DE 3EME GRADE</LL_GRADE>
+    <LA_GRADE>متصرف من الدرجة الثالثة</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99140101</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9914</CD_CORPS>
+    <CD_CADRE>991401</CD_CADRE>
+    <LL_GRADE>REDACTEUR 1ER GRADE</LL_GRADE>
+    <LA_GRADE>محرر من الدرجة الأولى</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99140102</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9914</CD_CORPS>
+    <CD_CADRE>991401</CD_CADRE>
+    <LL_GRADE>REDACTEUR 2EME GRADE</LL_GRADE>
+    <LA_GRADE>محرر من الدرجة الثانية</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99140103</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9914</CD_CORPS>
+    <CD_CADRE>991401</CD_CADRE>
+    <LL_GRADE>REDACTEUR 3EME GRADE</LL_GRADE>
+    <LA_GRADE>محرر من الدرجة الثالثة</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99140104</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9914</CD_CORPS>
+    <CD_CADRE>991401</CD_CADRE>
+    <LL_GRADE>REDACTEUR 4EME GRADE</LL_GRADE>
+    <LA_GRADE>محرر من الدرجة الرابعة</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99150101</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9915</CD_CORPS>
+    <CD_CADRE>991501</CD_CADRE>
+    <LL_GRADE>ADJOINT TECHNIQUE 1ER GRADE</LL_GRADE>
+    <LA_GRADE>مساعد تقني من الدرجة الأولى</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99150102</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9915</CD_CORPS>
+    <CD_CADRE>991501</CD_CADRE>
+    <LL_GRADE>ADJOINT TECHNIQUE 2EME GRADE</LL_GRADE>
+    <LA_GRADE>مساعد تقني من الدرجة الثانية</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99150103</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9915</CD_CORPS>
+    <CD_CADRE>991501</CD_CADRE>
+    <LL_GRADE>ADJOINT TECHNIQUE 3EME GRADE</LL_GRADE>
+    <LA_GRADE>مساعد تقني من الدرجة الثالثة</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99150104</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9915</CD_CORPS>
+    <CD_CADRE>991501</CD_CADRE>
+    <LL_GRADE>ADJOINT TECHNIQUE 4EME GRADE</LL_GRADE>
+    <LA_GRADE>مساعد تقني من الدرجة الرابعة</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99160101</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9916</CD_CORPS>
+    <CD_CADRE>991601</CD_CADRE>
+    <LL_GRADE>ADJOINT ADMINISTRATIF 1ER GRADE</LL_GRADE>
+    <LA_GRADE>مساعد إداري من الدرجة الأولى</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99160102</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9916</CD_CORPS>
+    <CD_CADRE>991601</CD_CADRE>
+    <LL_GRADE>ADJOINT ADMINISTRATIF 2EME GRADE</LL_GRADE>
+    <LA_GRADE>مساعد إداري من الدرجة الثانية</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99160103</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9916</CD_CORPS>
+    <CD_CADRE>991601</CD_CADRE>
+    <LL_GRADE>ADJOINT ADMINISTRATIF 3EME GRADE</LL_GRADE>
+    <LA_GRADE>مساعد إداري من الدرجة الثالثة</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99160104</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9916</CD_CORPS>
+    <CD_CADRE>991601</CD_CADRE>
+    <LL_GRADE>ADJOINT ADMINISTRATIF 4EME GRADE</LL_GRADE>
+    <LA_GRADE>مساعد إداري من الدرجة الرابعة</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99170101</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9917</CD_CORPS>
+    <CD_CADRE>991701</CD_CADRE>
+    <LL_GRADE>EMPLOI SUPERIEUR D'INGENIEUR GENERAL (NOUVEAU STATUT)</LL_GRADE>
+    <LA_GRADE>منصب سامي لمهندس عام</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99170201</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9917</CD_CORPS>
+    <CD_CADRE>991702</CD_CADRE>
+    <LL_GRADE>INGENIEUR EN CHEF GRADE PRINCIPAL</LL_GRADE>
+    <LA_GRADE>مهندس رئيسي الدرجة الممتازة</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99170202</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9917</CD_CORPS>
+    <CD_CADRE>991702</CD_CADRE>
+    <LL_GRADE>INGENIEUR EN CHEF 1er GRADE</LL_GRADE>
+    <LA_GRADE>مهندس رئيسي الدرجة الأولى</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99170301</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9917</CD_CORPS>
+    <CD_CADRE>991703</CD_CADRE>
+    <LL_GRADE>INGENIEUR D'ETAT GRADE PRINCIPAL (NOUVEAU STATUT)</LL_GRADE>
+    <LA_GRADE>مهندس الدولة الدرجة الممتازة</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99170302</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9917</CD_CORPS>
+    <CD_CADRE>991703</CD_CADRE>
+    <LL_GRADE>INGENIEUR D'ETAT 1ER GRADE (NOUVEAU STATUT)</LL_GRADE>
+    <LA_GRADE>مهندس الدولة الدرجة الأولى</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99170401</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9917</CD_CORPS>
+    <CD_CADRE>991704</CD_CADRE>
+    <LL_GRADE>EMPLOI SUPERIEUR D'ARCHITECTE GENERAL (NOUVEAU STATUT)</LL_GRADE>
+    <LA_GRADE>منصب سامي لمهندس معماري عام</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99170501</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9917</CD_CORPS>
+    <CD_CADRE>991705</CD_CADRE>
+    <LL_GRADE>ARCHITECTE EN CHEF GRADE PRINCIPAL</LL_GRADE>
+    <LA_GRADE>مهندس معماري  رئيسي الدرجة الممتازة</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99170502</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9917</CD_CORPS>
+    <CD_CADRE>991705</CD_CADRE>
+    <LL_GRADE>ARCHITECTE EN CHEF 1er GRADE</LL_GRADE>
+    <LA_GRADE>مهندس معماري  رئيسي الدرجة الأولى</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99170601</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9917</CD_CORPS>
+    <CD_CADRE>991706</CD_CADRE>
+    <LL_GRADE>ARCHITECTE GRADE PRINCIPAL</LL_GRADE>
+    <LA_GRADE>مهندس معماري الدرجة الممتازة</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99170602</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9917</CD_CORPS>
+    <CD_CADRE>991706</CD_CADRE>
+    <LL_GRADE>ARCHITECTE PREMIER GRADE</LL_GRADE>
+    <LA_GRADE>مهندس معماري الدرجة الأولى</LA_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99990001</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9999</CD_CORPS>
+    <CD_CADRE>999900</CD_CADRE>
+    <LL_GRADE>PREPARAT. ATELIER-LABO. 1ER GRADE</LL_GRADE>
+    <ECHELLE>10</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99990002</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9999</CD_CORPS>
+    <CD_CADRE>999900</CD_CADRE>
+    <LL_GRADE>PREPARAT. ATELIER-LABO. 2EME GRADE</LL_GRADE>
+    <ECHELLE>9</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99990003</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9999</CD_CORPS>
+    <CD_CADRE>999900</CD_CADRE>
+    <LL_GRADE>PREPARAT. ATELIER-LABO. 3EME GRADE</LL_GRADE>
+    <ECHELLE>8</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99990004</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9999</CD_CORPS>
+    <CD_CADRE>999900</CD_CADRE>
+    <LL_GRADE>PREPARAT. ATELIER-LABO. 4EME GRADE</LL_GRADE>
+    <ECHELLE>7</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99990005</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9999</CD_CORPS>
+    <CD_CADRE>999900</CD_CADRE>
+    <LL_GRADE>DOCUMENTALISTE 2EME GRADE</LL_GRADE>
+    <ECHELLE>7</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99990006</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9999</CD_CORPS>
+    <CD_CADRE>999900</CD_CADRE>
+    <LL_GRADE>DOCUMENTALISTE 1ER GRADE</LL_GRADE>
+    <ECHELLE>8</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99990007</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9999</CD_CORPS>
+    <CD_CADRE>999900</CD_CADRE>
+    <LL_GRADE>DOCUMENTALISTE GRADE PRINCIPAL</LL_GRADE>
+    <ECHELLE>9</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99990008</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9999</CD_CORPS>
+    <CD_CADRE>999900</CD_CADRE>
+    <LL_GRADE>ECONOME</LL_GRADE>
+    <ECHELLE>8</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99990009</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9999</CD_CORPS>
+    <CD_CADRE>999900</CD_CADRE>
+    <LL_GRADE>ECONOME PRINCIPAL</LL_GRADE>
+    <ECHELLE>9</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99990010</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9999</CD_CORPS>
+    <CD_CADRE>999900</CD_CADRE>
+    <LL_GRADE>INTENDANT</LL_GRADE>
+    <ECHELLE>10</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99990011</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9999</CD_CORPS>
+    <CD_CADRE>999900</CD_CADRE>
+    <LL_GRADE>INSPECTEUR DES SERVICES ECONOMIQUES (NON MEN)</LL_GRADE>
+    <ECHELLE>11</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99990012</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9999</CD_CORPS>
+    <CD_CADRE>999900</CD_CADRE>
+    <LL_GRADE>INSP. DE SERVICE ECONOM. PPL</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99990013</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9999</CD_CORPS>
+    <CD_CADRE>999900</CD_CADRE>
+    <LL_GRADE>CONSERVATEUR MAGASIN 3EME GRADE</LL_GRADE>
+    <ECHELLE>8</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99990014</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9999</CD_CORPS>
+    <CD_CADRE>999900</CD_CADRE>
+    <LL_GRADE>CONSERVATEUR MAGASIN 2EME GRADE</LL_GRADE>
+    <ECHELLE>9</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99990015</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9999</CD_CORPS>
+    <CD_CADRE>999900</CD_CADRE>
+    <LL_GRADE>CONSERVATEUR MAGASIN 1ER GRADE</LL_GRADE>
+    <ECHELLE>10</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99990016</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9999</CD_CORPS>
+    <CD_CADRE>999900</CD_CADRE>
+    <LL_GRADE>SURV. EXTER. ET INTER. 4EME  GRADE</LL_GRADE>
+    <ECHELLE>7</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99990017</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9999</CD_CORPS>
+    <CD_CADRE>999900</CD_CADRE>
+    <LL_GRADE>SURV. EXTER. ET INTER. 3EME  GRADE</LL_GRADE>
+    <ECHELLE>8</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99990018</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9999</CD_CORPS>
+    <CD_CADRE>999900</CD_CADRE>
+    <LL_GRADE>SURV. EXTER. ET INTER. 2EME  GRADE</LL_GRADE>
+    <ECHELLE>9</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99990019</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9999</CD_CORPS>
+    <CD_CADRE>999900</CD_CADRE>
+    <LL_GRADE>SURV. EXTER. ET INTER. 1ER GRADE</LL_GRADE>
+    <ECHELLE>10</ECHELLE>
+  </R_GRADE>
+  <R_GRADE>
+    <CD_GRADE>99990020</CD_GRADE>
+    <CD_CATEG>99</CD_CATEG>
+    <CD_CORPS>9999</CD_CORPS>
+    <CD_CADRE>999900</CD_CADRE>
+    <LL_GRADE>ADJOINT DE SERVICE ECONOMIQUE</LL_GRADE>
+    <ECHELLE>0</ECHELLE>
+  </R_GRADE>
+</DsAgentExport>

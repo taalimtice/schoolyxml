@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Employee" Class="EmployeeDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Employee.mdf;Integrated Security=True" SettingsObjectName="Schooly.Properties.Settings" SettingsPropertyName="EmployeeConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.absence_day_emp" Member="absence_day_emps">
+    <Type Name="absence_day_emp">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ppr_ab" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="nm_jours_ab" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="debut_ab" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="fin_ab" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="nomDocteur_ab" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="justification_ab" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="regle_ap" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ref_ab" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="type_ab" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="half_day_ab" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="lblToPrint" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.absence_seance_emp" Member="absence_seance_emps">
+    <Type Name="absence_seance_emp">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ppr_ab" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="debut_ab" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="nomDocteur_ab" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="justification_ab" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="regle_ap" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ref_ab" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="nb_seance_ab" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="seance_ab" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="half_day_ab" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="lblToPrint" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.cadre" Member="cadres">
+    <Type Name="cadre">
+      <Column Name="CD_CADRE" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LL_CADRE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LA_CADRE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.centre_formation" Member="centre_formations">
+    <Type Name="centre_formation">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NOM_ETABL" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.cycle" Member="cycles">
+    <Type Name="cycle">
+      <Column Name="CD_CYCLE" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LL_CYCLE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LA_CYCLE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.dippro" Member="dippros">
+    <Type Name="dippro">
+      <Column Name="CD_DIPP" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LL_DIPP" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="LA_DIPP" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.dipscol" Member="dipscols">
+    <Type Name="dipscol">
+      <Column Name="CD_DIPS" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LL_DIPS" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="LA_DIPS" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.discipline" Member="disciplines">
+    <Type Name="discipline">
+      <Column Name="CD_Discip" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LL_DISCIP" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LA_DISCIP" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Emp_Act" Member="Emp_Acts">
+    <Type Name="Emp_Act">
+      <Column Name="ppr_act" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CD_MODAFFE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CD_FONC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CD_ETAB" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CD_CYCLE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ACTIV_PRINC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DT_DEB_EXERCICE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DT_FIN_EXERCICE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DATEAFFECT" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DT_AFF_ETAB" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DT_AFF_PROV" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DT_AFF_REG" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DT_AFF_POSTE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Emp_Data" Member="Emp_Datas">
+    <Type Name="Emp_Data">
+      <Column Name="ppr_dat" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CD_POSITION" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CD_NATION" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CD_DIPS" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CD_DIPP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CD_DISCIP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CD_STATUT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CD_GRADE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MODAVGRA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SIT_FAM" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="NOML" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PRENOML" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NOMA" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PRENOMA" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="JOUR_NAIS" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="MOIS_NAIS" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AN_NAIS" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LIEU_NAIS" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GENRE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ADRESSE" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="CODE_POSTAL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VILLE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TEL_PORTABLE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ADRESSE_ELEC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DATE_REC" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DT_TITUL" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ANC_ADM" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ANC_GRADE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ECHELON" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DT_ECHELON" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ANC_ECHELON" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DATEAFFIL" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="AFFILIE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VILLEFORM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DATE_POSITION" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="villeFormationFR_dat" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DT_DIPSCOL" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DT_DIPPROF" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DT_SITSTAT" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DT_GRADE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DATE_SITFAM" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DT_CADRE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="AffectationPrincipale" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NumAFFIL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NumImma" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ID_tech" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CINA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CINN" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="CD_CADRE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fonction" Member="fonctions">
+    <Type Name="fonction">
+      <Column Name="CD_Fonc" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LL_FONC" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="LA_Fonc" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.grade" Member="grades">
+    <Type Name="grade">
+      <Column Name="CD_GRADE" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LL_GRADE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LA_GRADE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mode_accsses_grad" Member="mode_accsses_grads">
+    <Type Name="mode_accsses_grad">
+      <Column Name="MODAVGRA" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LL_DESLMODAV" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LA_DESLMODAV" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mode_Affectation" Member="mode_Affectations">
+    <Type Name="mode_Affectation">
+      <Column Name="CD_MODAFFE" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LL_MODEAFFE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LA_MODEAFFE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.nation" Member="nations">
+    <Type Name="nation">
+      <Column Name="CD_NATION" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LL_NATION" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LA_NATION" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.position" Member="positions">
+    <Type Name="position">
+      <Column Name="CD_Position" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LL_POSITION" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LA_POSITION" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.retard_emp" Member="retard_emps">
+    <Type Name="retard_emp">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ppr_ret" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="nb_minut_ret" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="debut_ret" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="fin_ret" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="regle_ret" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ref_ret" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="day_ret" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="justification_ret" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="lblToPrint" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.sit_statut" Member="sit_statuts">
+    <Type Name="sit_statut">
+      <Column Name="CD_Statut" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LL_STATUT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LA_STATUT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.sitfam" Member="sitfams">
+    <Type Name="sitfam">
+      <Column Name="Sit_Fam" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LL_SitFam" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LA_SitFam" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.congee_sick" Method="congee_sick">
+    <Parameter Name="param1" Type="System.Int32" DbType="Int" />
+    <ElementType Name="congee_sickResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ppr_ab" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="nm_jours_ab" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="debut_ab" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="fin_ab" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>
